@@ -32,7 +32,7 @@
             TopNavBar = new Panel();
             Logo_PicBox = new PictureBox();
             Line_PicBox = new PictureBox();
-            SignIn_NavBarLbl = new Label();
+            NavBarLabel = new Label();
             CartIcon_PicBox = new PictureBox();
             ProfileIcon_PicBox = new PictureBox();
             Search_Btn = new AddControls.RoundedButton();
@@ -66,6 +66,23 @@
             SignIn_Panel = new Panel();
             SignUp_Panel = new Panel();
             HomePage_Panel = new Panel();
+            SortSales = new ComboBox();
+            SortPrice = new ComboBox();
+            label3 = new Label();
+            panel1 = new Panel();
+            label5 = new Label();
+            MaxPrice_TxtBox = new TextBox();
+            MinPrice_TxtBox = new TextBox();
+            label4 = new Label();
+            PersonalCare_CheckBox = new CheckBox();
+            Kitchenware_CheckBox = new CheckBox();
+            Shoes_CheckBox = new CheckBox();
+            WomenClothing_CheckBox = new CheckBox();
+            MenClothing_CheckBox = new CheckBox();
+            Bags_CheckBox = new CheckBox();
+            Electronics_CheckBox = new CheckBox();
+            label2 = new Label();
+            label1 = new Label();
             TopNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
@@ -78,6 +95,8 @@
             tableLayout2.SuspendLayout();
             SignIn_Panel.SuspendLayout();
             SignUp_Panel.SuspendLayout();
+            HomePage_Panel.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // TopNavBar
@@ -85,7 +104,7 @@
             TopNavBar.BackColor = Color.FromArgb(82, 171, 153);
             TopNavBar.Controls.Add(Logo_PicBox);
             TopNavBar.Controls.Add(Line_PicBox);
-            TopNavBar.Controls.Add(SignIn_NavBarLbl);
+            TopNavBar.Controls.Add(NavBarLabel);
             TopNavBar.Controls.Add(CartIcon_PicBox);
             TopNavBar.Controls.Add(ProfileIcon_PicBox);
             TopNavBar.Controls.Add(Search_Btn);
@@ -122,18 +141,18 @@
             Line_PicBox.TabIndex = 12;
             Line_PicBox.TabStop = false;
             // 
-            // SignIn_NavBarLbl
+            // NavBarLabel
             // 
-            SignIn_NavBarLbl.AutoSize = true;
-            SignIn_NavBarLbl.Font = new Font("Segoe UI Semibold", 17.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SignIn_NavBarLbl.ForeColor = Color.White;
-            SignIn_NavBarLbl.ImageAlign = ContentAlignment.MiddleLeft;
-            SignIn_NavBarLbl.Location = new Point(203, 15);
-            SignIn_NavBarLbl.Name = "SignIn_NavBarLbl";
-            SignIn_NavBarLbl.Size = new Size(85, 31);
-            SignIn_NavBarLbl.TabIndex = 8;
-            SignIn_NavBarLbl.Text = "Sign in";
-            SignIn_NavBarLbl.TextAlign = ContentAlignment.MiddleLeft;
+            NavBarLabel.AutoSize = true;
+            NavBarLabel.Font = new Font("Segoe UI Semibold", 17.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            NavBarLabel.ForeColor = Color.White;
+            NavBarLabel.ImageAlign = ContentAlignment.MiddleLeft;
+            NavBarLabel.Location = new Point(203, 15);
+            NavBarLabel.Name = "NavBarLabel";
+            NavBarLabel.Size = new Size(85, 31);
+            NavBarLabel.TabIndex = 8;
+            NavBarLabel.Text = "Sign in";
+            NavBarLabel.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // CartIcon_PicBox
             // 
@@ -581,11 +600,204 @@
             // HomePage_Panel
             // 
             HomePage_Panel.AutoScroll = true;
+            HomePage_Panel.Controls.Add(SortSales);
+            HomePage_Panel.Controls.Add(SortPrice);
+            HomePage_Panel.Controls.Add(label3);
+            HomePage_Panel.Controls.Add(panel1);
             HomePage_Panel.Dock = DockStyle.Fill;
             HomePage_Panel.Location = new Point(0, 69);
             HomePage_Panel.Name = "HomePage_Panel";
             HomePage_Panel.Size = new Size(1350, 660);
             HomePage_Panel.TabIndex = 14;
+            HomePage_Panel.Paint += HomePage_Panel_Paint;
+            // 
+            // SortSales
+            // 
+            SortSales.Font = new Font("Segoe UI", 10F);
+            SortSales.FormattingEnabled = true;
+            SortSales.Location = new Point(445, 43);
+            SortSales.Name = "SortSales";
+            SortSales.Size = new Size(154, 25);
+            SortSales.TabIndex = 3;
+            SortSales.Text = " Sales";
+            SortSales.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
+            // 
+            // SortPrice
+            // 
+            SortPrice.Font = new Font("Segoe UI", 10F);
+            SortPrice.FormattingEnabled = true;
+            SortPrice.Location = new Point(285, 43);
+            SortPrice.Name = "SortPrice";
+            SortPrice.Size = new Size(154, 25);
+            SortPrice.TabIndex = 2;
+            SortPrice.Text = " Price";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 10F);
+            label3.Location = new Point(215, 46);
+            label3.Name = "label3";
+            label3.Size = new Size(53, 19);
+            label3.TabIndex = 1;
+            label3.Text = "Sort by";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(MaxPrice_TxtBox);
+            panel1.Controls.Add(MinPrice_TxtBox);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(PersonalCare_CheckBox);
+            panel1.Controls.Add(Kitchenware_CheckBox);
+            panel1.Controls.Add(Shoes_CheckBox);
+            panel1.Controls.Add(WomenClothing_CheckBox);
+            panel1.Controls.Add(MenClothing_CheckBox);
+            panel1.Controls.Add(Bags_CheckBox);
+            panel1.Controls.Add(Electronics_CheckBox);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(182, 660);
+            panel1.TabIndex = 0;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(74, 326);
+            label5.Name = "label5";
+            label5.Size = new Size(32, 15);
+            label5.TabIndex = 12;
+            label5.Text = "-----";
+            label5.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // MaxPrice_TxtBox
+            // 
+            MaxPrice_TxtBox.Location = new Point(110, 323);
+            MaxPrice_TxtBox.Name = "MaxPrice_TxtBox";
+            MaxPrice_TxtBox.PlaceholderText = "MAX";
+            MaxPrice_TxtBox.Size = new Size(53, 23);
+            MaxPrice_TxtBox.TabIndex = 11;
+            // 
+            // MinPrice_TxtBox
+            // 
+            MinPrice_TxtBox.Location = new Point(17, 322);
+            MinPrice_TxtBox.Name = "MinPrice_TxtBox";
+            MinPrice_TxtBox.PlaceholderText = "MIN";
+            MinPrice_TxtBox.Size = new Size(53, 23);
+            MinPrice_TxtBox.TabIndex = 10;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 10F);
+            label4.Location = new Point(17, 294);
+            label4.Name = "label4";
+            label4.Size = new Size(80, 19);
+            label4.TabIndex = 9;
+            label4.Text = "Price Range";
+            // 
+            // PersonalCare_CheckBox
+            // 
+            PersonalCare_CheckBox.AutoSize = true;
+            PersonalCare_CheckBox.Font = new Font("Segoe UI", 10F);
+            PersonalCare_CheckBox.Location = new Point(17, 246);
+            PersonalCare_CheckBox.Name = "PersonalCare_CheckBox";
+            PersonalCare_CheckBox.Size = new Size(111, 23);
+            PersonalCare_CheckBox.TabIndex = 8;
+            PersonalCare_CheckBox.Text = "Personal Care";
+            PersonalCare_CheckBox.UseVisualStyleBackColor = true;
+            // 
+            // Kitchenware_CheckBox
+            // 
+            Kitchenware_CheckBox.AutoSize = true;
+            Kitchenware_CheckBox.Font = new Font("Segoe UI", 10F);
+            Kitchenware_CheckBox.Location = new Point(17, 217);
+            Kitchenware_CheckBox.Name = "Kitchenware_CheckBox";
+            Kitchenware_CheckBox.Size = new Size(102, 23);
+            Kitchenware_CheckBox.TabIndex = 7;
+            Kitchenware_CheckBox.Text = "Kitchenware";
+            Kitchenware_CheckBox.UseVisualStyleBackColor = true;
+            // 
+            // Shoes_CheckBox
+            // 
+            Shoes_CheckBox.AutoSize = true;
+            Shoes_CheckBox.Font = new Font("Segoe UI", 10F);
+            Shoes_CheckBox.Location = new Point(17, 188);
+            Shoes_CheckBox.Name = "Shoes_CheckBox";
+            Shoes_CheckBox.Size = new Size(64, 23);
+            Shoes_CheckBox.TabIndex = 6;
+            Shoes_CheckBox.Text = "Shoes";
+            Shoes_CheckBox.UseVisualStyleBackColor = true;
+            // 
+            // WomenClothing_CheckBox
+            // 
+            WomenClothing_CheckBox.AutoSize = true;
+            WomenClothing_CheckBox.Font = new Font("Segoe UI", 10F);
+            WomenClothing_CheckBox.Location = new Point(17, 159);
+            WomenClothing_CheckBox.Name = "WomenClothing_CheckBox";
+            WomenClothing_CheckBox.Size = new Size(140, 23);
+            WomenClothing_CheckBox.TabIndex = 5;
+            WomenClothing_CheckBox.Text = "Women's Clothing";
+            WomenClothing_CheckBox.UseVisualStyleBackColor = true;
+            WomenClothing_CheckBox.CheckedChanged += checkBox4_CheckedChanged;
+            // 
+            // MenClothing_CheckBox
+            // 
+            MenClothing_CheckBox.AutoSize = true;
+            MenClothing_CheckBox.Font = new Font("Segoe UI", 10F);
+            MenClothing_CheckBox.Location = new Point(17, 130);
+            MenClothing_CheckBox.Name = "MenClothing_CheckBox";
+            MenClothing_CheckBox.Size = new Size(118, 23);
+            MenClothing_CheckBox.TabIndex = 4;
+            MenClothing_CheckBox.Text = "Men's clothing";
+            MenClothing_CheckBox.UseVisualStyleBackColor = true;
+            // 
+            // Bags_CheckBox
+            // 
+            Bags_CheckBox.AutoSize = true;
+            Bags_CheckBox.Font = new Font("Segoe UI", 10F);
+            Bags_CheckBox.Location = new Point(17, 101);
+            Bags_CheckBox.Name = "Bags_CheckBox";
+            Bags_CheckBox.Size = new Size(157, 23);
+            Bags_CheckBox.TabIndex = 3;
+            Bags_CheckBox.Text = "Bags and Accessories";
+            Bags_CheckBox.UseVisualStyleBackColor = true;
+            // 
+            // Electronics_CheckBox
+            // 
+            Electronics_CheckBox.AutoSize = true;
+            Electronics_CheckBox.Font = new Font("Segoe UI", 10F);
+            Electronics_CheckBox.Location = new Point(17, 72);
+            Electronics_CheckBox.Name = "Electronics_CheckBox";
+            Electronics_CheckBox.Size = new Size(92, 23);
+            Electronics_CheckBox.TabIndex = 2;
+            Electronics_CheckBox.Text = "Electronics";
+            Electronics_CheckBox.UseVisualStyleBackColor = true;
+            Electronics_CheckBox.CheckedChanged += checkBox1_CheckedChanged;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
+            label2.Location = new Point(14, 46);
+            label2.Name = "label2";
+            label2.Size = new Size(85, 19);
+            label2.TabIndex = 1;
+            label2.Text = "By Category";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(13, 16);
+            label1.Name = "label1";
+            label1.Size = new Size(70, 25);
+            label1.TabIndex = 0;
+            label1.Text = "FILTER";
+            label1.Click += label1_Click;
             // 
             // Form1
             // 
@@ -615,6 +827,10 @@
             tableLayout2.ResumeLayout(false);
             SignIn_Panel.ResumeLayout(false);
             SignUp_Panel.ResumeLayout(false);
+            HomePage_Panel.ResumeLayout(false);
+            HomePage_Panel.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -629,7 +845,7 @@
         private Label Email_SignInLbl;
         private TextBox Email_SignInTxtBox;
         private TextBox Password_SignInTxtBox;
-        private Label SignIn_NavBarLbl;
+        private Label NavBarLabel;
         private PictureBox NotificationIcon_PicBox;
         private PictureBox CartIcon_PicBox;
         private PictureBox ProfileIcon_PicBox;
@@ -657,5 +873,22 @@
         private Panel SignUp_Panel;
         private PictureBox Logo_PicBox;
         private Panel HomePage_Panel;
+        private Panel panel1;
+        private Label label1;
+        private Label label2;
+        private CheckBox Electronics_CheckBox;
+        private CheckBox WomenClothing_CheckBox;
+        private CheckBox MenClothing_CheckBox;
+        private CheckBox Bags_CheckBox;
+        private CheckBox PersonalCare_CheckBox;
+        private CheckBox Kitchenware_CheckBox;
+        private CheckBox Shoes_CheckBox;
+        private ComboBox SortSales;
+        private ComboBox SortPrice;
+        private Label label3;
+        private Label label5;
+        private TextBox MaxPrice_TxtBox;
+        private TextBox MinPrice_TxtBox;
+        private Label label4;
     }
 }
