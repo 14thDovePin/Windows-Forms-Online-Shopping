@@ -40,5 +40,10 @@ namespace ITEC103_Finals
         {
 
         }
+
+        private void tableLayout2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

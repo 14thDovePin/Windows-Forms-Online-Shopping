@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             TopNavBar = new Panel();
-            Logo_PicBox = new PictureBox();
             Line_PicBox = new PictureBox();
             SignIn_NavBarLbl = new Label();
             CartIcon_PicBox = new PictureBox();
@@ -65,8 +64,8 @@
             tableLayout2 = new TableLayoutPanel();
             SignIn_Panel = new Panel();
             SignUp_Panel = new Panel();
+            Logo_PicBox = new PictureBox();
             TopNavBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)CartIcon_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ProfileIcon_PicBox).BeginInit();
@@ -77,6 +76,7 @@
             tableLayout2.SuspendLayout();
             SignIn_Panel.SuspendLayout();
             SignUp_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             SuspendLayout();
             // 
             // TopNavBar
@@ -97,18 +97,6 @@
             TopNavBar.Size = new Size(1350, 69);
             TopNavBar.TabIndex = 0;
             // 
-            // Logo_PicBox
-            // 
-            Logo_PicBox.BackgroundImageLayout = ImageLayout.None;
-            Logo_PicBox.Image = (Image)resources.GetObject("Logo_PicBox.Image");
-            Logo_PicBox.Location = new Point(14, 16);
-            Logo_PicBox.Margin = new Padding(3, 2, 3, 2);
-            Logo_PicBox.Name = "Logo_PicBox";
-            Logo_PicBox.Size = new Size(145, 34);
-            Logo_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
-            Logo_PicBox.TabIndex = 0;
-            Logo_PicBox.TabStop = false;
-            // 
             // Line_PicBox
             // 
             Line_PicBox.BackgroundImageLayout = ImageLayout.None;
@@ -124,12 +112,12 @@
             // SignIn_NavBarLbl
             // 
             SignIn_NavBarLbl.AutoSize = true;
-            SignIn_NavBarLbl.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            SignIn_NavBarLbl.Font = new Font("Segoe UI Semibold", 17.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SignIn_NavBarLbl.ForeColor = Color.White;
             SignIn_NavBarLbl.ImageAlign = ContentAlignment.MiddleLeft;
-            SignIn_NavBarLbl.Location = new Point(202, 19);
+            SignIn_NavBarLbl.Location = new Point(203, 15);
             SignIn_NavBarLbl.Name = "SignIn_NavBarLbl";
-            SignIn_NavBarLbl.Size = new Size(78, 30);
+            SignIn_NavBarLbl.Size = new Size(85, 31);
             SignIn_NavBarLbl.TabIndex = 8;
             SignIn_NavBarLbl.Text = "Sign in";
             SignIn_NavBarLbl.TextAlign = ContentAlignment.MiddleLeft;
@@ -138,10 +126,10 @@
             // 
             CartIcon_PicBox.BackgroundImageLayout = ImageLayout.None;
             CartIcon_PicBox.Image = (Image)resources.GetObject("CartIcon_PicBox.Image");
-            CartIcon_PicBox.Location = new Point(1168, 15);
+            CartIcon_PicBox.Location = new Point(1176, 15);
             CartIcon_PicBox.Margin = new Padding(3, 2, 3, 2);
             CartIcon_PicBox.Name = "CartIcon_PicBox";
-            CartIcon_PicBox.Size = new Size(63, 41);
+            CartIcon_PicBox.Size = new Size(47, 37);
             CartIcon_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
             CartIcon_PicBox.TabIndex = 10;
             CartIcon_PicBox.TabStop = false;
@@ -150,10 +138,10 @@
             // 
             ProfileIcon_PicBox.BackgroundImageLayout = ImageLayout.None;
             ProfileIcon_PicBox.Image = (Image)resources.GetObject("ProfileIcon_PicBox.Image");
-            ProfileIcon_PicBox.Location = new Point(1262, 14);
+            ProfileIcon_PicBox.Location = new Point(1245, 15);
             ProfileIcon_PicBox.Margin = new Padding(3, 2, 3, 2);
             ProfileIcon_PicBox.Name = "ProfileIcon_PicBox";
-            ProfileIcon_PicBox.Size = new Size(63, 41);
+            ProfileIcon_PicBox.Size = new Size(47, 37);
             ProfileIcon_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
             ProfileIcon_PicBox.TabIndex = 11;
             ProfileIcon_PicBox.TabStop = false;
@@ -195,10 +183,10 @@
             // 
             NotificationIcon_PicBox.BackgroundImageLayout = ImageLayout.None;
             NotificationIcon_PicBox.Image = (Image)resources.GetObject("NotificationIcon_PicBox.Image");
-            NotificationIcon_PicBox.Location = new Point(1075, 15);
+            NotificationIcon_PicBox.Location = new Point(1109, 16);
             NotificationIcon_PicBox.Margin = new Padding(3, 2, 3, 2);
             NotificationIcon_PicBox.Name = "NotificationIcon_PicBox";
-            NotificationIcon_PicBox.Size = new Size(63, 41);
+            NotificationIcon_PicBox.Size = new Size(47, 35);
             NotificationIcon_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
             NotificationIcon_PicBox.TabIndex = 9;
             NotificationIcon_PicBox.TabStop = false;
@@ -556,6 +544,7 @@
             tableLayout2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayout2.Size = new Size(1350, 660);
             tableLayout2.TabIndex = 3;
+            tableLayout2.Paint += tableLayout2_Paint;
             // 
             // SignIn_Panel
             // 
@@ -576,6 +565,18 @@
             SignUp_Panel.Size = new Size(1350, 660);
             SignUp_Panel.TabIndex = 9;
             // 
+            // Logo_PicBox
+            // 
+            Logo_PicBox.BackgroundImageLayout = ImageLayout.None;
+            Logo_PicBox.Image = (Image)resources.GetObject("Logo_PicBox.Image");
+            Logo_PicBox.Location = new Point(14, 16);
+            Logo_PicBox.Margin = new Padding(3, 2, 3, 2);
+            Logo_PicBox.Name = "Logo_PicBox";
+            Logo_PicBox.Size = new Size(145, 34);
+            Logo_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
+            Logo_PicBox.TabIndex = 0;
+            Logo_PicBox.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -590,7 +591,6 @@
             Load += Form1_Load;
             TopNavBar.ResumeLayout(false);
             TopNavBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)Logo_PicBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)CartIcon_PicBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)ProfileIcon_PicBox).EndInit();
@@ -603,6 +603,7 @@
             tableLayout2.ResumeLayout(false);
             SignIn_Panel.ResumeLayout(false);
             SignUp_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)Logo_PicBox).EndInit();
             ResumeLayout(false);
         }
 
@@ -617,7 +618,6 @@
         private Label Email_SignInLbl;
         private TextBox Email_SignInTxtBox;
         private TextBox Password_SignInTxtBox;
-        private PictureBox Logo_PicBox;
         private Label SignIn_NavBarLbl;
         private PictureBox NotificationIcon_PicBox;
         private PictureBox CartIcon_PicBox;
@@ -644,5 +644,6 @@
         private LinkLabel SignInLink;
         private Panel SignIn_Panel;
         private Panel SignUp_Panel;
+        private PictureBox Logo_PicBox;
     }
 }
