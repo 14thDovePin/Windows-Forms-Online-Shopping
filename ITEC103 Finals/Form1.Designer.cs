@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             TopNavBar = new Panel();
+            Logo_PicBox = new PictureBox();
             Line_PicBox = new PictureBox();
             SignIn_NavBarLbl = new Label();
             CartIcon_PicBox = new PictureBox();
@@ -64,8 +65,9 @@
             tableLayout2 = new TableLayoutPanel();
             SignIn_Panel = new Panel();
             SignUp_Panel = new Panel();
-            Logo_PicBox = new PictureBox();
+            HomePage_Panel = new Panel();
             TopNavBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)CartIcon_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ProfileIcon_PicBox).BeginInit();
@@ -76,7 +78,6 @@
             tableLayout2.SuspendLayout();
             SignIn_Panel.SuspendLayout();
             SignUp_Panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             SuspendLayout();
             // 
             // TopNavBar
@@ -96,6 +97,18 @@
             TopNavBar.Name = "TopNavBar";
             TopNavBar.Size = new Size(1350, 69);
             TopNavBar.TabIndex = 0;
+            // 
+            // Logo_PicBox
+            // 
+            Logo_PicBox.BackgroundImageLayout = ImageLayout.None;
+            Logo_PicBox.Image = (Image)resources.GetObject("Logo_PicBox.Image");
+            Logo_PicBox.Location = new Point(14, 16);
+            Logo_PicBox.Margin = new Padding(3, 2, 3, 2);
+            Logo_PicBox.Name = "Logo_PicBox";
+            Logo_PicBox.Size = new Size(145, 34);
+            Logo_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
+            Logo_PicBox.TabIndex = 0;
+            Logo_PicBox.TabStop = false;
             // 
             // Line_PicBox
             // 
@@ -565,17 +578,14 @@
             SignUp_Panel.Size = new Size(1350, 660);
             SignUp_Panel.TabIndex = 9;
             // 
-            // Logo_PicBox
+            // HomePage_Panel
             // 
-            Logo_PicBox.BackgroundImageLayout = ImageLayout.None;
-            Logo_PicBox.Image = (Image)resources.GetObject("Logo_PicBox.Image");
-            Logo_PicBox.Location = new Point(14, 16);
-            Logo_PicBox.Margin = new Padding(3, 2, 3, 2);
-            Logo_PicBox.Name = "Logo_PicBox";
-            Logo_PicBox.Size = new Size(145, 34);
-            Logo_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
-            Logo_PicBox.TabIndex = 0;
-            Logo_PicBox.TabStop = false;
+            HomePage_Panel.AutoScroll = true;
+            HomePage_Panel.Dock = DockStyle.Fill;
+            HomePage_Panel.Location = new Point(0, 69);
+            HomePage_Panel.Name = "HomePage_Panel";
+            HomePage_Panel.Size = new Size(1350, 660);
+            HomePage_Panel.TabIndex = 14;
             // 
             // Form1
             // 
@@ -583,6 +593,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 244);
             ClientSize = new Size(1350, 729);
+            Controls.Add(HomePage_Panel);
             Controls.Add(SignUp_Panel);
             Controls.Add(SignIn_Panel);
             Controls.Add(TopNavBar);
@@ -591,6 +602,7 @@
             Load += Form1_Load;
             TopNavBar.ResumeLayout(false);
             TopNavBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)Logo_PicBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)CartIcon_PicBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)ProfileIcon_PicBox).EndInit();
@@ -603,7 +615,6 @@
             tableLayout2.ResumeLayout(false);
             SignIn_Panel.ResumeLayout(false);
             SignUp_Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)Logo_PicBox).EndInit();
             ResumeLayout(false);
         }
 
@@ -645,5 +656,6 @@
         private Panel SignIn_Panel;
         private Panel SignUp_Panel;
         private PictureBox Logo_PicBox;
+        private Panel HomePage_Panel;
     }
 }
