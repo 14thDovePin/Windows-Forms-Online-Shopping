@@ -36,7 +36,6 @@
             CartIcon_PicBox = new PictureBox();
             ProfileIcon_PicBox = new PictureBox();
             Search_Btn = new AddControls.RoundedButton();
-            SearchBox_TxtBox = new TextBox();
             NotificationIcon_PicBox = new PictureBox();
             SignIn_Btn = new AddControls.RoundedButton();
             SignIn_Container = new Panel();
@@ -66,6 +65,7 @@
             SignIn_Panel = new Panel();
             SignUp_Panel = new Panel();
             HomePage_Panel = new Panel();
+            SearchBar_TxtBox = new AddControls.RoundedTextBox();
             TopNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
@@ -89,8 +89,8 @@
             TopNavBar.Controls.Add(CartIcon_PicBox);
             TopNavBar.Controls.Add(ProfileIcon_PicBox);
             TopNavBar.Controls.Add(Search_Btn);
-            TopNavBar.Controls.Add(SearchBox_TxtBox);
             TopNavBar.Controls.Add(NotificationIcon_PicBox);
+            TopNavBar.Controls.Add(SearchBar_TxtBox);
             TopNavBar.Dock = DockStyle.Top;
             TopNavBar.Location = new Point(0, 0);
             TopNavBar.Margin = new Padding(3, 2, 3, 2);
@@ -172,7 +172,7 @@
             Search_Btn.FlatStyle = FlatStyle.Flat;
             Search_Btn.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Search_Btn.ForeColor = Color.White;
-            Search_Btn.Location = new Point(916, 21);
+            Search_Btn.Location = new Point(980, 20);
             Search_Btn.Margin = new Padding(3, 2, 3, 2);
             Search_Btn.Name = "Search_Btn";
             Search_Btn.Size = new Size(58, 25);
@@ -180,17 +180,6 @@
             Search_Btn.TextColor = Color.White;
             Search_Btn.TextImageRelation = TextImageRelation.ImageAboveText;
             Search_Btn.UseVisualStyleBackColor = false;
-            // 
-            // SearchBox_TxtBox
-            // 
-            SearchBox_TxtBox.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            SearchBox_TxtBox.Location = new Point(365, 18);
-            SearchBox_TxtBox.Margin = new Padding(3, 2, 3, 2);
-            SearchBox_TxtBox.Multiline = true;
-            SearchBox_TxtBox.Name = "SearchBox_TxtBox";
-            SearchBox_TxtBox.PlaceholderText = " Search";
-            SearchBox_TxtBox.Size = new Size(611, 31);
-            SearchBox_TxtBox.TabIndex = 13;
             // 
             // NotificationIcon_PicBox
             // 
@@ -587,6 +576,27 @@
             HomePage_Panel.Size = new Size(1350, 660);
             HomePage_Panel.TabIndex = 14;
             // 
+            // SearchBar_TxtBox
+            // 
+            SearchBar_TxtBox.BackColor = Color.White;
+            SearchBar_TxtBox.BorderColor = Color.Teal;
+            SearchBar_TxtBox.BorderFocusColor = Color.Teal;
+            SearchBar_TxtBox.BorderRadius = 20;
+            SearchBar_TxtBox.BorderSize = 2;
+            SearchBar_TxtBox.Font = new Font("Segoe UI", 14F);
+            SearchBar_TxtBox.ForeColor = Color.DimGray;
+            SearchBar_TxtBox.Location = new Point(452, 12);
+            SearchBar_TxtBox.Multiline = false;
+            SearchBar_TxtBox.Name = "SearchBar_TxtBox";
+            SearchBar_TxtBox.Padding = new Padding(7);
+            SearchBar_TxtBox.PasswordChar = false;
+            SearchBar_TxtBox.PlaceholderColor = Color.DarkGray;
+            SearchBar_TxtBox.PlaceholderText = " SEARCH";
+            SearchBar_TxtBox.Size = new Size(595, 40);
+            SearchBar_TxtBox.TabIndex = 0;
+            SearchBar_TxtBox.Texts = "";
+            SearchBar_TxtBox.UnderlinedStyle = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -634,7 +644,6 @@
         private PictureBox CartIcon_PicBox;
         private PictureBox ProfileIcon_PicBox;
         private PictureBox Line_PicBox;
-        private TextBox SearchBox_TxtBox;
         private AddControls.RoundedButton Search_Btn;
         private Panel SignUp_Container;
         private Label SignUp_HeaderLbl;
@@ -657,5 +666,6 @@
         private Panel SignUp_Panel;
         private PictureBox Logo_PicBox;
         private Panel HomePage_Panel;
+        private AddControls.RoundedTextBox SearchBar_TxtBox;
     }
 }
