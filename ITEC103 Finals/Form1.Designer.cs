@@ -66,73 +66,76 @@
             SignIn_Panel = new Panel();
             SignUp_Panel = new Panel();
             HomePage_Panel = new Panel();
-            SideBar = new Panel();
-            panel1 = new Panel();
             ProductView = new FlowLayoutPanel();
             panel14 = new Panel();
             PriceTag = new Label();
             Item1 = new LinkLabel();
             pictureBox1 = new PictureBox();
+            panel2 = new Panel();
             label1 = new Label();
             linkLabel1 = new LinkLabel();
-            panel2 = new Panel();
+            pictureBox2 = new PictureBox();
+            panel3 = new Panel();
             label2 = new Label();
             linkLabel2 = new LinkLabel();
             pictureBox3 = new PictureBox();
-            panel3 = new Panel();
+            panel4 = new Panel();
             label3 = new Label();
             linkLabel3 = new LinkLabel();
             pictureBox4 = new PictureBox();
-            panel4 = new Panel();
+            panel5 = new Panel();
             label4 = new Label();
             linkLabel4 = new LinkLabel();
             pictureBox5 = new PictureBox();
-            panel5 = new Panel();
+            panel6 = new Panel();
             label5 = new Label();
             linkLabel5 = new LinkLabel();
             pictureBox6 = new PictureBox();
-            panel6 = new Panel();
+            panel7 = new Panel();
             label6 = new Label();
             linkLabel6 = new LinkLabel();
             pictureBox7 = new PictureBox();
-            panel7 = new Panel();
+            panel8 = new Panel();
             label7 = new Label();
             linkLabel7 = new LinkLabel();
             pictureBox8 = new PictureBox();
-            panel8 = new Panel();
+            panel9 = new Panel();
             label8 = new Label();
             linkLabel8 = new LinkLabel();
             pictureBox9 = new PictureBox();
-            panel9 = new Panel();
+            panel10 = new Panel();
             label9 = new Label();
             linkLabel9 = new LinkLabel();
             pictureBox10 = new PictureBox();
-            panel10 = new Panel();
+            panel11 = new Panel();
             label10 = new Label();
             linkLabel10 = new LinkLabel();
             pictureBox11 = new PictureBox();
-            panel11 = new Panel();
+            panel12 = new Panel();
             label11 = new Label();
             linkLabel11 = new LinkLabel();
             pictureBox12 = new PictureBox();
-            panel12 = new Panel();
+            panel13 = new Panel();
             label12 = new Label();
             linkLabel12 = new LinkLabel();
             pictureBox13 = new PictureBox();
-            panel13 = new Panel();
+            panel15 = new Panel();
             label13 = new Label();
             linkLabel13 = new LinkLabel();
             pictureBox14 = new PictureBox();
-            panel15 = new Panel();
+            panel16 = new Panel();
             label14 = new Label();
             linkLabel14 = new LinkLabel();
             pictureBox15 = new PictureBox();
-            panel16 = new Panel();
+            panel17 = new Panel();
             label15 = new Label();
             linkLabel15 = new LinkLabel();
             pictureBox16 = new PictureBox();
-            panel17 = new Panel();
-            pictureBox2 = new PictureBox();
+            panel1 = new Panel();
+            SideBar = new Panel();
+            label16 = new Label();
+            SortPrice = new ComboBox();
+            SortSales = new ComboBox();
             TopNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
@@ -150,35 +153,36 @@
             panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
-            panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
-            panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
+            panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // TopNavBar
@@ -701,22 +705,6 @@
             HomePage_Panel.Size = new Size(1350, 660);
             HomePage_Panel.TabIndex = 14;
             // 
-            // SideBar
-            // 
-            SideBar.Dock = DockStyle.Left;
-            SideBar.Location = new Point(0, 0);
-            SideBar.Name = "SideBar";
-            SideBar.Size = new Size(200, 660);
-            SideBar.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(200, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1150, 40);
-            panel1.TabIndex = 1;
-            // 
             // ProductView
             // 
             ProductView.AutoScroll = true;
@@ -792,6 +780,18 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            panel2.Anchor = AnchorStyles.None;
+            panel2.BackColor = Color.FromArgb(224, 224, 224);
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(linkLabel1);
+            panel2.Controls.Add(pictureBox2);
+            panel2.Location = new Point(283, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(274, 321);
+            panel2.TabIndex = 5;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -818,17 +818,29 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "ITEM NAME";
             // 
-            // panel2
+            // pictureBox2
             // 
-            panel2.Anchor = AnchorStyles.None;
-            panel2.BackColor = Color.FromArgb(224, 224, 224);
-            panel2.Controls.Add(label1);
-            panel2.Controls.Add(linkLabel1);
-            panel2.Controls.Add(pictureBox2);
-            panel2.Location = new Point(283, 3);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(274, 321);
-            panel2.TabIndex = 5;
+            pictureBox2.BackColor = Color.White;
+            pictureBox2.Dock = DockStyle.Top;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(274, 225);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
+            // 
+            // panel3
+            // 
+            panel3.Anchor = AnchorStyles.None;
+            panel3.BackColor = Color.FromArgb(224, 224, 224);
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(linkLabel2);
+            panel3.Controls.Add(pictureBox3);
+            panel3.Location = new Point(563, 3);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(274, 321);
+            panel3.TabIndex = 5;
             // 
             // label2
             // 
@@ -867,17 +879,17 @@
             pictureBox3.TabIndex = 0;
             pictureBox3.TabStop = false;
             // 
-            // panel3
+            // panel4
             // 
-            panel3.Anchor = AnchorStyles.None;
-            panel3.BackColor = Color.FromArgb(224, 224, 224);
-            panel3.Controls.Add(label2);
-            panel3.Controls.Add(linkLabel2);
-            panel3.Controls.Add(pictureBox3);
-            panel3.Location = new Point(563, 3);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(274, 321);
-            panel3.TabIndex = 5;
+            panel4.Anchor = AnchorStyles.None;
+            panel4.BackColor = Color.FromArgb(224, 224, 224);
+            panel4.Controls.Add(label3);
+            panel4.Controls.Add(linkLabel3);
+            panel4.Controls.Add(pictureBox4);
+            panel4.Location = new Point(843, 3);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(274, 321);
+            panel4.TabIndex = 5;
             // 
             // label3
             // 
@@ -916,17 +928,17 @@
             pictureBox4.TabIndex = 0;
             pictureBox4.TabStop = false;
             // 
-            // panel4
+            // panel5
             // 
-            panel4.Anchor = AnchorStyles.None;
-            panel4.BackColor = Color.FromArgb(224, 224, 224);
-            panel4.Controls.Add(label3);
-            panel4.Controls.Add(linkLabel3);
-            panel4.Controls.Add(pictureBox4);
-            panel4.Location = new Point(843, 3);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(274, 321);
-            panel4.TabIndex = 5;
+            panel5.Anchor = AnchorStyles.None;
+            panel5.BackColor = Color.FromArgb(224, 224, 224);
+            panel5.Controls.Add(label4);
+            panel5.Controls.Add(linkLabel4);
+            panel5.Controls.Add(pictureBox5);
+            panel5.Location = new Point(3, 330);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(274, 321);
+            panel5.TabIndex = 5;
             // 
             // label4
             // 
@@ -965,17 +977,17 @@
             pictureBox5.TabIndex = 0;
             pictureBox5.TabStop = false;
             // 
-            // panel5
+            // panel6
             // 
-            panel5.Anchor = AnchorStyles.None;
-            panel5.BackColor = Color.FromArgb(224, 224, 224);
-            panel5.Controls.Add(label4);
-            panel5.Controls.Add(linkLabel4);
-            panel5.Controls.Add(pictureBox5);
-            panel5.Location = new Point(3, 330);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(274, 321);
-            panel5.TabIndex = 5;
+            panel6.Anchor = AnchorStyles.None;
+            panel6.BackColor = Color.FromArgb(224, 224, 224);
+            panel6.Controls.Add(label5);
+            panel6.Controls.Add(linkLabel5);
+            panel6.Controls.Add(pictureBox6);
+            panel6.Location = new Point(283, 330);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(274, 321);
+            panel6.TabIndex = 5;
             // 
             // label5
             // 
@@ -1014,17 +1026,17 @@
             pictureBox6.TabIndex = 0;
             pictureBox6.TabStop = false;
             // 
-            // panel6
+            // panel7
             // 
-            panel6.Anchor = AnchorStyles.None;
-            panel6.BackColor = Color.FromArgb(224, 224, 224);
-            panel6.Controls.Add(label5);
-            panel6.Controls.Add(linkLabel5);
-            panel6.Controls.Add(pictureBox6);
-            panel6.Location = new Point(283, 330);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(274, 321);
-            panel6.TabIndex = 5;
+            panel7.Anchor = AnchorStyles.None;
+            panel7.BackColor = Color.FromArgb(224, 224, 224);
+            panel7.Controls.Add(label6);
+            panel7.Controls.Add(linkLabel6);
+            panel7.Controls.Add(pictureBox7);
+            panel7.Location = new Point(563, 330);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(274, 321);
+            panel7.TabIndex = 5;
             // 
             // label6
             // 
@@ -1063,17 +1075,17 @@
             pictureBox7.TabIndex = 0;
             pictureBox7.TabStop = false;
             // 
-            // panel7
+            // panel8
             // 
-            panel7.Anchor = AnchorStyles.None;
-            panel7.BackColor = Color.FromArgb(224, 224, 224);
-            panel7.Controls.Add(label6);
-            panel7.Controls.Add(linkLabel6);
-            panel7.Controls.Add(pictureBox7);
-            panel7.Location = new Point(563, 330);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(274, 321);
-            panel7.TabIndex = 5;
+            panel8.Anchor = AnchorStyles.None;
+            panel8.BackColor = Color.FromArgb(224, 224, 224);
+            panel8.Controls.Add(label7);
+            panel8.Controls.Add(linkLabel7);
+            panel8.Controls.Add(pictureBox8);
+            panel8.Location = new Point(843, 330);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(274, 321);
+            panel8.TabIndex = 5;
             // 
             // label7
             // 
@@ -1112,17 +1124,17 @@
             pictureBox8.TabIndex = 0;
             pictureBox8.TabStop = false;
             // 
-            // panel8
+            // panel9
             // 
-            panel8.Anchor = AnchorStyles.None;
-            panel8.BackColor = Color.FromArgb(224, 224, 224);
-            panel8.Controls.Add(label7);
-            panel8.Controls.Add(linkLabel7);
-            panel8.Controls.Add(pictureBox8);
-            panel8.Location = new Point(843, 330);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(274, 321);
-            panel8.TabIndex = 5;
+            panel9.Anchor = AnchorStyles.None;
+            panel9.BackColor = Color.FromArgb(224, 224, 224);
+            panel9.Controls.Add(label8);
+            panel9.Controls.Add(linkLabel8);
+            panel9.Controls.Add(pictureBox9);
+            panel9.Location = new Point(3, 657);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(274, 321);
+            panel9.TabIndex = 5;
             // 
             // label8
             // 
@@ -1161,17 +1173,17 @@
             pictureBox9.TabIndex = 0;
             pictureBox9.TabStop = false;
             // 
-            // panel9
+            // panel10
             // 
-            panel9.Anchor = AnchorStyles.None;
-            panel9.BackColor = Color.FromArgb(224, 224, 224);
-            panel9.Controls.Add(label8);
-            panel9.Controls.Add(linkLabel8);
-            panel9.Controls.Add(pictureBox9);
-            panel9.Location = new Point(3, 657);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(274, 321);
-            panel9.TabIndex = 5;
+            panel10.Anchor = AnchorStyles.None;
+            panel10.BackColor = Color.FromArgb(224, 224, 224);
+            panel10.Controls.Add(label9);
+            panel10.Controls.Add(linkLabel9);
+            panel10.Controls.Add(pictureBox10);
+            panel10.Location = new Point(283, 657);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(274, 321);
+            panel10.TabIndex = 5;
             // 
             // label9
             // 
@@ -1210,17 +1222,17 @@
             pictureBox10.TabIndex = 0;
             pictureBox10.TabStop = false;
             // 
-            // panel10
+            // panel11
             // 
-            panel10.Anchor = AnchorStyles.None;
-            panel10.BackColor = Color.FromArgb(224, 224, 224);
-            panel10.Controls.Add(label9);
-            panel10.Controls.Add(linkLabel9);
-            panel10.Controls.Add(pictureBox10);
-            panel10.Location = new Point(283, 657);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(274, 321);
-            panel10.TabIndex = 5;
+            panel11.Anchor = AnchorStyles.None;
+            panel11.BackColor = Color.FromArgb(224, 224, 224);
+            panel11.Controls.Add(label10);
+            panel11.Controls.Add(linkLabel10);
+            panel11.Controls.Add(pictureBox11);
+            panel11.Location = new Point(563, 657);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(274, 321);
+            panel11.TabIndex = 5;
             // 
             // label10
             // 
@@ -1259,17 +1271,17 @@
             pictureBox11.TabIndex = 0;
             pictureBox11.TabStop = false;
             // 
-            // panel11
+            // panel12
             // 
-            panel11.Anchor = AnchorStyles.None;
-            panel11.BackColor = Color.FromArgb(224, 224, 224);
-            panel11.Controls.Add(label10);
-            panel11.Controls.Add(linkLabel10);
-            panel11.Controls.Add(pictureBox11);
-            panel11.Location = new Point(563, 657);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(274, 321);
-            panel11.TabIndex = 5;
+            panel12.Anchor = AnchorStyles.None;
+            panel12.BackColor = Color.FromArgb(224, 224, 224);
+            panel12.Controls.Add(label11);
+            panel12.Controls.Add(linkLabel11);
+            panel12.Controls.Add(pictureBox12);
+            panel12.Location = new Point(843, 657);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(274, 321);
+            panel12.TabIndex = 5;
             // 
             // label11
             // 
@@ -1308,17 +1320,17 @@
             pictureBox12.TabIndex = 0;
             pictureBox12.TabStop = false;
             // 
-            // panel12
+            // panel13
             // 
-            panel12.Anchor = AnchorStyles.None;
-            panel12.BackColor = Color.FromArgb(224, 224, 224);
-            panel12.Controls.Add(label11);
-            panel12.Controls.Add(linkLabel11);
-            panel12.Controls.Add(pictureBox12);
-            panel12.Location = new Point(843, 657);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(274, 321);
-            panel12.TabIndex = 5;
+            panel13.Anchor = AnchorStyles.None;
+            panel13.BackColor = Color.FromArgb(224, 224, 224);
+            panel13.Controls.Add(label12);
+            panel13.Controls.Add(linkLabel12);
+            panel13.Controls.Add(pictureBox13);
+            panel13.Location = new Point(3, 984);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(274, 321);
+            panel13.TabIndex = 5;
             // 
             // label12
             // 
@@ -1357,17 +1369,17 @@
             pictureBox13.TabIndex = 0;
             pictureBox13.TabStop = false;
             // 
-            // panel13
+            // panel15
             // 
-            panel13.Anchor = AnchorStyles.None;
-            panel13.BackColor = Color.FromArgb(224, 224, 224);
-            panel13.Controls.Add(label12);
-            panel13.Controls.Add(linkLabel12);
-            panel13.Controls.Add(pictureBox13);
-            panel13.Location = new Point(3, 984);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(274, 321);
-            panel13.TabIndex = 5;
+            panel15.Anchor = AnchorStyles.None;
+            panel15.BackColor = Color.FromArgb(224, 224, 224);
+            panel15.Controls.Add(label13);
+            panel15.Controls.Add(linkLabel13);
+            panel15.Controls.Add(pictureBox14);
+            panel15.Location = new Point(283, 984);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(274, 321);
+            panel15.TabIndex = 5;
             // 
             // label13
             // 
@@ -1406,17 +1418,17 @@
             pictureBox14.TabIndex = 0;
             pictureBox14.TabStop = false;
             // 
-            // panel15
+            // panel16
             // 
-            panel15.Anchor = AnchorStyles.None;
-            panel15.BackColor = Color.FromArgb(224, 224, 224);
-            panel15.Controls.Add(label13);
-            panel15.Controls.Add(linkLabel13);
-            panel15.Controls.Add(pictureBox14);
-            panel15.Location = new Point(283, 984);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(274, 321);
-            panel15.TabIndex = 5;
+            panel16.Anchor = AnchorStyles.None;
+            panel16.BackColor = Color.FromArgb(224, 224, 224);
+            panel16.Controls.Add(label14);
+            panel16.Controls.Add(linkLabel14);
+            panel16.Controls.Add(pictureBox15);
+            panel16.Location = new Point(563, 984);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(274, 321);
+            panel16.TabIndex = 5;
             // 
             // label14
             // 
@@ -1455,17 +1467,17 @@
             pictureBox15.TabIndex = 0;
             pictureBox15.TabStop = false;
             // 
-            // panel16
+            // panel17
             // 
-            panel16.Anchor = AnchorStyles.None;
-            panel16.BackColor = Color.FromArgb(224, 224, 224);
-            panel16.Controls.Add(label14);
-            panel16.Controls.Add(linkLabel14);
-            panel16.Controls.Add(pictureBox15);
-            panel16.Location = new Point(563, 984);
-            panel16.Name = "panel16";
-            panel16.Size = new Size(274, 321);
-            panel16.TabIndex = 5;
+            panel17.Anchor = AnchorStyles.None;
+            panel17.BackColor = Color.FromArgb(224, 224, 224);
+            panel17.Controls.Add(label15);
+            panel17.Controls.Add(linkLabel15);
+            panel17.Controls.Add(pictureBox16);
+            panel17.Location = new Point(843, 984);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(274, 321);
+            panel17.TabIndex = 5;
             // 
             // label15
             // 
@@ -1504,29 +1516,54 @@
             pictureBox16.TabIndex = 0;
             pictureBox16.TabStop = false;
             // 
-            // panel17
+            // panel1
             // 
-            panel17.Anchor = AnchorStyles.None;
-            panel17.BackColor = Color.FromArgb(224, 224, 224);
-            panel17.Controls.Add(label15);
-            panel17.Controls.Add(linkLabel15);
-            panel17.Controls.Add(pictureBox16);
-            panel17.Location = new Point(843, 984);
-            panel17.Name = "panel17";
-            panel17.Size = new Size(274, 321);
-            panel17.TabIndex = 5;
+            panel1.Controls.Add(SortSales);
+            panel1.Controls.Add(SortPrice);
+            panel1.Controls.Add(label16);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(200, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1150, 40);
+            panel1.TabIndex = 1;
             // 
-            // pictureBox2
+            // SideBar
             // 
-            pictureBox2.BackColor = Color.White;
-            pictureBox2.Dock = DockStyle.Top;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(0, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(274, 225);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 0;
-            pictureBox2.TabStop = false;
+            SideBar.Dock = DockStyle.Left;
+            SideBar.Location = new Point(0, 0);
+            SideBar.Name = "SideBar";
+            SideBar.Size = new Size(200, 660);
+            SideBar.TabIndex = 0;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.Location = new Point(17, 12);
+            label16.Name = "label16";
+            label16.Size = new Size(60, 17);
+            label16.TabIndex = 0;
+            label16.Text = "SORT BY";
+            // 
+            // SortPrice
+            // 
+            SortPrice.Font = new Font("Segoe UI", 10F);
+            SortPrice.FormattingEnabled = true;
+            SortPrice.Location = new Point(83, 9);
+            SortPrice.Name = "SortPrice";
+            SortPrice.Size = new Size(121, 25);
+            SortPrice.TabIndex = 1;
+            SortPrice.Text = " PRICE";
+            // 
+            // SortSales
+            // 
+            SortSales.Font = new Font("Segoe UI", 10F);
+            SortSales.FormattingEnabled = true;
+            SortSales.Location = new Point(210, 9);
+            SortSales.Name = "SortSales";
+            SortSales.Size = new Size(121, 25);
+            SortSales.TabIndex = 2;
+            SortSales.Text = " SALES";
             // 
             // Form1
             // 
@@ -1564,49 +1601,51 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             panel13.ResumeLayout(false);
             panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             panel15.ResumeLayout(false);
             panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             panel16.ResumeLayout(false);
             panel16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             panel17.ResumeLayout(false);
             panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1716,5 +1755,8 @@
         private LinkLabel linkLabel15;
         private PictureBox pictureBox16;
         private PictureBox pictureBox2;
+        private Label label16;
+        private ComboBox SortSales;
+        private ComboBox SortPrice;
     }
 }
