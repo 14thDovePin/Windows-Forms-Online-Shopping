@@ -37,6 +37,7 @@
             ProfileIcon_PicBox = new PictureBox();
             Search_Btn = new AddControls.RoundedButton();
             NotificationIcon_PicBox = new PictureBox();
+            SearchBar_TxtBox = new AddControls.RoundedTextBox();
             SignIn_Btn = new AddControls.RoundedButton();
             SignIn_Container = new Panel();
             SignUpLink = new LinkLabel();
@@ -65,7 +66,73 @@
             SignIn_Panel = new Panel();
             SignUp_Panel = new Panel();
             HomePage_Panel = new Panel();
-            SearchBar_TxtBox = new AddControls.RoundedTextBox();
+            SideBar = new Panel();
+            panel1 = new Panel();
+            ProductView = new FlowLayoutPanel();
+            panel14 = new Panel();
+            PriceTag = new Label();
+            Item1 = new LinkLabel();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            linkLabel1 = new LinkLabel();
+            panel2 = new Panel();
+            label2 = new Label();
+            linkLabel2 = new LinkLabel();
+            pictureBox3 = new PictureBox();
+            panel3 = new Panel();
+            label3 = new Label();
+            linkLabel3 = new LinkLabel();
+            pictureBox4 = new PictureBox();
+            panel4 = new Panel();
+            label4 = new Label();
+            linkLabel4 = new LinkLabel();
+            pictureBox5 = new PictureBox();
+            panel5 = new Panel();
+            label5 = new Label();
+            linkLabel5 = new LinkLabel();
+            pictureBox6 = new PictureBox();
+            panel6 = new Panel();
+            label6 = new Label();
+            linkLabel6 = new LinkLabel();
+            pictureBox7 = new PictureBox();
+            panel7 = new Panel();
+            label7 = new Label();
+            linkLabel7 = new LinkLabel();
+            pictureBox8 = new PictureBox();
+            panel8 = new Panel();
+            label8 = new Label();
+            linkLabel8 = new LinkLabel();
+            pictureBox9 = new PictureBox();
+            panel9 = new Panel();
+            label9 = new Label();
+            linkLabel9 = new LinkLabel();
+            pictureBox10 = new PictureBox();
+            panel10 = new Panel();
+            label10 = new Label();
+            linkLabel10 = new LinkLabel();
+            pictureBox11 = new PictureBox();
+            panel11 = new Panel();
+            label11 = new Label();
+            linkLabel11 = new LinkLabel();
+            pictureBox12 = new PictureBox();
+            panel12 = new Panel();
+            label12 = new Label();
+            linkLabel12 = new LinkLabel();
+            pictureBox13 = new PictureBox();
+            panel13 = new Panel();
+            label13 = new Label();
+            linkLabel13 = new LinkLabel();
+            pictureBox14 = new PictureBox();
+            panel15 = new Panel();
+            label14 = new Label();
+            linkLabel14 = new LinkLabel();
+            pictureBox15 = new PictureBox();
+            panel16 = new Panel();
+            label15 = new Label();
+            linkLabel15 = new LinkLabel();
+            pictureBox16 = new PictureBox();
+            panel17 = new Panel();
+            pictureBox2 = new PictureBox();
             TopNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
@@ -78,6 +145,40 @@
             tableLayout2.SuspendLayout();
             SignIn_Panel.SuspendLayout();
             SignUp_Panel.SuspendLayout();
+            HomePage_Panel.SuspendLayout();
+            ProductView.SuspendLayout();
+            panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            panel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
+            panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
+            panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // TopNavBar
@@ -102,10 +203,10 @@
             // 
             Logo_PicBox.BackgroundImageLayout = ImageLayout.None;
             Logo_PicBox.Image = (Image)resources.GetObject("Logo_PicBox.Image");
-            Logo_PicBox.Location = new Point(14, 16);
+            Logo_PicBox.Location = new Point(17, 12);
             Logo_PicBox.Margin = new Padding(3, 2, 3, 2);
             Logo_PicBox.Name = "Logo_PicBox";
-            Logo_PicBox.Size = new Size(145, 34);
+            Logo_PicBox.Size = new Size(161, 48);
             Logo_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
             Logo_PicBox.TabIndex = 0;
             Logo_PicBox.TabStop = false;
@@ -114,7 +215,7 @@
             // 
             Line_PicBox.BackgroundImageLayout = ImageLayout.None;
             Line_PicBox.Image = (Image)resources.GetObject("Line_PicBox.Image");
-            Line_PicBox.Location = new Point(164, 14);
+            Line_PicBox.Location = new Point(184, 16);
             Line_PicBox.Margin = new Padding(3, 2, 3, 2);
             Line_PicBox.Name = "Line_PicBox";
             Line_PicBox.Size = new Size(33, 36);
@@ -128,7 +229,7 @@
             SignIn_NavBarLbl.Font = new Font("Segoe UI Semibold", 17.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SignIn_NavBarLbl.ForeColor = Color.White;
             SignIn_NavBarLbl.ImageAlign = ContentAlignment.MiddleLeft;
-            SignIn_NavBarLbl.Location = new Point(203, 15);
+            SignIn_NavBarLbl.Location = new Point(217, 15);
             SignIn_NavBarLbl.Name = "SignIn_NavBarLbl";
             SignIn_NavBarLbl.Size = new Size(85, 31);
             SignIn_NavBarLbl.TabIndex = 8;
@@ -192,6 +293,27 @@
             NotificationIcon_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
             NotificationIcon_PicBox.TabIndex = 9;
             NotificationIcon_PicBox.TabStop = false;
+            // 
+            // SearchBar_TxtBox
+            // 
+            SearchBar_TxtBox.BackColor = Color.White;
+            SearchBar_TxtBox.BorderColor = Color.Teal;
+            SearchBar_TxtBox.BorderFocusColor = Color.Teal;
+            SearchBar_TxtBox.BorderRadius = 20;
+            SearchBar_TxtBox.BorderSize = 2;
+            SearchBar_TxtBox.Font = new Font("Segoe UI", 14F);
+            SearchBar_TxtBox.ForeColor = Color.DimGray;
+            SearchBar_TxtBox.Location = new Point(452, 12);
+            SearchBar_TxtBox.Multiline = false;
+            SearchBar_TxtBox.Name = "SearchBar_TxtBox";
+            SearchBar_TxtBox.Padding = new Padding(7);
+            SearchBar_TxtBox.PasswordChar = false;
+            SearchBar_TxtBox.PlaceholderColor = Color.DarkGray;
+            SearchBar_TxtBox.PlaceholderText = " SEARCH";
+            SearchBar_TxtBox.Size = new Size(595, 40);
+            SearchBar_TxtBox.TabIndex = 0;
+            SearchBar_TxtBox.Texts = "";
+            SearchBar_TxtBox.UnderlinedStyle = false;
             // 
             // SignIn_Btn
             // 
@@ -570,32 +692,841 @@
             // HomePage_Panel
             // 
             HomePage_Panel.AutoScroll = true;
+            HomePage_Panel.Controls.Add(ProductView);
+            HomePage_Panel.Controls.Add(panel1);
+            HomePage_Panel.Controls.Add(SideBar);
             HomePage_Panel.Dock = DockStyle.Fill;
             HomePage_Panel.Location = new Point(0, 69);
             HomePage_Panel.Name = "HomePage_Panel";
             HomePage_Panel.Size = new Size(1350, 660);
             HomePage_Panel.TabIndex = 14;
             // 
-            // SearchBar_TxtBox
+            // SideBar
             // 
-            SearchBar_TxtBox.BackColor = Color.White;
-            SearchBar_TxtBox.BorderColor = Color.Teal;
-            SearchBar_TxtBox.BorderFocusColor = Color.Teal;
-            SearchBar_TxtBox.BorderRadius = 20;
-            SearchBar_TxtBox.BorderSize = 2;
-            SearchBar_TxtBox.Font = new Font("Segoe UI", 14F);
-            SearchBar_TxtBox.ForeColor = Color.DimGray;
-            SearchBar_TxtBox.Location = new Point(452, 12);
-            SearchBar_TxtBox.Multiline = false;
-            SearchBar_TxtBox.Name = "SearchBar_TxtBox";
-            SearchBar_TxtBox.Padding = new Padding(7);
-            SearchBar_TxtBox.PasswordChar = false;
-            SearchBar_TxtBox.PlaceholderColor = Color.DarkGray;
-            SearchBar_TxtBox.PlaceholderText = " SEARCH";
-            SearchBar_TxtBox.Size = new Size(595, 40);
-            SearchBar_TxtBox.TabIndex = 0;
-            SearchBar_TxtBox.Texts = "";
-            SearchBar_TxtBox.UnderlinedStyle = false;
+            SideBar.Dock = DockStyle.Left;
+            SideBar.Location = new Point(0, 0);
+            SideBar.Name = "SideBar";
+            SideBar.Size = new Size(200, 660);
+            SideBar.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(200, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1150, 40);
+            panel1.TabIndex = 1;
+            // 
+            // ProductView
+            // 
+            ProductView.AutoScroll = true;
+            ProductView.AutoSize = true;
+            ProductView.Controls.Add(panel14);
+            ProductView.Controls.Add(panel2);
+            ProductView.Controls.Add(panel3);
+            ProductView.Controls.Add(panel4);
+            ProductView.Controls.Add(panel5);
+            ProductView.Controls.Add(panel6);
+            ProductView.Controls.Add(panel7);
+            ProductView.Controls.Add(panel8);
+            ProductView.Controls.Add(panel9);
+            ProductView.Controls.Add(panel10);
+            ProductView.Controls.Add(panel11);
+            ProductView.Controls.Add(panel12);
+            ProductView.Controls.Add(panel13);
+            ProductView.Controls.Add(panel15);
+            ProductView.Controls.Add(panel16);
+            ProductView.Controls.Add(panel17);
+            ProductView.Dock = DockStyle.Fill;
+            ProductView.Location = new Point(200, 40);
+            ProductView.Name = "ProductView";
+            ProductView.Size = new Size(1150, 620);
+            ProductView.TabIndex = 2;
+            // 
+            // panel14
+            // 
+            panel14.Anchor = AnchorStyles.None;
+            panel14.BackColor = Color.FromArgb(224, 224, 224);
+            panel14.Controls.Add(PriceTag);
+            panel14.Controls.Add(Item1);
+            panel14.Controls.Add(pictureBox1);
+            panel14.Location = new Point(3, 3);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(274, 321);
+            panel14.TabIndex = 4;
+            // 
+            // PriceTag
+            // 
+            PriceTag.AutoSize = true;
+            PriceTag.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            PriceTag.ForeColor = Color.Teal;
+            PriceTag.Image = (Image)resources.GetObject("PriceTag.Image");
+            PriceTag.ImageAlign = ContentAlignment.MiddleLeft;
+            PriceTag.Location = new Point(3, 291);
+            PriceTag.Name = "PriceTag";
+            PriceTag.Size = new Size(54, 21);
+            PriceTag.TabIndex = 2;
+            PriceTag.Text = "PRICE";
+            // 
+            // Item1
+            // 
+            Item1.ActiveLinkColor = Color.Gray;
+            Item1.AutoSize = true;
+            Item1.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Item1.LinkColor = Color.Black;
+            Item1.Location = new Point(3, 228);
+            Item1.Name = "Item1";
+            Item1.Size = new Size(119, 28);
+            Item1.TabIndex = 1;
+            Item1.TabStop = true;
+            Item1.Text = "ITEM NAME";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Top;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(274, 225);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Teal;
+            label1.Image = (Image)resources.GetObject("label1.Image");
+            label1.ImageAlign = ContentAlignment.MiddleLeft;
+            label1.Location = new Point(3, 291);
+            label1.Name = "label1";
+            label1.Size = new Size(54, 21);
+            label1.TabIndex = 2;
+            label1.Text = "PRICE";
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.ActiveLinkColor = Color.Gray;
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel1.LinkColor = Color.Black;
+            linkLabel1.Location = new Point(3, 228);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(119, 28);
+            linkLabel1.TabIndex = 1;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "ITEM NAME";
+            // 
+            // panel2
+            // 
+            panel2.Anchor = AnchorStyles.None;
+            panel2.BackColor = Color.FromArgb(224, 224, 224);
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(linkLabel1);
+            panel2.Controls.Add(pictureBox2);
+            panel2.Location = new Point(283, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(274, 321);
+            panel2.TabIndex = 5;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.Teal;
+            label2.Image = (Image)resources.GetObject("label2.Image");
+            label2.ImageAlign = ContentAlignment.MiddleLeft;
+            label2.Location = new Point(3, 291);
+            label2.Name = "label2";
+            label2.Size = new Size(54, 21);
+            label2.TabIndex = 2;
+            label2.Text = "PRICE";
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.ActiveLinkColor = Color.Gray;
+            linkLabel2.AutoSize = true;
+            linkLabel2.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel2.LinkColor = Color.Black;
+            linkLabel2.Location = new Point(3, 228);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(119, 28);
+            linkLabel2.TabIndex = 1;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "ITEM NAME";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Dock = DockStyle.Top;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(0, 0);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(274, 225);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 0;
+            pictureBox3.TabStop = false;
+            // 
+            // panel3
+            // 
+            panel3.Anchor = AnchorStyles.None;
+            panel3.BackColor = Color.FromArgb(224, 224, 224);
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(linkLabel2);
+            panel3.Controls.Add(pictureBox3);
+            panel3.Location = new Point(563, 3);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(274, 321);
+            panel3.TabIndex = 5;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.Teal;
+            label3.Image = (Image)resources.GetObject("label3.Image");
+            label3.ImageAlign = ContentAlignment.MiddleLeft;
+            label3.Location = new Point(3, 291);
+            label3.Name = "label3";
+            label3.Size = new Size(54, 21);
+            label3.TabIndex = 2;
+            label3.Text = "PRICE";
+            // 
+            // linkLabel3
+            // 
+            linkLabel3.ActiveLinkColor = Color.Gray;
+            linkLabel3.AutoSize = true;
+            linkLabel3.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel3.LinkColor = Color.Black;
+            linkLabel3.Location = new Point(3, 228);
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.Size = new Size(119, 28);
+            linkLabel3.TabIndex = 1;
+            linkLabel3.TabStop = true;
+            linkLabel3.Text = "ITEM NAME";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Dock = DockStyle.Top;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(0, 0);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(274, 225);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 0;
+            pictureBox4.TabStop = false;
+            // 
+            // panel4
+            // 
+            panel4.Anchor = AnchorStyles.None;
+            panel4.BackColor = Color.FromArgb(224, 224, 224);
+            panel4.Controls.Add(label3);
+            panel4.Controls.Add(linkLabel3);
+            panel4.Controls.Add(pictureBox4);
+            panel4.Location = new Point(843, 3);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(274, 321);
+            panel4.TabIndex = 5;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.Teal;
+            label4.Image = (Image)resources.GetObject("label4.Image");
+            label4.ImageAlign = ContentAlignment.MiddleLeft;
+            label4.Location = new Point(3, 291);
+            label4.Name = "label4";
+            label4.Size = new Size(54, 21);
+            label4.TabIndex = 2;
+            label4.Text = "PRICE";
+            // 
+            // linkLabel4
+            // 
+            linkLabel4.ActiveLinkColor = Color.Gray;
+            linkLabel4.AutoSize = true;
+            linkLabel4.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel4.LinkColor = Color.Black;
+            linkLabel4.Location = new Point(3, 228);
+            linkLabel4.Name = "linkLabel4";
+            linkLabel4.Size = new Size(119, 28);
+            linkLabel4.TabIndex = 1;
+            linkLabel4.TabStop = true;
+            linkLabel4.Text = "ITEM NAME";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Dock = DockStyle.Top;
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(0, 0);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(274, 225);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 0;
+            pictureBox5.TabStop = false;
+            // 
+            // panel5
+            // 
+            panel5.Anchor = AnchorStyles.None;
+            panel5.BackColor = Color.FromArgb(224, 224, 224);
+            panel5.Controls.Add(label4);
+            panel5.Controls.Add(linkLabel4);
+            panel5.Controls.Add(pictureBox5);
+            panel5.Location = new Point(3, 330);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(274, 321);
+            panel5.TabIndex = 5;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.Teal;
+            label5.Image = (Image)resources.GetObject("label5.Image");
+            label5.ImageAlign = ContentAlignment.MiddleLeft;
+            label5.Location = new Point(3, 291);
+            label5.Name = "label5";
+            label5.Size = new Size(54, 21);
+            label5.TabIndex = 2;
+            label5.Text = "PRICE";
+            // 
+            // linkLabel5
+            // 
+            linkLabel5.ActiveLinkColor = Color.Gray;
+            linkLabel5.AutoSize = true;
+            linkLabel5.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel5.LinkColor = Color.Black;
+            linkLabel5.Location = new Point(3, 228);
+            linkLabel5.Name = "linkLabel5";
+            linkLabel5.Size = new Size(119, 28);
+            linkLabel5.TabIndex = 1;
+            linkLabel5.TabStop = true;
+            linkLabel5.Text = "ITEM NAME";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Dock = DockStyle.Top;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(0, 0);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(274, 225);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 0;
+            pictureBox6.TabStop = false;
+            // 
+            // panel6
+            // 
+            panel6.Anchor = AnchorStyles.None;
+            panel6.BackColor = Color.FromArgb(224, 224, 224);
+            panel6.Controls.Add(label5);
+            panel6.Controls.Add(linkLabel5);
+            panel6.Controls.Add(pictureBox6);
+            panel6.Location = new Point(283, 330);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(274, 321);
+            panel6.TabIndex = 5;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.Teal;
+            label6.Image = (Image)resources.GetObject("label6.Image");
+            label6.ImageAlign = ContentAlignment.MiddleLeft;
+            label6.Location = new Point(3, 291);
+            label6.Name = "label6";
+            label6.Size = new Size(54, 21);
+            label6.TabIndex = 2;
+            label6.Text = "PRICE";
+            // 
+            // linkLabel6
+            // 
+            linkLabel6.ActiveLinkColor = Color.Gray;
+            linkLabel6.AutoSize = true;
+            linkLabel6.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel6.LinkColor = Color.Black;
+            linkLabel6.Location = new Point(3, 228);
+            linkLabel6.Name = "linkLabel6";
+            linkLabel6.Size = new Size(119, 28);
+            linkLabel6.TabIndex = 1;
+            linkLabel6.TabStop = true;
+            linkLabel6.Text = "ITEM NAME";
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Dock = DockStyle.Top;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(0, 0);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(274, 225);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 0;
+            pictureBox7.TabStop = false;
+            // 
+            // panel7
+            // 
+            panel7.Anchor = AnchorStyles.None;
+            panel7.BackColor = Color.FromArgb(224, 224, 224);
+            panel7.Controls.Add(label6);
+            panel7.Controls.Add(linkLabel6);
+            panel7.Controls.Add(pictureBox7);
+            panel7.Location = new Point(563, 330);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(274, 321);
+            panel7.TabIndex = 5;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.Teal;
+            label7.Image = (Image)resources.GetObject("label7.Image");
+            label7.ImageAlign = ContentAlignment.MiddleLeft;
+            label7.Location = new Point(3, 291);
+            label7.Name = "label7";
+            label7.Size = new Size(54, 21);
+            label7.TabIndex = 2;
+            label7.Text = "PRICE";
+            // 
+            // linkLabel7
+            // 
+            linkLabel7.ActiveLinkColor = Color.Gray;
+            linkLabel7.AutoSize = true;
+            linkLabel7.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel7.LinkColor = Color.Black;
+            linkLabel7.Location = new Point(3, 228);
+            linkLabel7.Name = "linkLabel7";
+            linkLabel7.Size = new Size(119, 28);
+            linkLabel7.TabIndex = 1;
+            linkLabel7.TabStop = true;
+            linkLabel7.Text = "ITEM NAME";
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Dock = DockStyle.Top;
+            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Location = new Point(0, 0);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(274, 225);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 0;
+            pictureBox8.TabStop = false;
+            // 
+            // panel8
+            // 
+            panel8.Anchor = AnchorStyles.None;
+            panel8.BackColor = Color.FromArgb(224, 224, 224);
+            panel8.Controls.Add(label7);
+            panel8.Controls.Add(linkLabel7);
+            panel8.Controls.Add(pictureBox8);
+            panel8.Location = new Point(843, 330);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(274, 321);
+            panel8.TabIndex = 5;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.Teal;
+            label8.Image = (Image)resources.GetObject("label8.Image");
+            label8.ImageAlign = ContentAlignment.MiddleLeft;
+            label8.Location = new Point(3, 291);
+            label8.Name = "label8";
+            label8.Size = new Size(54, 21);
+            label8.TabIndex = 2;
+            label8.Text = "PRICE";
+            // 
+            // linkLabel8
+            // 
+            linkLabel8.ActiveLinkColor = Color.Gray;
+            linkLabel8.AutoSize = true;
+            linkLabel8.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel8.LinkColor = Color.Black;
+            linkLabel8.Location = new Point(3, 228);
+            linkLabel8.Name = "linkLabel8";
+            linkLabel8.Size = new Size(119, 28);
+            linkLabel8.TabIndex = 1;
+            linkLabel8.TabStop = true;
+            linkLabel8.Text = "ITEM NAME";
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Dock = DockStyle.Top;
+            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Location = new Point(0, 0);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(274, 225);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 0;
+            pictureBox9.TabStop = false;
+            // 
+            // panel9
+            // 
+            panel9.Anchor = AnchorStyles.None;
+            panel9.BackColor = Color.FromArgb(224, 224, 224);
+            panel9.Controls.Add(label8);
+            panel9.Controls.Add(linkLabel8);
+            panel9.Controls.Add(pictureBox9);
+            panel9.Location = new Point(3, 657);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(274, 321);
+            panel9.TabIndex = 5;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.Teal;
+            label9.Image = (Image)resources.GetObject("label9.Image");
+            label9.ImageAlign = ContentAlignment.MiddleLeft;
+            label9.Location = new Point(3, 291);
+            label9.Name = "label9";
+            label9.Size = new Size(54, 21);
+            label9.TabIndex = 2;
+            label9.Text = "PRICE";
+            // 
+            // linkLabel9
+            // 
+            linkLabel9.ActiveLinkColor = Color.Gray;
+            linkLabel9.AutoSize = true;
+            linkLabel9.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel9.LinkColor = Color.Black;
+            linkLabel9.Location = new Point(3, 228);
+            linkLabel9.Name = "linkLabel9";
+            linkLabel9.Size = new Size(119, 28);
+            linkLabel9.TabIndex = 1;
+            linkLabel9.TabStop = true;
+            linkLabel9.Text = "ITEM NAME";
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Dock = DockStyle.Top;
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(0, 0);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(274, 225);
+            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox10.TabIndex = 0;
+            pictureBox10.TabStop = false;
+            // 
+            // panel10
+            // 
+            panel10.Anchor = AnchorStyles.None;
+            panel10.BackColor = Color.FromArgb(224, 224, 224);
+            panel10.Controls.Add(label9);
+            panel10.Controls.Add(linkLabel9);
+            panel10.Controls.Add(pictureBox10);
+            panel10.Location = new Point(283, 657);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(274, 321);
+            panel10.TabIndex = 5;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label10.ForeColor = Color.Teal;
+            label10.Image = (Image)resources.GetObject("label10.Image");
+            label10.ImageAlign = ContentAlignment.MiddleLeft;
+            label10.Location = new Point(3, 291);
+            label10.Name = "label10";
+            label10.Size = new Size(54, 21);
+            label10.TabIndex = 2;
+            label10.Text = "PRICE";
+            // 
+            // linkLabel10
+            // 
+            linkLabel10.ActiveLinkColor = Color.Gray;
+            linkLabel10.AutoSize = true;
+            linkLabel10.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel10.LinkColor = Color.Black;
+            linkLabel10.Location = new Point(3, 228);
+            linkLabel10.Name = "linkLabel10";
+            linkLabel10.Size = new Size(119, 28);
+            linkLabel10.TabIndex = 1;
+            linkLabel10.TabStop = true;
+            linkLabel10.Text = "ITEM NAME";
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Dock = DockStyle.Top;
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
+            pictureBox11.Location = new Point(0, 0);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(274, 225);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 0;
+            pictureBox11.TabStop = false;
+            // 
+            // panel11
+            // 
+            panel11.Anchor = AnchorStyles.None;
+            panel11.BackColor = Color.FromArgb(224, 224, 224);
+            panel11.Controls.Add(label10);
+            panel11.Controls.Add(linkLabel10);
+            panel11.Controls.Add(pictureBox11);
+            panel11.Location = new Point(563, 657);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(274, 321);
+            panel11.TabIndex = 5;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.Teal;
+            label11.Image = (Image)resources.GetObject("label11.Image");
+            label11.ImageAlign = ContentAlignment.MiddleLeft;
+            label11.Location = new Point(3, 291);
+            label11.Name = "label11";
+            label11.Size = new Size(54, 21);
+            label11.TabIndex = 2;
+            label11.Text = "PRICE";
+            // 
+            // linkLabel11
+            // 
+            linkLabel11.ActiveLinkColor = Color.Gray;
+            linkLabel11.AutoSize = true;
+            linkLabel11.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel11.LinkColor = Color.Black;
+            linkLabel11.Location = new Point(3, 228);
+            linkLabel11.Name = "linkLabel11";
+            linkLabel11.Size = new Size(119, 28);
+            linkLabel11.TabIndex = 1;
+            linkLabel11.TabStop = true;
+            linkLabel11.Text = "ITEM NAME";
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Dock = DockStyle.Top;
+            pictureBox12.Image = (Image)resources.GetObject("pictureBox12.Image");
+            pictureBox12.Location = new Point(0, 0);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(274, 225);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 0;
+            pictureBox12.TabStop = false;
+            // 
+            // panel12
+            // 
+            panel12.Anchor = AnchorStyles.None;
+            panel12.BackColor = Color.FromArgb(224, 224, 224);
+            panel12.Controls.Add(label11);
+            panel12.Controls.Add(linkLabel11);
+            panel12.Controls.Add(pictureBox12);
+            panel12.Location = new Point(843, 657);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(274, 321);
+            panel12.TabIndex = 5;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.Teal;
+            label12.Image = (Image)resources.GetObject("label12.Image");
+            label12.ImageAlign = ContentAlignment.MiddleLeft;
+            label12.Location = new Point(3, 291);
+            label12.Name = "label12";
+            label12.Size = new Size(54, 21);
+            label12.TabIndex = 2;
+            label12.Text = "PRICE";
+            // 
+            // linkLabel12
+            // 
+            linkLabel12.ActiveLinkColor = Color.Gray;
+            linkLabel12.AutoSize = true;
+            linkLabel12.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel12.LinkColor = Color.Black;
+            linkLabel12.Location = new Point(3, 228);
+            linkLabel12.Name = "linkLabel12";
+            linkLabel12.Size = new Size(119, 28);
+            linkLabel12.TabIndex = 1;
+            linkLabel12.TabStop = true;
+            linkLabel12.Text = "ITEM NAME";
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.Dock = DockStyle.Top;
+            pictureBox13.Image = (Image)resources.GetObject("pictureBox13.Image");
+            pictureBox13.Location = new Point(0, 0);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(274, 225);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 0;
+            pictureBox13.TabStop = false;
+            // 
+            // panel13
+            // 
+            panel13.Anchor = AnchorStyles.None;
+            panel13.BackColor = Color.FromArgb(224, 224, 224);
+            panel13.Controls.Add(label12);
+            panel13.Controls.Add(linkLabel12);
+            panel13.Controls.Add(pictureBox13);
+            panel13.Location = new Point(3, 984);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(274, 321);
+            panel13.TabIndex = 5;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13.ForeColor = Color.Teal;
+            label13.Image = (Image)resources.GetObject("label13.Image");
+            label13.ImageAlign = ContentAlignment.MiddleLeft;
+            label13.Location = new Point(3, 291);
+            label13.Name = "label13";
+            label13.Size = new Size(54, 21);
+            label13.TabIndex = 2;
+            label13.Text = "PRICE";
+            // 
+            // linkLabel13
+            // 
+            linkLabel13.ActiveLinkColor = Color.Gray;
+            linkLabel13.AutoSize = true;
+            linkLabel13.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel13.LinkColor = Color.Black;
+            linkLabel13.Location = new Point(3, 228);
+            linkLabel13.Name = "linkLabel13";
+            linkLabel13.Size = new Size(119, 28);
+            linkLabel13.TabIndex = 1;
+            linkLabel13.TabStop = true;
+            linkLabel13.Text = "ITEM NAME";
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.Dock = DockStyle.Top;
+            pictureBox14.Image = (Image)resources.GetObject("pictureBox14.Image");
+            pictureBox14.Location = new Point(0, 0);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(274, 225);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 0;
+            pictureBox14.TabStop = false;
+            // 
+            // panel15
+            // 
+            panel15.Anchor = AnchorStyles.None;
+            panel15.BackColor = Color.FromArgb(224, 224, 224);
+            panel15.Controls.Add(label13);
+            panel15.Controls.Add(linkLabel13);
+            panel15.Controls.Add(pictureBox14);
+            panel15.Location = new Point(283, 984);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(274, 321);
+            panel15.TabIndex = 5;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.Teal;
+            label14.Image = (Image)resources.GetObject("label14.Image");
+            label14.ImageAlign = ContentAlignment.MiddleLeft;
+            label14.Location = new Point(3, 291);
+            label14.Name = "label14";
+            label14.Size = new Size(54, 21);
+            label14.TabIndex = 2;
+            label14.Text = "PRICE";
+            // 
+            // linkLabel14
+            // 
+            linkLabel14.ActiveLinkColor = Color.Gray;
+            linkLabel14.AutoSize = true;
+            linkLabel14.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel14.LinkColor = Color.Black;
+            linkLabel14.Location = new Point(3, 228);
+            linkLabel14.Name = "linkLabel14";
+            linkLabel14.Size = new Size(119, 28);
+            linkLabel14.TabIndex = 1;
+            linkLabel14.TabStop = true;
+            linkLabel14.Text = "ITEM NAME";
+            // 
+            // pictureBox15
+            // 
+            pictureBox15.Dock = DockStyle.Top;
+            pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
+            pictureBox15.Location = new Point(0, 0);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(274, 225);
+            pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox15.TabIndex = 0;
+            pictureBox15.TabStop = false;
+            // 
+            // panel16
+            // 
+            panel16.Anchor = AnchorStyles.None;
+            panel16.BackColor = Color.FromArgb(224, 224, 224);
+            panel16.Controls.Add(label14);
+            panel16.Controls.Add(linkLabel14);
+            panel16.Controls.Add(pictureBox15);
+            panel16.Location = new Point(563, 984);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(274, 321);
+            panel16.TabIndex = 5;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.ForeColor = Color.Teal;
+            label15.Image = (Image)resources.GetObject("label15.Image");
+            label15.ImageAlign = ContentAlignment.MiddleLeft;
+            label15.Location = new Point(3, 291);
+            label15.Name = "label15";
+            label15.Size = new Size(54, 21);
+            label15.TabIndex = 2;
+            label15.Text = "PRICE";
+            // 
+            // linkLabel15
+            // 
+            linkLabel15.ActiveLinkColor = Color.Gray;
+            linkLabel15.AutoSize = true;
+            linkLabel15.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel15.LinkColor = Color.Black;
+            linkLabel15.Location = new Point(3, 228);
+            linkLabel15.Name = "linkLabel15";
+            linkLabel15.Size = new Size(119, 28);
+            linkLabel15.TabIndex = 1;
+            linkLabel15.TabStop = true;
+            linkLabel15.Text = "ITEM NAME";
+            // 
+            // pictureBox16
+            // 
+            pictureBox16.Dock = DockStyle.Top;
+            pictureBox16.Image = (Image)resources.GetObject("pictureBox16.Image");
+            pictureBox16.Location = new Point(0, 0);
+            pictureBox16.Name = "pictureBox16";
+            pictureBox16.Size = new Size(274, 225);
+            pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox16.TabIndex = 0;
+            pictureBox16.TabStop = false;
+            // 
+            // panel17
+            // 
+            panel17.Anchor = AnchorStyles.None;
+            panel17.BackColor = Color.FromArgb(224, 224, 224);
+            panel17.Controls.Add(label15);
+            panel17.Controls.Add(linkLabel15);
+            panel17.Controls.Add(pictureBox16);
+            panel17.Location = new Point(843, 984);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(274, 321);
+            panel17.TabIndex = 5;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackColor = Color.White;
+            pictureBox2.Dock = DockStyle.Top;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(274, 225);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
             // 
             // Form1
             // 
@@ -625,6 +1556,57 @@
             tableLayout2.ResumeLayout(false);
             SignIn_Panel.ResumeLayout(false);
             SignUp_Panel.ResumeLayout(false);
+            HomePage_Panel.ResumeLayout(false);
+            HomePage_Panel.PerformLayout();
+            ProductView.ResumeLayout(false);
+            panel14.ResumeLayout(false);
+            panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            panel12.ResumeLayout(false);
+            panel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            panel15.ResumeLayout(false);
+            panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
+            panel16.ResumeLayout(false);
+            panel16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
+            panel17.ResumeLayout(false);
+            panel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -667,5 +1649,72 @@
         private PictureBox Logo_PicBox;
         private Panel HomePage_Panel;
         private AddControls.RoundedTextBox SearchBar_TxtBox;
+        private Panel SideBar;
+        private FlowLayoutPanel ProductView;
+        private Panel panel14;
+        private Label PriceTag;
+        private LinkLabel Item1;
+        private PictureBox pictureBox1;
+        private Panel panel1;
+        private Panel panel2;
+        private Label label1;
+        private LinkLabel linkLabel1;
+        private Panel panel3;
+        private Label label2;
+        private LinkLabel linkLabel2;
+        private PictureBox pictureBox3;
+        private Panel panel4;
+        private Label label3;
+        private LinkLabel linkLabel3;
+        private PictureBox pictureBox4;
+        private Panel panel5;
+        private Label label4;
+        private LinkLabel linkLabel4;
+        private PictureBox pictureBox5;
+        private Panel panel6;
+        private Label label5;
+        private LinkLabel linkLabel5;
+        private PictureBox pictureBox6;
+        private Panel panel7;
+        private Label label6;
+        private LinkLabel linkLabel6;
+        private PictureBox pictureBox7;
+        private Panel panel8;
+        private Label label7;
+        private LinkLabel linkLabel7;
+        private PictureBox pictureBox8;
+        private Panel panel9;
+        private Label label8;
+        private LinkLabel linkLabel8;
+        private PictureBox pictureBox9;
+        private Panel panel10;
+        private Label label9;
+        private LinkLabel linkLabel9;
+        private PictureBox pictureBox10;
+        private Panel panel11;
+        private Label label10;
+        private LinkLabel linkLabel10;
+        private PictureBox pictureBox11;
+        private Panel panel12;
+        private Label label11;
+        private LinkLabel linkLabel11;
+        private PictureBox pictureBox12;
+        private Panel panel13;
+        private Label label12;
+        private LinkLabel linkLabel12;
+        private PictureBox pictureBox13;
+        private Panel panel15;
+        private Label label13;
+        private LinkLabel linkLabel13;
+        private PictureBox pictureBox14;
+        private Panel panel16;
+        private Label label14;
+        private LinkLabel linkLabel14;
+        private PictureBox pictureBox15;
+        private Panel panel17;
+        private Label label15;
+        private LinkLabel linkLabel15;
+        private PictureBox pictureBox16;
+        private PictureBox pictureBox2;
     }
 }
