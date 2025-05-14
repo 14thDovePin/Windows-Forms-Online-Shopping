@@ -32,7 +32,7 @@
             TopNavBar = new Panel();
             Logo_PicBox = new PictureBox();
             Line_PicBox = new PictureBox();
-            SignIn_NavBarLbl = new Label();
+            PageLabel = new Label();
             CartIcon_PicBox = new PictureBox();
             ProfileIcon_PicBox = new PictureBox();
             Search_Btn = new AddControls.RoundedButton();
@@ -138,6 +138,7 @@
             SideBar = new Panel();
             ItemView_Panel = new Panel();
             panel19 = new Panel();
+            CloseView = new Button();
             button10 = new Button();
             button9 = new Button();
             button8 = new Button();
@@ -150,20 +151,48 @@
             button1 = new Button();
             panel21 = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
-            QuantityDecrement = new Button();
-            QuantityIncrement = new Button();
-            label17 = new Label();
+            ItemView_QtyIncrement = new Button();
+            ItemView_QtyDecrement = new Button();
+            ItemViewQty = new Label();
             ItemView_Buy = new AddControls.RoundedButton();
             ItemView_AddCart = new AddControls.RoundedButton();
             label21 = new Label();
             label20 = new Label();
             label19 = new Label();
             AmountSold = new Label();
-            ItemViewName = new Label();
             panel20 = new Panel();
             ItemViewPrice = new Label();
             pictureBox17 = new PictureBox();
-            CloseView = new Button();
+            panel25 = new Panel();
+            ItemViewName = new Label();
+            Cart_Panel = new Panel();
+            tableLayoutPanel2 = new TableLayoutPanel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            panel23 = new Panel();
+            CartEdit = new Button();
+            CartDelete = new Button();
+            panel24 = new Panel();
+            tableLayoutPanel3 = new TableLayoutPanel();
+            Cart_QtyDecrement = new Button();
+            Cart_QtyIncrement = new Button();
+            CartQty = new Label();
+            CartTotalPrice = new Label();
+            CartUnitPrice = new Label();
+            CartVariation = new Label();
+            pictureBox18 = new PictureBox();
+            ToggleItem = new AddControls.ToggleButton();
+            panel26 = new Panel();
+            CartItemName = new Label();
+            panel22 = new Panel();
+            label26 = new Label();
+            label25 = new Label();
+            label24 = new Label();
+            label23 = new Label();
+            panel18 = new Panel();
+            CartCheckOut = new AddControls.RoundedButton();
+            CheckOutTotalPrice = new Label();
+            TotalItemLabel = new Label();
+            CartSelectAll = new CheckBox();
             TopNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
@@ -217,6 +246,17 @@
             tableLayoutPanel1.SuspendLayout();
             panel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
+            panel25.SuspendLayout();
+            Cart_Panel.SuspendLayout();
+            tableLayoutPanel2.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
+            panel23.SuspendLayout();
+            panel24.SuspendLayout();
+            tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
+            panel26.SuspendLayout();
+            panel22.SuspendLayout();
+            panel18.SuspendLayout();
             SuspendLayout();
             // 
             // TopNavBar
@@ -224,7 +264,7 @@
             TopNavBar.BackColor = Color.FromArgb(82, 171, 153);
             TopNavBar.Controls.Add(Logo_PicBox);
             TopNavBar.Controls.Add(Line_PicBox);
-            TopNavBar.Controls.Add(SignIn_NavBarLbl);
+            TopNavBar.Controls.Add(PageLabel);
             TopNavBar.Controls.Add(CartIcon_PicBox);
             TopNavBar.Controls.Add(ProfileIcon_PicBox);
             TopNavBar.Controls.Add(Search_Btn);
@@ -261,18 +301,18 @@
             Line_PicBox.TabIndex = 12;
             Line_PicBox.TabStop = false;
             // 
-            // SignIn_NavBarLbl
+            // PageLabel
             // 
-            SignIn_NavBarLbl.AutoSize = true;
-            SignIn_NavBarLbl.Font = new Font("Segoe UI Semibold", 17.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SignIn_NavBarLbl.ForeColor = Color.White;
-            SignIn_NavBarLbl.ImageAlign = ContentAlignment.MiddleLeft;
-            SignIn_NavBarLbl.Location = new Point(217, 15);
-            SignIn_NavBarLbl.Name = "SignIn_NavBarLbl";
-            SignIn_NavBarLbl.Size = new Size(85, 31);
-            SignIn_NavBarLbl.TabIndex = 8;
-            SignIn_NavBarLbl.Text = "Sign in";
-            SignIn_NavBarLbl.TextAlign = ContentAlignment.MiddleLeft;
+            PageLabel.AutoSize = true;
+            PageLabel.Font = new Font("Segoe UI Semibold", 17.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            PageLabel.ForeColor = Color.White;
+            PageLabel.ImageAlign = ContentAlignment.MiddleLeft;
+            PageLabel.Location = new Point(217, 15);
+            PageLabel.Name = "PageLabel";
+            PageLabel.Size = new Size(85, 31);
+            PageLabel.TabIndex = 8;
+            PageLabel.Text = "Sign in";
+            PageLabel.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // CartIcon_PicBox
             // 
@@ -1630,14 +1670,27 @@
             panel19.Controls.Add(label20);
             panel19.Controls.Add(label19);
             panel19.Controls.Add(AmountSold);
-            panel19.Controls.Add(ItemViewName);
             panel19.Controls.Add(panel20);
             panel19.Controls.Add(pictureBox17);
+            panel19.Controls.Add(panel25);
             panel19.Location = new Point(80, 57);
             panel19.Name = "panel19";
             panel19.Size = new Size(1189, 548);
             panel19.TabIndex = 0;
             panel19.Paint += panel19_Paint;
+            // 
+            // CloseView
+            // 
+            CloseView.BackColor = Color.Transparent;
+            CloseView.BackgroundImage = (Image)resources.GetObject("CloseView.BackgroundImage");
+            CloseView.BackgroundImageLayout = ImageLayout.Stretch;
+            CloseView.FlatAppearance.BorderSize = 0;
+            CloseView.FlatStyle = FlatStyle.Flat;
+            CloseView.Location = new Point(1141, 11);
+            CloseView.Name = "CloseView";
+            CloseView.Size = new Size(35, 35);
+            CloseView.TabIndex = 1;
+            CloseView.UseVisualStyleBackColor = false;
             // 
             // button10
             // 
@@ -1794,9 +1847,9 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 31.3131313F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.Controls.Add(QuantityDecrement, 0, 0);
-            tableLayoutPanel1.Controls.Add(QuantityIncrement, 2, 0);
-            tableLayoutPanel1.Controls.Add(label17, 1, 0);
+            tableLayoutPanel1.Controls.Add(ItemView_QtyIncrement, 0, 0);
+            tableLayoutPanel1.Controls.Add(ItemView_QtyDecrement, 2, 0);
+            tableLayoutPanel1.Controls.Add(ItemViewQty, 1, 0);
             tableLayoutPanel1.Location = new Point(3, 2);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
@@ -1805,39 +1858,39 @@
             tableLayoutPanel1.Size = new Size(99, 35);
             tableLayoutPanel1.TabIndex = 0;
             // 
-            // QuantityDecrement
+            // ItemView_QtyIncrement
             // 
-            QuantityDecrement.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            QuantityDecrement.Location = new Point(3, 3);
-            QuantityDecrement.Name = "QuantityDecrement";
-            QuantityDecrement.Size = new Size(27, 29);
-            QuantityDecrement.TabIndex = 0;
-            QuantityDecrement.Text = "-";
-            QuantityDecrement.TextAlign = ContentAlignment.TopCenter;
-            QuantityDecrement.UseVisualStyleBackColor = true;
+            ItemView_QtyIncrement.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            ItemView_QtyIncrement.Location = new Point(3, 3);
+            ItemView_QtyIncrement.Name = "ItemView_QtyIncrement";
+            ItemView_QtyIncrement.Size = new Size(27, 29);
+            ItemView_QtyIncrement.TabIndex = 0;
+            ItemView_QtyIncrement.Text = "-";
+            ItemView_QtyIncrement.TextAlign = ContentAlignment.TopCenter;
+            ItemView_QtyIncrement.UseVisualStyleBackColor = true;
             // 
-            // QuantityIncrement
+            // ItemView_QtyDecrement
             // 
-            QuantityIncrement.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            QuantityIncrement.Location = new Point(67, 3);
-            QuantityIncrement.Name = "QuantityIncrement";
-            QuantityIncrement.Size = new Size(27, 29);
-            QuantityIncrement.TabIndex = 1;
-            QuantityIncrement.Text = "+";
-            QuantityIncrement.TextAlign = ContentAlignment.TopCenter;
-            QuantityIncrement.UseVisualStyleBackColor = true;
+            ItemView_QtyDecrement.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            ItemView_QtyDecrement.Location = new Point(67, 3);
+            ItemView_QtyDecrement.Name = "ItemView_QtyDecrement";
+            ItemView_QtyDecrement.Size = new Size(27, 29);
+            ItemView_QtyDecrement.TabIndex = 1;
+            ItemView_QtyDecrement.Text = "+";
+            ItemView_QtyDecrement.TextAlign = ContentAlignment.TopCenter;
+            ItemView_QtyDecrement.UseVisualStyleBackColor = true;
             // 
-            // label17
+            // ItemViewQty
             // 
-            label17.AutoSize = true;
-            label17.Dock = DockStyle.Fill;
-            label17.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.Location = new Point(36, 0);
-            label17.Name = "label17";
-            label17.Size = new Size(25, 35);
-            label17.TabIndex = 2;
-            label17.Text = "1";
-            label17.TextAlign = ContentAlignment.MiddleCenter;
+            ItemViewQty.AutoSize = true;
+            ItemViewQty.Dock = DockStyle.Fill;
+            ItemViewQty.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ItemViewQty.Location = new Point(36, 0);
+            ItemViewQty.Name = "ItemViewQty";
+            ItemViewQty.Size = new Size(25, 35);
+            ItemViewQty.TabIndex = 2;
+            ItemViewQty.Text = "1";
+            ItemViewQty.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // ItemView_Buy
             // 
@@ -1912,21 +1965,11 @@
             // 
             AmountSold.AutoSize = true;
             AmountSold.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            AmountSold.Location = new Point(604, 84);
+            AmountSold.Location = new Point(600, 90);
             AmountSold.Name = "AmountSold";
             AmountSold.Size = new Size(65, 21);
             AmountSold.TabIndex = 3;
             AmountSold.Text = "## Sold";
-            // 
-            // ItemViewName
-            // 
-            ItemViewName.AutoSize = true;
-            ItemViewName.Font = new Font("Segoe UI", 25.25F, FontStyle.Bold);
-            ItemViewName.Location = new Point(604, 25);
-            ItemViewName.Name = "ItemViewName";
-            ItemViewName.Size = new Size(420, 46);
-            ItemViewName.TabIndex = 2;
-            ItemViewName.Text = "ENTER ITEM NAME HERE";
             // 
             // panel20
             // 
@@ -1950,6 +1993,7 @@
             // 
             // pictureBox17
             // 
+            pictureBox17.BackColor = Color.Black;
             pictureBox17.Location = new Point(21, 25);
             pictureBox17.Name = "pictureBox17";
             pictureBox17.Size = new Size(541, 488);
@@ -1957,18 +2001,356 @@
             pictureBox17.TabStop = false;
             pictureBox17.Click += pictureBox17_Click;
             // 
-            // CloseView
+            // panel25
             // 
-            CloseView.BackColor = Color.Transparent;
-            CloseView.BackgroundImage = (Image)resources.GetObject("CloseView.BackgroundImage");
-            CloseView.BackgroundImageLayout = ImageLayout.Stretch;
-            CloseView.FlatAppearance.BorderSize = 0;
-            CloseView.FlatStyle = FlatStyle.Flat;
-            CloseView.Location = new Point(1141, 11);
-            CloseView.Name = "CloseView";
-            CloseView.Size = new Size(35, 35);
-            CloseView.TabIndex = 1;
-            CloseView.UseVisualStyleBackColor = false;
+            panel25.Controls.Add(ItemViewName);
+            panel25.Location = new Point(592, 33);
+            panel25.Name = "panel25";
+            panel25.Size = new Size(529, 51);
+            panel25.TabIndex = 20;
+            // 
+            // ItemViewName
+            // 
+            ItemViewName.AutoEllipsis = true;
+            ItemViewName.AutoSize = true;
+            ItemViewName.Dock = DockStyle.Fill;
+            ItemViewName.Font = new Font("Segoe UI", 25.25F, FontStyle.Bold);
+            ItemViewName.Location = new Point(0, 0);
+            ItemViewName.Name = "ItemViewName";
+            ItemViewName.Size = new Size(420, 46);
+            ItemViewName.TabIndex = 2;
+            ItemViewName.Text = "ENTER ITEM NAME HERE";
+            // 
+            // Cart_Panel
+            // 
+            Cart_Panel.BackColor = Color.FromArgb(224, 224, 224);
+            Cart_Panel.Controls.Add(tableLayoutPanel2);
+            Cart_Panel.Controls.Add(panel22);
+            Cart_Panel.Controls.Add(panel18);
+            Cart_Panel.Dock = DockStyle.Fill;
+            Cart_Panel.Location = new Point(0, 69);
+            Cart_Panel.Name = "Cart_Panel";
+            Cart_Panel.Size = new Size(1350, 660);
+            Cart_Panel.TabIndex = 1;
+            // 
+            // tableLayoutPanel2
+            // 
+            tableLayoutPanel2.ColumnCount = 3;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            tableLayoutPanel2.Controls.Add(flowLayoutPanel1, 1, 0);
+            tableLayoutPanel2.Dock = DockStyle.Fill;
+            tableLayoutPanel2.Location = new Point(0, 63);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 1;
+            tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel2.Size = new Size(1350, 525);
+            tableLayoutPanel2.TabIndex = 2;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Controls.Add(panel23);
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel1.Location = new Point(138, 3);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1074, 519);
+            flowLayoutPanel1.TabIndex = 0;
+            // 
+            // panel23
+            // 
+            panel23.BackColor = Color.White;
+            panel23.Controls.Add(CartEdit);
+            panel23.Controls.Add(CartDelete);
+            panel23.Controls.Add(panel24);
+            panel23.Controls.Add(CartTotalPrice);
+            panel23.Controls.Add(CartUnitPrice);
+            panel23.Controls.Add(CartVariation);
+            panel23.Controls.Add(pictureBox18);
+            panel23.Controls.Add(ToggleItem);
+            panel23.Controls.Add(panel26);
+            panel23.Location = new Point(3, 3);
+            panel23.Name = "panel23";
+            panel23.Size = new Size(1071, 122);
+            panel23.TabIndex = 0;
+            // 
+            // CartEdit
+            // 
+            CartEdit.BackgroundImage = (Image)resources.GetObject("CartEdit.BackgroundImage");
+            CartEdit.BackgroundImageLayout = ImageLayout.Stretch;
+            CartEdit.FlatAppearance.BorderSize = 0;
+            CartEdit.FlatStyle = FlatStyle.Flat;
+            CartEdit.Location = new Point(956, 40);
+            CartEdit.Name = "CartEdit";
+            CartEdit.Size = new Size(48, 44);
+            CartEdit.TabIndex = 11;
+            CartEdit.UseVisualStyleBackColor = true;
+            // 
+            // CartDelete
+            // 
+            CartDelete.BackgroundImage = (Image)resources.GetObject("CartDelete.BackgroundImage");
+            CartDelete.BackgroundImageLayout = ImageLayout.Stretch;
+            CartDelete.FlatAppearance.BorderSize = 0;
+            CartDelete.FlatStyle = FlatStyle.Flat;
+            CartDelete.Location = new Point(1010, 40);
+            CartDelete.Name = "CartDelete";
+            CartDelete.Size = new Size(48, 44);
+            CartDelete.TabIndex = 10;
+            CartDelete.UseVisualStyleBackColor = true;
+            // 
+            // panel24
+            // 
+            panel24.Controls.Add(tableLayoutPanel3);
+            panel24.Location = new Point(676, 46);
+            panel24.Name = "panel24";
+            panel24.Size = new Size(114, 32);
+            panel24.TabIndex = 9;
+            // 
+            // tableLayoutPanel3
+            // 
+            tableLayoutPanel3.ColumnCount = 3;
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel3.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayoutPanel3.Controls.Add(Cart_QtyDecrement, 0, 0);
+            tableLayoutPanel3.Controls.Add(Cart_QtyIncrement, 2, 0);
+            tableLayoutPanel3.Controls.Add(CartQty, 1, 0);
+            tableLayoutPanel3.Dock = DockStyle.Fill;
+            tableLayoutPanel3.Location = new Point(0, 0);
+            tableLayoutPanel3.Name = "tableLayoutPanel3";
+            tableLayoutPanel3.RowCount = 1;
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel3.Size = new Size(114, 32);
+            tableLayoutPanel3.TabIndex = 0;
+            // 
+            // Cart_QtyDecrement
+            // 
+            Cart_QtyDecrement.Dock = DockStyle.Fill;
+            Cart_QtyDecrement.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Cart_QtyDecrement.ImageAlign = ContentAlignment.TopCenter;
+            Cart_QtyDecrement.Location = new Point(3, 3);
+            Cart_QtyDecrement.Name = "Cart_QtyDecrement";
+            Cart_QtyDecrement.Size = new Size(31, 26);
+            Cart_QtyDecrement.TabIndex = 0;
+            Cart_QtyDecrement.Text = "-";
+            Cart_QtyDecrement.UseVisualStyleBackColor = true;
+            // 
+            // Cart_QtyIncrement
+            // 
+            Cart_QtyIncrement.Dock = DockStyle.Fill;
+            Cart_QtyIncrement.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Cart_QtyIncrement.Location = new Point(77, 3);
+            Cart_QtyIncrement.Name = "Cart_QtyIncrement";
+            Cart_QtyIncrement.Size = new Size(34, 26);
+            Cart_QtyIncrement.TabIndex = 1;
+            Cart_QtyIncrement.Text = "+";
+            Cart_QtyIncrement.UseVisualStyleBackColor = true;
+            // 
+            // CartQty
+            // 
+            CartQty.AutoSize = true;
+            CartQty.Dock = DockStyle.Fill;
+            CartQty.Font = new Font("Segoe UI", 12F);
+            CartQty.Location = new Point(40, 0);
+            CartQty.Name = "CartQty";
+            CartQty.Size = new Size(31, 32);
+            CartQty.TabIndex = 2;
+            CartQty.Text = "1";
+            CartQty.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // CartTotalPrice
+            // 
+            CartTotalPrice.AutoSize = true;
+            CartTotalPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CartTotalPrice.ForeColor = Color.Teal;
+            CartTotalPrice.Location = new Point(839, 55);
+            CartTotalPrice.Name = "CartTotalPrice";
+            CartTotalPrice.Size = new Size(37, 21);
+            CartTotalPrice.TabIndex = 8;
+            CartTotalPrice.Text = "###";
+            // 
+            // CartUnitPrice
+            // 
+            CartUnitPrice.AutoSize = true;
+            CartUnitPrice.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CartUnitPrice.Location = new Point(571, 50);
+            CartUnitPrice.Name = "CartUnitPrice";
+            CartUnitPrice.Size = new Size(37, 21);
+            CartUnitPrice.TabIndex = 7;
+            CartUnitPrice.Text = "###";
+            CartUnitPrice.Click += label27_Click;
+            // 
+            // CartVariation
+            // 
+            CartVariation.AutoSize = true;
+            CartVariation.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CartVariation.Location = new Point(219, 90);
+            CartVariation.Name = "CartVariation";
+            CartVariation.Size = new Size(70, 17);
+            CartVariation.TabIndex = 2;
+            CartVariation.Text = "Size, Color";
+            // 
+            // pictureBox18
+            // 
+            pictureBox18.BackColor = Color.Black;
+            pictureBox18.Location = new Point(65, 3);
+            pictureBox18.Name = "pictureBox18";
+            pictureBox18.Size = new Size(144, 116);
+            pictureBox18.TabIndex = 1;
+            pictureBox18.TabStop = false;
+            // 
+            // ToggleItem
+            // 
+            ToggleItem.AutoSize = true;
+            ToggleItem.Location = new Point(10, 52);
+            ToggleItem.MinimumSize = new Size(45, 22);
+            ToggleItem.Name = "ToggleItem";
+            ToggleItem.OffBackColor = Color.Gray;
+            ToggleItem.OffToggleColor = Color.Gainsboro;
+            ToggleItem.OnBackColor = Color.MediumSlateBlue;
+            ToggleItem.OnToggleColor = Color.WhiteSmoke;
+            ToggleItem.Size = new Size(45, 22);
+            ToggleItem.SolidStyle = true;
+            ToggleItem.TabIndex = 0;
+            ToggleItem.UseVisualStyleBackColor = true;
+            // 
+            // panel26
+            // 
+            panel26.Controls.Add(CartItemName);
+            panel26.Location = new Point(219, 13);
+            panel26.Name = "panel26";
+            panel26.Size = new Size(320, 30);
+            panel26.TabIndex = 12;
+            // 
+            // CartItemName
+            // 
+            CartItemName.AutoEllipsis = true;
+            CartItemName.AutoSize = true;
+            CartItemName.Dock = DockStyle.Fill;
+            CartItemName.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CartItemName.Location = new Point(0, 0);
+            CartItemName.Name = "CartItemName";
+            CartItemName.Size = new Size(168, 25);
+            CartItemName.TabIndex = 0;
+            CartItemName.Text = "ITEM NAME HERE";
+            // 
+            // panel22
+            // 
+            panel22.Controls.Add(label26);
+            panel22.Controls.Add(label25);
+            panel22.Controls.Add(label24);
+            panel22.Controls.Add(label23);
+            panel22.Dock = DockStyle.Top;
+            panel22.Location = new Point(0, 0);
+            panel22.Name = "panel22";
+            panel22.Size = new Size(1350, 63);
+            panel22.TabIndex = 1;
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Font = new Font("Segoe UI", 12F);
+            label26.Location = new Point(1118, 40);
+            label26.Name = "label26";
+            label26.Size = new Size(54, 21);
+            label26.TabIndex = 6;
+            label26.Text = "Action";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Font = new Font("Segoe UI", 12F);
+            label25.Location = new Point(961, 40);
+            label25.Name = "label25";
+            label25.Size = new Size(80, 21);
+            label25.TabIndex = 5;
+            label25.Text = "Total Price";
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Segoe UI", 12F);
+            label24.Location = new Point(838, 40);
+            label24.Name = "label24";
+            label24.Size = new Size(70, 21);
+            label24.TabIndex = 4;
+            label24.Text = "Quantity";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Segoe UI", 12F);
+            label23.Location = new Point(694, 39);
+            label23.Name = "label23";
+            label23.Size = new Size(77, 21);
+            label23.TabIndex = 3;
+            label23.Text = "Unit Price";
+            // 
+            // panel18
+            // 
+            panel18.BackColor = Color.White;
+            panel18.Controls.Add(CartCheckOut);
+            panel18.Controls.Add(CheckOutTotalPrice);
+            panel18.Controls.Add(TotalItemLabel);
+            panel18.Controls.Add(CartSelectAll);
+            panel18.Dock = DockStyle.Bottom;
+            panel18.Location = new Point(0, 588);
+            panel18.Name = "panel18";
+            panel18.Size = new Size(1350, 72);
+            panel18.TabIndex = 0;
+            // 
+            // CartCheckOut
+            // 
+            CartCheckOut.BackColor = Color.Teal;
+            CartCheckOut.BackgroundColor = Color.Teal;
+            CartCheckOut.BorderColor = Color.PaleVioletRed;
+            CartCheckOut.BorderRadius = 40;
+            CartCheckOut.BorderSize = 0;
+            CartCheckOut.FlatAppearance.BorderSize = 0;
+            CartCheckOut.FlatStyle = FlatStyle.Flat;
+            CartCheckOut.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CartCheckOut.ForeColor = Color.White;
+            CartCheckOut.Location = new Point(1176, 16);
+            CartCheckOut.Name = "CartCheckOut";
+            CartCheckOut.Size = new Size(150, 40);
+            CartCheckOut.TabIndex = 4;
+            CartCheckOut.Text = "Check Out";
+            CartCheckOut.TextColor = Color.White;
+            CartCheckOut.UseVisualStyleBackColor = false;
+            // 
+            // CheckOutTotalPrice
+            // 
+            CheckOutTotalPrice.AutoSize = true;
+            CheckOutTotalPrice.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            CheckOutTotalPrice.ForeColor = Color.Teal;
+            CheckOutTotalPrice.Location = new Point(1113, 23);
+            CheckOutTotalPrice.Name = "CheckOutTotalPrice";
+            CheckOutTotalPrice.Size = new Size(52, 30);
+            CheckOutTotalPrice.TabIndex = 3;
+            CheckOutTotalPrice.Text = "###";
+            // 
+            // TotalItemLabel
+            // 
+            TotalItemLabel.AutoSize = true;
+            TotalItemLabel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TotalItemLabel.Location = new Point(980, 27);
+            TotalItemLabel.Name = "TotalItemLabel";
+            TotalItemLabel.Size = new Size(128, 21);
+            TotalItemLabel.TabIndex = 2;
+            TotalItemLabel.Text = "Total ( # Item/s):";
+            // 
+            // CartSelectAll
+            // 
+            CartSelectAll.AutoSize = true;
+            CartSelectAll.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            CartSelectAll.Location = new Point(48, 23);
+            CartSelectAll.Name = "CartSelectAll";
+            CartSelectAll.Size = new Size(97, 25);
+            CartSelectAll.TabIndex = 0;
+            CartSelectAll.Text = "Select All";
+            CartSelectAll.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -1976,10 +2358,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 244);
             ClientSize = new Size(1350, 729);
+            Controls.Add(Cart_Panel);
             Controls.Add(ItemView_Panel);
             Controls.Add(HomePage_Panel);
-            Controls.Add(SignUp_Panel);
             Controls.Add(SignIn_Panel);
+            Controls.Add(SignUp_Panel);
             Controls.Add(TopNavBar);
             Name = "Form1";
             Text = "Add Program Label Here";
@@ -2061,6 +2444,23 @@
             panel20.ResumeLayout(false);
             panel20.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
+            panel25.ResumeLayout(false);
+            panel25.PerformLayout();
+            Cart_Panel.ResumeLayout(false);
+            tableLayoutPanel2.ResumeLayout(false);
+            flowLayoutPanel1.ResumeLayout(false);
+            panel23.ResumeLayout(false);
+            panel23.PerformLayout();
+            panel24.ResumeLayout(false);
+            tableLayoutPanel3.ResumeLayout(false);
+            tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
+            panel26.ResumeLayout(false);
+            panel26.PerformLayout();
+            panel22.ResumeLayout(false);
+            panel22.PerformLayout();
+            panel18.ResumeLayout(false);
+            panel18.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -2075,7 +2475,7 @@
         private Label Email_SignInLbl;
         private TextBox Email_SignInTxtBox;
         private TextBox Password_SignInTxtBox;
-        private Label SignIn_NavBarLbl;
+        private Label PageLabel;
         private PictureBox NotificationIcon_PicBox;
         private PictureBox CartIcon_PicBox;
         private PictureBox ProfileIcon_PicBox;
@@ -2187,9 +2587,9 @@
         private AddControls.RoundedButton ItemView_AddCart;
         private Panel panel21;
         private TableLayoutPanel tableLayoutPanel1;
-        private Button QuantityDecrement;
-        private Button QuantityIncrement;
-        private Label label17;
+        private Button ItemView_QtyIncrement;
+        private Button ItemView_QtyDecrement;
+        private Label ItemViewQty;
         private Button button8;
         private Button button10;
         private Button button9;
@@ -2201,5 +2601,34 @@
         private Button button2;
         private Button button1;
         private Button CloseView;
+        private Panel Cart_Panel;
+        private Panel panel18;
+        private TableLayoutPanel tableLayoutPanel2;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Panel panel23;
+        private AddControls.ToggleButton ToggleItem;
+        private Panel panel22;
+        private Label CartTotalPrice;
+        private Label CartUnitPrice;
+        private Label CartVariation;
+        private Label CartItemName;
+        private PictureBox pictureBox18;
+        private Label label26;
+        private Label label25;
+        private Label label24;
+        private Label label23;
+        private Panel panel24;
+        private TableLayoutPanel tableLayoutPanel3;
+        private Button Cart_QtyDecrement;
+        private Button Cart_QtyIncrement;
+        private Label CartQty;
+        private Button CartEdit;
+        private Button CartDelete;
+        private CheckBox CartSelectAll;
+        private AddControls.RoundedButton CartCheckOut;
+        private Label CheckOutTotalPrice;
+        private Label TotalItemLabel;
+        private Panel panel25;
+        private Panel panel26;
     }
 }
