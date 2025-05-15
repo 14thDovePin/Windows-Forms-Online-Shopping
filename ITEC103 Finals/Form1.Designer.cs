@@ -67,10 +67,6 @@
             SignUp_Panel = new Panel();
             HomePage_Panel = new Panel();
             ItemList = new FlowLayoutPanel();
-            panel14 = new Panel();
-            PriceTag = new Label();
-            Item1 = new LinkLabel();
-            pictureBox1 = new PictureBox();
             panel2 = new Panel();
             label1 = new Label();
             linkLabel1 = new LinkLabel();
@@ -119,17 +115,21 @@
             label12 = new Label();
             linkLabel12 = new LinkLabel();
             pictureBox13 = new PictureBox();
+            panel14 = new Panel();
+            PriceTag = new Label();
+            linkLabel13 = new LinkLabel();
+            pictureBox1 = new PictureBox();
             panel15 = new Panel();
             label13 = new Label();
-            linkLabel13 = new LinkLabel();
+            linkLabel14 = new LinkLabel();
             pictureBox14 = new PictureBox();
             panel16 = new Panel();
             label14 = new Label();
-            linkLabel14 = new LinkLabel();
+            linkLabel15 = new LinkLabel();
             pictureBox15 = new PictureBox();
             panel17 = new Panel();
             label15 = new Label();
-            linkLabel15 = new LinkLabel();
+            linkLabel16 = new LinkLabel();
             pictureBox16 = new PictureBox();
             panel1 = new Panel();
             SortSales = new ComboBox();
@@ -161,10 +161,11 @@
             label19 = new Label();
             AmountSold = new Label();
             panel20 = new Panel();
-            ItemViewPrice = new Label();
-            pictureBox17 = new PictureBox();
+            label17 = new Label();
+            label18 = new Label();
             panel25 = new Panel();
             ItemViewName = new Label();
+            pictureBox17 = new PictureBox();
             Cart_Panel = new Panel();
             tableLayoutPanel2 = new TableLayoutPanel();
             flowLayoutPanel1 = new FlowLayoutPanel();
@@ -207,8 +208,6 @@
             SignUp_Panel.SuspendLayout();
             HomePage_Panel.SuspendLayout();
             ItemList.SuspendLayout();
-            panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
@@ -233,6 +232,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             panel16.SuspendLayout();
@@ -245,8 +246,8 @@
             panel21.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             Cart_Panel.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
@@ -783,7 +784,6 @@
             // 
             ItemList.AutoScroll = true;
             ItemList.AutoSize = true;
-            ItemList.Controls.Add(panel14);
             ItemList.Controls.Add(panel2);
             ItemList.Controls.Add(panel3);
             ItemList.Controls.Add(panel4);
@@ -796,6 +796,7 @@
             ItemList.Controls.Add(panel11);
             ItemList.Controls.Add(panel12);
             ItemList.Controls.Add(panel13);
+            ItemList.Controls.Add(panel14);
             ItemList.Controls.Add(panel15);
             ItemList.Controls.Add(panel16);
             ItemList.Controls.Add(panel17);
@@ -805,55 +806,6 @@
             ItemList.Size = new Size(1150, 620);
             ItemList.TabIndex = 2;
             // 
-            // panel14
-            // 
-            panel14.Anchor = AnchorStyles.None;
-            panel14.BackColor = Color.FromArgb(224, 224, 224);
-            panel14.Controls.Add(PriceTag);
-            panel14.Controls.Add(Item1);
-            panel14.Controls.Add(pictureBox1);
-            panel14.Location = new Point(3, 3);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(274, 321);
-            panel14.TabIndex = 4;
-            // 
-            // PriceTag
-            // 
-            PriceTag.AutoSize = true;
-            PriceTag.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            PriceTag.ForeColor = Color.Teal;
-            PriceTag.Image = (Image)resources.GetObject("PriceTag.Image");
-            PriceTag.ImageAlign = ContentAlignment.MiddleLeft;
-            PriceTag.Location = new Point(3, 291);
-            PriceTag.Name = "PriceTag";
-            PriceTag.Size = new Size(54, 21);
-            PriceTag.TabIndex = 2;
-            PriceTag.Text = "PRICE";
-            // 
-            // Item1
-            // 
-            Item1.ActiveLinkColor = Color.Gray;
-            Item1.AutoSize = true;
-            Item1.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Item1.LinkColor = Color.Black;
-            Item1.Location = new Point(3, 228);
-            Item1.Name = "Item1";
-            Item1.Size = new Size(119, 28);
-            Item1.TabIndex = 1;
-            Item1.TabStop = true;
-            Item1.Text = "ITEM NAME";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Dock = DockStyle.Top;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(274, 225);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             panel2.Anchor = AnchorStyles.None;
@@ -861,7 +813,7 @@
             panel2.Controls.Add(label1);
             panel2.Controls.Add(linkLabel1);
             panel2.Controls.Add(pictureBox2);
-            panel2.Location = new Point(283, 3);
+            panel2.Location = new Point(3, 3);
             panel2.Name = "panel2";
             panel2.Size = new Size(274, 321);
             panel2.TabIndex = 5;
@@ -875,22 +827,21 @@
             label1.ImageAlign = ContentAlignment.MiddleLeft;
             label1.Location = new Point(3, 291);
             label1.Name = "label1";
-            label1.Size = new Size(54, 21);
+            label1.Size = new Size(51, 21);
             label1.TabIndex = 2;
-            label1.Text = "PRICE";
+            label1.Text = "₱ 899";
             // 
             // linkLabel1
             // 
             linkLabel1.ActiveLinkColor = Color.Gray;
-            linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel1.LinkColor = Color.Black;
             linkLabel1.Location = new Point(3, 228);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(119, 28);
+            linkLabel1.Size = new Size(268, 28);
             linkLabel1.TabIndex = 1;
             linkLabel1.TabStop = true;
-            linkLabel1.Text = "ITEM NAME";
+            linkLabel1.Text = "Zeus K-55(Mechanical Keyboard)";
             // 
             // pictureBox2
             // 
@@ -911,7 +862,7 @@
             panel3.Controls.Add(label2);
             panel3.Controls.Add(linkLabel2);
             panel3.Controls.Add(pictureBox3);
-            panel3.Location = new Point(563, 3);
+            panel3.Location = new Point(283, 3);
             panel3.Name = "panel3";
             panel3.Size = new Size(274, 321);
             panel3.TabIndex = 5;
@@ -925,22 +876,23 @@
             label2.ImageAlign = ContentAlignment.MiddleLeft;
             label2.Location = new Point(3, 291);
             label2.Name = "label2";
-            label2.Size = new Size(54, 21);
+            label2.Size = new Size(51, 21);
             label2.TabIndex = 2;
-            label2.Text = "PRICE";
+            label2.Text = "₱ 499";
             // 
             // linkLabel2
             // 
             linkLabel2.ActiveLinkColor = Color.Gray;
+            linkLabel2.AutoEllipsis = true;
             linkLabel2.AutoSize = true;
             linkLabel2.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLabel2.LinkColor = Color.Black;
             linkLabel2.Location = new Point(3, 228);
             linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(119, 28);
+            linkLabel2.Size = new Size(203, 28);
             linkLabel2.TabIndex = 1;
             linkLabel2.TabStop = true;
-            linkLabel2.Text = "ITEM NAME";
+            linkLabel2.Text = "Vintag Jacket (violet)";
             // 
             // pictureBox3
             // 
@@ -960,7 +912,7 @@
             panel4.Controls.Add(label3);
             panel4.Controls.Add(linkLabel3);
             panel4.Controls.Add(pictureBox4);
-            panel4.Location = new Point(843, 3);
+            panel4.Location = new Point(563, 3);
             panel4.Name = "panel4";
             panel4.Size = new Size(274, 321);
             panel4.TabIndex = 5;
@@ -974,9 +926,9 @@
             label3.ImageAlign = ContentAlignment.MiddleLeft;
             label3.Location = new Point(3, 291);
             label3.Name = "label3";
-            label3.Size = new Size(54, 21);
+            label3.Size = new Size(60, 21);
             label3.TabIndex = 2;
-            label3.Text = "PRICE";
+            label3.Text = "₱ 1259";
             // 
             // linkLabel3
             // 
@@ -986,10 +938,10 @@
             linkLabel3.LinkColor = Color.Black;
             linkLabel3.Location = new Point(3, 228);
             linkLabel3.Name = "linkLabel3";
-            linkLabel3.Size = new Size(119, 28);
+            linkLabel3.Size = new Size(259, 28);
             linkLabel3.TabIndex = 1;
             linkLabel3.TabStop = true;
-            linkLabel3.Text = "ITEM NAME";
+            linkLabel3.Text = "GooJoDoq Mini electric fan";
             // 
             // pictureBox4
             // 
@@ -1009,7 +961,7 @@
             panel5.Controls.Add(label4);
             panel5.Controls.Add(linkLabel4);
             panel5.Controls.Add(pictureBox5);
-            panel5.Location = new Point(3, 330);
+            panel5.Location = new Point(843, 3);
             panel5.Name = "panel5";
             panel5.Size = new Size(274, 321);
             panel5.TabIndex = 5;
@@ -1058,7 +1010,7 @@
             panel6.Controls.Add(label5);
             panel6.Controls.Add(linkLabel5);
             panel6.Controls.Add(pictureBox6);
-            panel6.Location = new Point(283, 330);
+            panel6.Location = new Point(3, 330);
             panel6.Name = "panel6";
             panel6.Size = new Size(274, 321);
             panel6.TabIndex = 5;
@@ -1107,7 +1059,7 @@
             panel7.Controls.Add(label6);
             panel7.Controls.Add(linkLabel6);
             panel7.Controls.Add(pictureBox7);
-            panel7.Location = new Point(563, 330);
+            panel7.Location = new Point(283, 330);
             panel7.Name = "panel7";
             panel7.Size = new Size(274, 321);
             panel7.TabIndex = 5;
@@ -1156,7 +1108,7 @@
             panel8.Controls.Add(label7);
             panel8.Controls.Add(linkLabel7);
             panel8.Controls.Add(pictureBox8);
-            panel8.Location = new Point(843, 330);
+            panel8.Location = new Point(563, 330);
             panel8.Name = "panel8";
             panel8.Size = new Size(274, 321);
             panel8.TabIndex = 5;
@@ -1205,7 +1157,7 @@
             panel9.Controls.Add(label8);
             panel9.Controls.Add(linkLabel8);
             panel9.Controls.Add(pictureBox9);
-            panel9.Location = new Point(3, 657);
+            panel9.Location = new Point(843, 330);
             panel9.Name = "panel9";
             panel9.Size = new Size(274, 321);
             panel9.TabIndex = 5;
@@ -1254,7 +1206,7 @@
             panel10.Controls.Add(label9);
             panel10.Controls.Add(linkLabel9);
             panel10.Controls.Add(pictureBox10);
-            panel10.Location = new Point(283, 657);
+            panel10.Location = new Point(3, 657);
             panel10.Name = "panel10";
             panel10.Size = new Size(274, 321);
             panel10.TabIndex = 5;
@@ -1303,7 +1255,7 @@
             panel11.Controls.Add(label10);
             panel11.Controls.Add(linkLabel10);
             panel11.Controls.Add(pictureBox11);
-            panel11.Location = new Point(563, 657);
+            panel11.Location = new Point(283, 657);
             panel11.Name = "panel11";
             panel11.Size = new Size(274, 321);
             panel11.TabIndex = 5;
@@ -1352,7 +1304,7 @@
             panel12.Controls.Add(label11);
             panel12.Controls.Add(linkLabel11);
             panel12.Controls.Add(pictureBox12);
-            panel12.Location = new Point(843, 657);
+            panel12.Location = new Point(563, 657);
             panel12.Name = "panel12";
             panel12.Size = new Size(274, 321);
             panel12.TabIndex = 5;
@@ -1401,7 +1353,7 @@
             panel13.Controls.Add(label12);
             panel13.Controls.Add(linkLabel12);
             panel13.Controls.Add(pictureBox13);
-            panel13.Location = new Point(3, 984);
+            panel13.Location = new Point(843, 657);
             panel13.Name = "panel13";
             panel13.Size = new Size(274, 321);
             panel13.TabIndex = 5;
@@ -1443,12 +1395,61 @@
             pictureBox13.TabIndex = 0;
             pictureBox13.TabStop = false;
             // 
+            // panel14
+            // 
+            panel14.Anchor = AnchorStyles.None;
+            panel14.BackColor = Color.FromArgb(224, 224, 224);
+            panel14.Controls.Add(PriceTag);
+            panel14.Controls.Add(linkLabel13);
+            panel14.Controls.Add(pictureBox1);
+            panel14.Location = new Point(3, 984);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(274, 321);
+            panel14.TabIndex = 4;
+            // 
+            // PriceTag
+            // 
+            PriceTag.AutoSize = true;
+            PriceTag.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            PriceTag.ForeColor = Color.Teal;
+            PriceTag.Image = (Image)resources.GetObject("PriceTag.Image");
+            PriceTag.ImageAlign = ContentAlignment.MiddleLeft;
+            PriceTag.Location = new Point(3, 291);
+            PriceTag.Name = "PriceTag";
+            PriceTag.Size = new Size(54, 21);
+            PriceTag.TabIndex = 2;
+            PriceTag.Text = "PRICE";
+            // 
+            // linkLabel13
+            // 
+            linkLabel13.ActiveLinkColor = Color.Gray;
+            linkLabel13.AutoSize = true;
+            linkLabel13.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel13.LinkColor = Color.Black;
+            linkLabel13.Location = new Point(3, 228);
+            linkLabel13.Name = "linkLabel13";
+            linkLabel13.Size = new Size(119, 28);
+            linkLabel13.TabIndex = 1;
+            linkLabel13.TabStop = true;
+            linkLabel13.Text = "ITEM NAME";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Top;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(274, 225);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
+            // 
             // panel15
             // 
             panel15.Anchor = AnchorStyles.None;
             panel15.BackColor = Color.FromArgb(224, 224, 224);
             panel15.Controls.Add(label13);
-            panel15.Controls.Add(linkLabel13);
+            panel15.Controls.Add(linkLabel14);
             panel15.Controls.Add(pictureBox14);
             panel15.Location = new Point(283, 984);
             panel15.Name = "panel15";
@@ -1468,18 +1469,18 @@
             label13.TabIndex = 2;
             label13.Text = "PRICE";
             // 
-            // linkLabel13
+            // linkLabel14
             // 
-            linkLabel13.ActiveLinkColor = Color.Gray;
-            linkLabel13.AutoSize = true;
-            linkLabel13.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabel13.LinkColor = Color.Black;
-            linkLabel13.Location = new Point(3, 228);
-            linkLabel13.Name = "linkLabel13";
-            linkLabel13.Size = new Size(119, 28);
-            linkLabel13.TabIndex = 1;
-            linkLabel13.TabStop = true;
-            linkLabel13.Text = "ITEM NAME";
+            linkLabel14.ActiveLinkColor = Color.Gray;
+            linkLabel14.AutoSize = true;
+            linkLabel14.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel14.LinkColor = Color.Black;
+            linkLabel14.Location = new Point(3, 228);
+            linkLabel14.Name = "linkLabel14";
+            linkLabel14.Size = new Size(119, 28);
+            linkLabel14.TabIndex = 1;
+            linkLabel14.TabStop = true;
+            linkLabel14.Text = "ITEM NAME";
             // 
             // pictureBox14
             // 
@@ -1497,7 +1498,7 @@
             panel16.Anchor = AnchorStyles.None;
             panel16.BackColor = Color.FromArgb(224, 224, 224);
             panel16.Controls.Add(label14);
-            panel16.Controls.Add(linkLabel14);
+            panel16.Controls.Add(linkLabel15);
             panel16.Controls.Add(pictureBox15);
             panel16.Location = new Point(563, 984);
             panel16.Name = "panel16";
@@ -1517,18 +1518,18 @@
             label14.TabIndex = 2;
             label14.Text = "PRICE";
             // 
-            // linkLabel14
+            // linkLabel15
             // 
-            linkLabel14.ActiveLinkColor = Color.Gray;
-            linkLabel14.AutoSize = true;
-            linkLabel14.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabel14.LinkColor = Color.Black;
-            linkLabel14.Location = new Point(3, 228);
-            linkLabel14.Name = "linkLabel14";
-            linkLabel14.Size = new Size(119, 28);
-            linkLabel14.TabIndex = 1;
-            linkLabel14.TabStop = true;
-            linkLabel14.Text = "ITEM NAME";
+            linkLabel15.ActiveLinkColor = Color.Gray;
+            linkLabel15.AutoSize = true;
+            linkLabel15.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel15.LinkColor = Color.Black;
+            linkLabel15.Location = new Point(3, 228);
+            linkLabel15.Name = "linkLabel15";
+            linkLabel15.Size = new Size(119, 28);
+            linkLabel15.TabIndex = 1;
+            linkLabel15.TabStop = true;
+            linkLabel15.Text = "ITEM NAME";
             // 
             // pictureBox15
             // 
@@ -1546,7 +1547,7 @@
             panel17.Anchor = AnchorStyles.None;
             panel17.BackColor = Color.FromArgb(224, 224, 224);
             panel17.Controls.Add(label15);
-            panel17.Controls.Add(linkLabel15);
+            panel17.Controls.Add(linkLabel16);
             panel17.Controls.Add(pictureBox16);
             panel17.Location = new Point(843, 984);
             panel17.Name = "panel17";
@@ -1566,18 +1567,18 @@
             label15.TabIndex = 2;
             label15.Text = "PRICE";
             // 
-            // linkLabel15
+            // linkLabel16
             // 
-            linkLabel15.ActiveLinkColor = Color.Gray;
-            linkLabel15.AutoSize = true;
-            linkLabel15.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLabel15.LinkColor = Color.Black;
-            linkLabel15.Location = new Point(3, 228);
-            linkLabel15.Name = "linkLabel15";
-            linkLabel15.Size = new Size(119, 28);
-            linkLabel15.TabIndex = 1;
-            linkLabel15.TabStop = true;
-            linkLabel15.Text = "ITEM NAME";
+            linkLabel16.ActiveLinkColor = Color.Gray;
+            linkLabel16.AutoSize = true;
+            linkLabel16.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLabel16.LinkColor = Color.Black;
+            linkLabel16.Location = new Point(3, 228);
+            linkLabel16.Name = "linkLabel16";
+            linkLabel16.Size = new Size(119, 28);
+            linkLabel16.TabIndex = 1;
+            linkLabel16.TabStop = true;
+            linkLabel16.Text = "ITEM NAME";
             // 
             // pictureBox16
             // 
@@ -1671,8 +1672,8 @@
             panel19.Controls.Add(label19);
             panel19.Controls.Add(AmountSold);
             panel19.Controls.Add(panel20);
-            panel19.Controls.Add(pictureBox17);
             panel19.Controls.Add(panel25);
+            panel19.Controls.Add(pictureBox17);
             panel19.Location = new Point(80, 57);
             panel19.Name = "panel19";
             panel19.Size = new Size(1189, 548);
@@ -1691,6 +1692,7 @@
             CloseView.Size = new Size(35, 35);
             CloseView.TabIndex = 1;
             CloseView.UseVisualStyleBackColor = false;
+            CloseView.Click += CloseView_Click;
             // 
             // button10
             // 
@@ -1974,32 +1976,34 @@
             // panel20
             // 
             panel20.BackColor = Color.FromArgb(224, 224, 224);
-            panel20.Controls.Add(ItemViewPrice);
+            panel20.Controls.Add(label17);
+            panel20.Controls.Add(label18);
             panel20.Location = new Point(568, 122);
             panel20.Name = "panel20";
             panel20.Size = new Size(607, 73);
             panel20.TabIndex = 1;
             // 
-            // ItemViewPrice
+            // label17
             // 
-            ItemViewPrice.AutoSize = true;
-            ItemViewPrice.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ItemViewPrice.ForeColor = Color.Teal;
-            ItemViewPrice.Location = new Point(36, 17);
-            ItemViewPrice.Name = "ItemViewPrice";
-            ItemViewPrice.Size = new Size(92, 37);
-            ItemViewPrice.TabIndex = 7;
-            ItemViewPrice.Text = "PRICE";
+            label17.AutoSize = true;
+            label17.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = Color.Teal;
+            label17.Location = new Point(24, 19);
+            label17.Name = "label17";
+            label17.Size = new Size(34, 37);
+            label17.TabIndex = 8;
+            label17.Text = "₱";
             // 
-            // pictureBox17
+            // label18
             // 
-            pictureBox17.BackColor = Color.Black;
-            pictureBox17.Location = new Point(21, 25);
-            pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(541, 488);
-            pictureBox17.TabIndex = 0;
-            pictureBox17.TabStop = false;
-            pictureBox17.Click += pictureBox17_Click;
+            label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.ForeColor = Color.Teal;
+            label18.Location = new Point(51, 19);
+            label18.Name = "label18";
+            label18.Size = new Size(72, 37);
+            label18.TabIndex = 9;
+            label18.Text = "0.00";
             // 
             // panel25
             // 
@@ -2020,6 +2024,16 @@
             ItemViewName.Size = new Size(420, 46);
             ItemViewName.TabIndex = 2;
             ItemViewName.Text = "ENTER ITEM NAME HERE";
+            // 
+            // pictureBox17
+            // 
+            pictureBox17.BackColor = Color.Black;
+            pictureBox17.Location = new Point(21, 25);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(541, 488);
+            pictureBox17.TabIndex = 0;
+            pictureBox17.TabStop = false;
+            pictureBox17.Click += pictureBox17_Click;
             // 
             // Cart_Panel
             // 
@@ -2358,9 +2372,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 244);
             ClientSize = new Size(1350, 729);
-            Controls.Add(Cart_Panel);
-            Controls.Add(ItemView_Panel);
             Controls.Add(HomePage_Panel);
+            Controls.Add(ItemView_Panel);
+            Controls.Add(Cart_Panel);
             Controls.Add(SignIn_Panel);
             Controls.Add(SignUp_Panel);
             Controls.Add(TopNavBar);
@@ -2385,9 +2399,6 @@
             HomePage_Panel.ResumeLayout(false);
             HomePage_Panel.PerformLayout();
             ItemList.ResumeLayout(false);
-            panel14.ResumeLayout(false);
-            panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -2424,6 +2435,9 @@
             panel13.ResumeLayout(false);
             panel13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            panel14.ResumeLayout(false);
+            panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel15.ResumeLayout(false);
             panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
@@ -2443,9 +2457,9 @@
             tableLayoutPanel1.PerformLayout();
             panel20.ResumeLayout(false);
             panel20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             panel25.ResumeLayout(false);
             panel25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             Cart_Panel.ResumeLayout(false);
             tableLayoutPanel2.ResumeLayout(false);
             flowLayoutPanel1.ResumeLayout(false);
@@ -2507,7 +2521,7 @@
         private FlowLayoutPanel ItemList;
         private Panel panel14;
         private Label PriceTag;
-        private LinkLabel Item1;
+        private LinkLabel linkLabel13;
         private PictureBox pictureBox1;
         private Panel panel1;
         private Panel panel2;
@@ -2559,15 +2573,15 @@
         private PictureBox pictureBox13;
         private Panel panel15;
         private Label label13;
-        private LinkLabel linkLabel13;
+        private LinkLabel linkLabel14;
         private PictureBox pictureBox14;
         private Panel panel16;
         private Label label14;
-        private LinkLabel linkLabel14;
+        private LinkLabel linkLabel15;
         private PictureBox pictureBox15;
         private Panel panel17;
         private Label label15;
-        private LinkLabel linkLabel15;
+        private LinkLabel linkLabel16;
         private PictureBox pictureBox16;
         private PictureBox pictureBox2;
         private Label label16;
@@ -2582,7 +2596,6 @@
         private Label AmountSold;
         private Label ItemViewName;
         private Panel panel20;
-        private Label ItemViewPrice;
         private AddControls.RoundedButton ItemView_Buy;
         private AddControls.RoundedButton ItemView_AddCart;
         private Panel panel21;
@@ -2630,5 +2643,7 @@
         private Label TotalItemLabel;
         private Panel panel25;
         private Panel panel26;
+        private Label label17;
+        private Label label18;
     }
 }
