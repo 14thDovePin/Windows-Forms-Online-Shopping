@@ -1,9 +1,12 @@
+using System.Net.Sockets;
 using System.Windows.Forms;
 
 namespace ITEC103_Finals
 {
     public partial class Form1 : Form
     {
+        int id = 1000;
+        string details;
         public Form1()
         {
             InitializeComponent();
@@ -15,12 +18,12 @@ namespace ITEC103_Finals
         //adds id to the link labels
         private void addid()
         {
-            int id = 1000;
+            
             LinkLabel[] labels = new LinkLabel[] {
                  linkLabel1, linkLabel2, linkLabel3, linkLabel4,
                  linkLabel5, linkLabel6, linkLabel7, linkLabel8,
                  linkLabel9, linkLabel10, linkLabel11, linkLabel12,
-                 linkLabel14, linkLabel15, linkLabel16, linkLabel16
+                 linkLabel13, linkLabel14, linkLabel15, linkLabel16
             };
 
             for (int i = 0; i < labels.Length; i++)
@@ -69,9 +72,9 @@ namespace ITEC103_Finals
                 case 1001:
                     resetvisuals();
                     ItemViewName.Text = "Vintag Jacket (violet)";
-                    label18.Text = "499"; 
+                    label18.Text = "499";
                     label19.Text = "Size";
-                    button1.Text = "XS"; 
+                    button1.Text = "XS";
                     button2.Text = "S";
                     button3.Text = "M";
                     button4.Text = "L";
@@ -104,12 +107,260 @@ namespace ITEC103_Finals
                     pictureBox17.Image = Image.FromFile(@"img\3.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
                     break;
+                case 1003:
+                    resetvisuals();
+                    ItemViewName.Text = "Uratex inflatable mattress";
+                    label18.Text = "2459";
+                    label19.Visible = false;
+                    button1.Visible = false;
+                    button2.Visible = false;
+                    button3.Visible = false;
+                    button4.Visible = false;
+                    button5.Visible = false;
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\4.jpg");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1004:
+                    resetvisuals();
+                    ItemViewName.Text = "(Inspeed) Bike Bag";
+                    label18.Text = "89";
+                    label19.Text = "Color";
+                    button1.Text = "Blue";
+                    button2.Text = "Red";
+                    button3.Text = "Black";
+                    button4.Visible = false;
+                    button5.Visible = false;
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\5_def.png");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1005:
+                    resetvisuals();
+                    ItemViewName.Text = "Wireless Headset (Onikuma Gaming Headset)";
+                    label18.Text = "259";
+                    label19.Visible = false; 
+                    button1.Visible = false; 
+                    button2.Visible = false;
+                    button3.Visible = false;
+                    button4.Visible = false;
+                    button5.Visible = false;
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\6.jpg");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1006:
+                    resetvisuals();
+                    ItemViewName.Text = "Taslan Shorts";
+                    label18.Text = "40";
+                    label19.Text = "Color";
+                    button1.Text = "Black";
+                    button2.Text = "Gray";
+                    button3.Text = "Blue";
+                    button4.Visible = false;
+                    button5.Visible = false;
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\7_def.png");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1007:
+                    resetvisuals();
+                    ItemViewName.Text = "Wireless RGB mouse (Zeus x Gundam) ";
+                    label18.Text = "699";
+                    label19.Visible = false;
+                    button1.Visible = false; 
+                    button2.Visible = false;
+                    button3.Visible = false;
+                    button4.Visible = false;
+                    button5.Visible = false;
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\8.jpg");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1008:
+                    resetvisuals();
+                    ItemViewName.Text = "Chelsea boots (brown)";
+                    label18.Text = "699";
+                    label19.Text = "Size";
+                    button1.Text = "38";
+                    button2.Text = "39";
+                    button3.Text = "40";
+                    button4.Text = "41";
+                    button5.Text = "42";
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\9.jpg");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1009:
+                    resetvisuals();
+                    ItemViewName.Text = "Lovito pocket pants";
+                    label18.Text = "180";
+                    label19.Text = "Size";
+                    button1.Text = "XS";
+                    button2.Text = "S";
+                    button3.Text = "M";
+                    button4.Text = "L";
+                    button5.Text = "XL";
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\10.jpg");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1010:
+                    resetvisuals();
+                    ItemViewName.Text = "Wireless RGB mouse (Zeus x Gundam) ";
+                    label18.Text = "699";
+                    label19.Visible = false;
+                    button1.Visible = false; 
+                    button2.Visible = false;
+                    button3.Visible = false;
+                    button4.Visible = false;
+                    button5.Visible = false;
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\11.jpg");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1011:
+                    resetvisuals();
+                    ItemViewName.Text = "wallet (black, dark brown, brown) ";
+                    label18.Text = "70";
+                    label19.Text = "Color";
+                    button1.Text = "Black";
+                    button2.Text = "Darkbrown";
+                    button3.Text = "brown";
+                    button4.Visible = false;
+                    button5.Visible = false;
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\12_def.png");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1012:
+                    resetvisuals();
+                    ItemViewName.Text = "10kg Workout Dumbbells";
+                    label18.Text = "700";
+                    label19.Visible = false;
+                    button1.Visible = false;
+                    button2.Visible = false;
+                    button3.Visible = false;
+                    button4.Visible = false;
+                    button5.Visible = false;
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\13.jpg");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1013:
+                    resetvisuals();
+                    ItemViewName.Text = "Bike shades";
+                    label18.Text = "130";
+                    label19.Text = "Color";
+                    button1.Text = "Red";
+                    button2.Text = "Blue";
+                    button3.Text = "Purple";
+                    button4.Visible = false;
+                    button5.Visible = false;
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\14_def.png");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1014:
+                    resetvisuals();
+                    ItemViewName.Text = "Adadis Socks (6pairs)";
+                    label18.Text = "75";
+                    label19.Text = "Color";
+                    button1.Text = "White";
+                    button2.Text = "Black";
+                    button3.Text = "Black and White";
+                    button4.Visible = false;
+                    button5.Visible = false;
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\15_def.png");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
+                case 1015:
+                    resetvisuals();
+                    ItemViewName.Text = "Gunpla Gundam kit HG (Barbatos, Aerial)";
+                    label18.Text = "821";
+                    label19.Visible = false;
+                    button1.Visible = false;
+                    button2.Visible = false;
+                    button3.Visible = false;
+                    button4.Visible = false;
+                    button5.Visible = false;
+                    button6.Visible = false;
+                    button7.Visible = false;
+                    label20.Text = "";
+                    button8.Visible = false;
+                    button9.Visible = false;
+                    button10.Visible = false;
+                    pictureBox17.Image = Image.FromFile(@"img\16.jpg");
+                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    break;
             }
         }
 
         //resets the visibility of the buttons
         private void resetvisuals()
-        { 
+        {
+            label19.Visible = true;
             button1.Visible = true;
             button2.Visible = true;
             button3.Visible = true;
@@ -198,6 +449,9 @@ namespace ITEC103_Finals
 
         }
 
-        
+        private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

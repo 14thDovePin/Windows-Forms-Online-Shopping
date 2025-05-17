@@ -975,9 +975,9 @@
             label4.ImageAlign = ContentAlignment.MiddleLeft;
             label4.Location = new Point(3, 291);
             label4.Name = "label4";
-            label4.Size = new Size(54, 21);
+            label4.Size = new Size(60, 21);
             label4.TabIndex = 2;
-            label4.Text = "PRICE";
+            label4.Text = "₱ 2459";
             // 
             // linkLabel4
             // 
@@ -987,10 +987,10 @@
             linkLabel4.LinkColor = Color.Black;
             linkLabel4.Location = new Point(3, 228);
             linkLabel4.Name = "linkLabel4";
-            linkLabel4.Size = new Size(119, 28);
+            linkLabel4.Size = new Size(187, 28);
             linkLabel4.TabIndex = 1;
             linkLabel4.TabStop = true;
-            linkLabel4.Text = "ITEM NAME";
+            linkLabel4.Text = "Inflatable Mattress ";
             // 
             // pictureBox5
             // 
@@ -1024,9 +1024,9 @@
             label5.ImageAlign = ContentAlignment.MiddleLeft;
             label5.Location = new Point(3, 291);
             label5.Name = "label5";
-            label5.Size = new Size(54, 21);
+            label5.Size = new Size(42, 21);
             label5.TabIndex = 2;
-            label5.Text = "PRICE";
+            label5.Text = "₱ 89";
             // 
             // linkLabel5
             // 
@@ -1036,10 +1036,10 @@
             linkLabel5.LinkColor = Color.Black;
             linkLabel5.Location = new Point(3, 228);
             linkLabel5.Name = "linkLabel5";
-            linkLabel5.Size = new Size(119, 28);
+            linkLabel5.Size = new Size(186, 28);
             linkLabel5.TabIndex = 1;
             linkLabel5.TabStop = true;
-            linkLabel5.Text = "ITEM NAME";
+            linkLabel5.Text = "(InSpeed) bike bag";
             // 
             // pictureBox6
             // 
@@ -1073,9 +1073,9 @@
             label6.ImageAlign = ContentAlignment.MiddleLeft;
             label6.Location = new Point(3, 291);
             label6.Name = "label6";
-            label6.Size = new Size(54, 21);
+            label6.Size = new Size(51, 21);
             label6.TabIndex = 2;
-            label6.Text = "PRICE";
+            label6.Text = "₱ 330";
             // 
             // linkLabel6
             // 
@@ -1085,10 +1085,10 @@
             linkLabel6.LinkColor = Color.Black;
             linkLabel6.Location = new Point(3, 228);
             linkLabel6.Name = "linkLabel6";
-            linkLabel6.Size = new Size(119, 28);
+            linkLabel6.Size = new Size(430, 28);
             linkLabel6.TabIndex = 1;
             linkLabel6.TabStop = true;
-            linkLabel6.Text = "ITEM NAME";
+            linkLabel6.Text = "Wireless Headset (Onikuma Gaming Headset)";
             // 
             // pictureBox7
             // 
@@ -1122,9 +1122,9 @@
             label7.ImageAlign = ContentAlignment.MiddleLeft;
             label7.Location = new Point(3, 291);
             label7.Name = "label7";
-            label7.Size = new Size(54, 21);
+            label7.Size = new Size(42, 21);
             label7.TabIndex = 2;
-            label7.Text = "PRICE";
+            label7.Text = "₱ 40";
             // 
             // linkLabel7
             // 
@@ -1134,10 +1134,10 @@
             linkLabel7.LinkColor = Color.Black;
             linkLabel7.Location = new Point(3, 228);
             linkLabel7.Name = "linkLabel7";
-            linkLabel7.Size = new Size(119, 28);
+            linkLabel7.Size = new Size(132, 28);
             linkLabel7.TabIndex = 1;
             linkLabel7.TabStop = true;
-            linkLabel7.Text = "ITEM NAME";
+            linkLabel7.Text = "Taslan Shorts";
             // 
             // pictureBox8
             // 
@@ -1171,9 +1171,9 @@
             label8.ImageAlign = ContentAlignment.MiddleLeft;
             label8.Location = new Point(3, 291);
             label8.Name = "label8";
-            label8.Size = new Size(54, 21);
+            label8.Size = new Size(51, 21);
             label8.TabIndex = 2;
-            label8.Text = "PRICE";
+            label8.Text = "₱ 699";
             // 
             // linkLabel8
             // 
@@ -1183,10 +1183,10 @@
             linkLabel8.LinkColor = Color.Black;
             linkLabel8.Location = new Point(3, 228);
             linkLabel8.Name = "linkLabel8";
-            linkLabel8.Size = new Size(119, 28);
+            linkLabel8.Size = new Size(364, 28);
             linkLabel8.TabIndex = 1;
             linkLabel8.TabStop = true;
-            linkLabel8.Text = "ITEM NAME";
+            linkLabel8.Text = "Wireless RGB mouse (Zeus x Gundam)";
             // 
             // pictureBox9
             // 
@@ -1220,9 +1220,9 @@
             label9.ImageAlign = ContentAlignment.MiddleLeft;
             label9.Location = new Point(3, 291);
             label9.Name = "label9";
-            label9.Size = new Size(54, 21);
+            label9.Size = new Size(51, 21);
             label9.TabIndex = 2;
-            label9.Text = "PRICE";
+            label9.Text = "₱ 270";
             // 
             // linkLabel9
             // 
@@ -1232,10 +1232,10 @@
             linkLabel9.LinkColor = Color.Black;
             linkLabel9.Location = new Point(3, 228);
             linkLabel9.Name = "linkLabel9";
-            linkLabel9.Size = new Size(119, 28);
+            linkLabel9.Size = new Size(218, 28);
             linkLabel9.TabIndex = 1;
             linkLabel9.TabStop = true;
-            linkLabel9.Text = "ITEM NAME";
+            linkLabel9.Text = "Chelsea boots (brown)";
             // 
             // pictureBox10
             // 
@@ -1269,9 +1269,9 @@
             label10.ImageAlign = ContentAlignment.MiddleLeft;
             label10.Location = new Point(3, 291);
             label10.Name = "label10";
-            label10.Size = new Size(54, 21);
+            label10.Size = new Size(37, 21);
             label10.TabIndex = 2;
-            label10.Text = "PRICE";
+            label10.Text = "180";
             // 
             // linkLabel10
             // 
@@ -1281,10 +1281,10 @@
             linkLabel10.LinkColor = Color.Black;
             linkLabel10.Location = new Point(3, 228);
             linkLabel10.Name = "linkLabel10";
-            linkLabel10.Size = new Size(119, 28);
+            linkLabel10.Size = new Size(192, 28);
             linkLabel10.TabIndex = 1;
             linkLabel10.TabStop = true;
-            linkLabel10.Text = "ITEM NAME";
+            linkLabel10.Text = "Lovito pocket pants";
             // 
             // pictureBox11
             // 
@@ -1318,9 +1318,9 @@
             label11.ImageAlign = ContentAlignment.MiddleLeft;
             label11.Location = new Point(3, 291);
             label11.Name = "label11";
-            label11.Size = new Size(54, 21);
+            label11.Size = new Size(51, 21);
             label11.TabIndex = 2;
-            label11.Text = "PRICE";
+            label11.Text = "₱ 550";
             // 
             // linkLabel11
             // 
@@ -1330,10 +1330,10 @@
             linkLabel11.LinkColor = Color.Black;
             linkLabel11.Location = new Point(3, 228);
             linkLabel11.Name = "linkLabel11";
-            linkLabel11.Size = new Size(119, 28);
+            linkLabel11.Size = new Size(394, 28);
             linkLabel11.TabIndex = 1;
             linkLabel11.TabStop = true;
-            linkLabel11.Text = "ITEM NAME";
+            linkLabel11.Text = "Bluetooth Earbuds (Robin Honkai Star Rail";
             // 
             // pictureBox12
             // 
@@ -1367,9 +1367,9 @@
             label12.ImageAlign = ContentAlignment.MiddleLeft;
             label12.Location = new Point(3, 291);
             label12.Name = "label12";
-            label12.Size = new Size(54, 21);
+            label12.Size = new Size(42, 21);
             label12.TabIndex = 2;
-            label12.Text = "PRICE";
+            label12.Text = "₱ 70";
             // 
             // linkLabel12
             // 
@@ -1379,10 +1379,10 @@
             linkLabel12.LinkColor = Color.Black;
             linkLabel12.Location = new Point(3, 228);
             linkLabel12.Name = "linkLabel12";
-            linkLabel12.Size = new Size(119, 28);
+            linkLabel12.Size = new Size(317, 28);
             linkLabel12.TabIndex = 1;
             linkLabel12.TabStop = true;
-            linkLabel12.Text = "ITEM NAME";
+            linkLabel12.Text = "wallet (black, dark brown, brown)";
             // 
             // pictureBox13
             // 
@@ -1416,9 +1416,9 @@
             PriceTag.ImageAlign = ContentAlignment.MiddleLeft;
             PriceTag.Location = new Point(3, 291);
             PriceTag.Name = "PriceTag";
-            PriceTag.Size = new Size(54, 21);
+            PriceTag.Size = new Size(51, 21);
             PriceTag.TabIndex = 2;
-            PriceTag.Text = "PRICE";
+            PriceTag.Text = "₱ 700";
             // 
             // linkLabel13
             // 
@@ -1428,10 +1428,10 @@
             linkLabel13.LinkColor = Color.Black;
             linkLabel13.Location = new Point(3, 228);
             linkLabel13.Name = "linkLabel13";
-            linkLabel13.Size = new Size(119, 28);
+            linkLabel13.Size = new Size(249, 28);
             linkLabel13.TabIndex = 1;
             linkLabel13.TabStop = true;
-            linkLabel13.Text = "ITEM NAME";
+            linkLabel13.Text = "10kg Workout Dumbbells ";
             // 
             // pictureBox1
             // 
@@ -1465,9 +1465,9 @@
             label13.ImageAlign = ContentAlignment.MiddleLeft;
             label13.Location = new Point(3, 291);
             label13.Name = "label13";
-            label13.Size = new Size(54, 21);
+            label13.Size = new Size(51, 21);
             label13.TabIndex = 2;
-            label13.Text = "PRICE";
+            label13.Text = "₱ 130";
             // 
             // linkLabel14
             // 
@@ -1477,10 +1477,10 @@
             linkLabel14.LinkColor = Color.Black;
             linkLabel14.Location = new Point(3, 228);
             linkLabel14.Name = "linkLabel14";
-            linkLabel14.Size = new Size(119, 28);
+            linkLabel14.Size = new Size(112, 28);
             linkLabel14.TabIndex = 1;
             linkLabel14.TabStop = true;
-            linkLabel14.Text = "ITEM NAME";
+            linkLabel14.Text = "Sunglasses";
             // 
             // pictureBox14
             // 
@@ -1514,9 +1514,9 @@
             label14.ImageAlign = ContentAlignment.MiddleLeft;
             label14.Location = new Point(3, 291);
             label14.Name = "label14";
-            label14.Size = new Size(54, 21);
+            label14.Size = new Size(42, 21);
             label14.TabIndex = 2;
-            label14.Text = "PRICE";
+            label14.Text = "₱ 75";
             // 
             // linkLabel15
             // 
@@ -1526,10 +1526,10 @@
             linkLabel15.LinkColor = Color.Black;
             linkLabel15.Location = new Point(3, 228);
             linkLabel15.Name = "linkLabel15";
-            linkLabel15.Size = new Size(119, 28);
+            linkLabel15.Size = new Size(131, 28);
             linkLabel15.TabIndex = 1;
             linkLabel15.TabStop = true;
-            linkLabel15.Text = "ITEM NAME";
+            linkLabel15.Text = "Adadis Socks";
             // 
             // pictureBox15
             // 
@@ -1563,9 +1563,9 @@
             label15.ImageAlign = ContentAlignment.MiddleLeft;
             label15.Location = new Point(3, 291);
             label15.Name = "label15";
-            label15.Size = new Size(54, 21);
+            label15.Size = new Size(51, 21);
             label15.TabIndex = 2;
-            label15.Text = "PRICE";
+            label15.Text = "₱ 821";
             // 
             // linkLabel16
             // 
@@ -1575,10 +1575,10 @@
             linkLabel16.LinkColor = Color.Black;
             linkLabel16.Location = new Point(3, 228);
             linkLabel16.Name = "linkLabel16";
-            linkLabel16.Size = new Size(119, 28);
+            linkLabel16.Size = new Size(386, 28);
             linkLabel16.TabIndex = 1;
             linkLabel16.TabStop = true;
-            linkLabel16.Text = "ITEM NAME";
+            linkLabel16.Text = "Gunpla Gundam kit HG (Barbatos, Aerial)";
             // 
             // pictureBox16
             // 
