@@ -5,8 +5,8 @@ namespace ITEC103_Finals
 {
     public partial class Form1 : Form
     {
-        int id = 1000;
-        string details;
+        int id = 1000, itm;//Note:yung item na int is kinukuha lang yung id ng item para sa detail buttons kasi fixed 1000 laging nalabas
+        string details = "det";
         public Form1()
         {
             InitializeComponent();
@@ -18,7 +18,7 @@ namespace ITEC103_Finals
         //adds id to the link labels
         private void addid()
         {
-            
+
             LinkLabel[] labels = new LinkLabel[] {
                  linkLabel1, linkLabel2, linkLabel3, linkLabel4,
                  linkLabel5, linkLabel6, linkLabel7, linkLabel8,
@@ -67,7 +67,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\1.jpg");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1001:
                     resetvisuals();
@@ -86,7 +87,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\2.jpg");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1002:
                     resetvisuals();
@@ -105,7 +107,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\3.jpg");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1003:
                     resetvisuals();
@@ -124,7 +127,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\4.jpg");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1004:
                     resetvisuals();
@@ -143,14 +147,15 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\5_def.png");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1005:
                     resetvisuals();
                     ItemViewName.Text = "Wireless Headset (Onikuma Gaming Headset)";
                     label18.Text = "259";
-                    label19.Visible = false; 
-                    button1.Visible = false; 
+                    label19.Visible = false;
+                    button1.Visible = false;
                     button2.Visible = false;
                     button3.Visible = false;
                     button4.Visible = false;
@@ -163,6 +168,7 @@ namespace ITEC103_Finals
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\6.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    itm = id;
                     break;
                 case 1006:
                     resetvisuals();
@@ -181,14 +187,15 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\7_def.png");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1007:
                     resetvisuals();
                     ItemViewName.Text = "Wireless RGB mouse (Zeus x Gundam) ";
                     label18.Text = "699";
                     label19.Visible = false;
-                    button1.Visible = false; 
+                    button1.Visible = false;
                     button2.Visible = false;
                     button3.Visible = false;
                     button4.Visible = false;
@@ -200,7 +207,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\8.jpg");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1008:
                     resetvisuals();
@@ -219,7 +227,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\9.jpg");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1009:
                     resetvisuals();
@@ -238,14 +247,15 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\10.jpg");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1010:
                     resetvisuals();
                     ItemViewName.Text = "Wireless RGB mouse (Zeus x Gundam) ";
                     label18.Text = "699";
                     label19.Visible = false;
-                    button1.Visible = false; 
+                    button1.Visible = false;
                     button2.Visible = false;
                     button3.Visible = false;
                     button4.Visible = false;
@@ -257,7 +267,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\11.jpg");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1011:
                     resetvisuals();
@@ -276,7 +287,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\12_def.png");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1012:
                     resetvisuals();
@@ -295,7 +307,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\13.jpg");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1013:
                     resetvisuals();
@@ -314,7 +327,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\14_def.png");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1014:
                     resetvisuals();
@@ -333,7 +347,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\15_def.png");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
                 case 1015:
                     resetvisuals();
@@ -352,7 +367,8 @@ namespace ITEC103_Finals
                     button9.Visible = false;
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\16.jpg");
-                    pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
+                    pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+                    itm = id;
                     break;
             }
         }
@@ -371,6 +387,156 @@ namespace ITEC103_Finals
             button8.Visible = true;
             button9.Visible = true;
             button10.Visible = true;
+        }
+
+        //Selects details based on click button (color, size, etc) (for buttons 1-5)(also changes images depending on the button clicked)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            switch(itm)
+            {
+                case 1000:
+                    details = button1.Text;
+                    break;
+                case 1001:
+                    details = button1.Text;
+                    break;
+                case 1004:
+                    details = button1.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\5_def.png");
+                    break;
+                case 1006:
+                    details = button1.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\7_def.png");
+                    break;
+                case 1008:
+                    details = button1.Text;
+                    break;
+                case 1009:
+                    details = button1.Text;
+                    break;
+                case 1011:
+                    details = button1.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\12_blk.png");
+                    break;
+                case 1013:
+                    details = button1.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\14_def.png");
+                    break;
+                case 1014:
+                    details = button1.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\15_def.png");
+                    break;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            switch (itm)
+            {
+                case 1000:
+                    details = button2.Text;
+                    break;
+                case 1001:
+                    details = button2.Text;
+                    break;
+                case 1004:
+                    details = button2.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\5_rd.png");
+                    break;
+                case 1006:
+                    details = button2.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\7_gry.png");
+                    break;
+                case 1008:
+                    details = button2.Text;
+                    break;
+                case 1009:
+                    details = button2.Text;
+                    break;
+                case 1011:
+                    details = button2.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\12_drkbrwn.png");
+                    break;
+                case 1013:
+                    details = button2.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\14-bl.png");
+                    break;
+                case 1014:
+                    details = button2.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\15_black.png");
+                    break;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            switch (itm)
+            {
+                case 1000:
+                    details = button3.Text;
+                    break;
+                case 1001:
+                    details = button3.Text;
+                    break;
+                case 1004:
+                    details = button3.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\5_blck.png");
+                    break;
+                case 1006:
+                    details = button3.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\7_bl.png");
+                    break;
+                case 1008:
+                    details = button3.Text;
+                    break;
+                case 1009:
+                    details = button3.Text;
+                    break;
+                case 1011:
+                    details = button3.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\12_def.png");
+                    break;
+                case 1013:
+                    details = button3.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\14_prpl.png");
+                    break;
+                case 1014:
+                    details = button3.Text;
+                    pictureBox17.Image = Image.FromFile(@"img\15_blkwht.png");
+                    break;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            switch (itm)
+            {
+                case 1001:
+                    details = button4.Text;
+                    break;
+                case 1008:
+                    details = button4.Text;
+                    break;
+                case 1009:
+                    details = button4.Text;
+                    break;
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            switch (itm)
+            {
+                case 1001:
+                    details = button5.Text;
+                    break;
+                case 1008:
+                    details = button5.Text;
+                    break;
+                case 1009:
+                    details = button5.Text;
+                    break;
+            }
         }
 
         //returns to homepage from items view
@@ -453,5 +619,6 @@ namespace ITEC103_Finals
         {
 
         }
+
     }
 }
