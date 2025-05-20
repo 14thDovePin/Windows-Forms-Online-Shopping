@@ -132,6 +132,7 @@
             linkLabel16 = new LinkLabel();
             pictureBox16 = new PictureBox();
             panel1 = new Panel();
+            button11 = new Button();
             SortSales = new ComboBox();
             SortPrice = new ComboBox();
             label16 = new Label();
@@ -1593,6 +1594,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(button11);
             panel1.Controls.Add(SortSales);
             panel1.Controls.Add(SortPrice);
             panel1.Controls.Add(label16);
@@ -1601,6 +1603,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1150, 40);
             panel1.TabIndex = 1;
+            // 
+            // button11
+            // 
+            button11.BackgroundImageLayout = ImageLayout.None;
+            button11.Font = new Font("Segoe UI", 10F);
+            button11.Location = new Point(333, 8);
+            button11.Name = "button11";
+            button11.Size = new Size(77, 28);
+            button11.TabIndex = 3;
+            button11.Text = "x Reset";
+            button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // SortSales
             // 
@@ -1616,11 +1630,13 @@
             // 
             SortPrice.Font = new Font("Segoe UI", 10F);
             SortPrice.FormattingEnabled = true;
+            SortPrice.Items.AddRange(new object[] { "High to Low", "Low to High" });
             SortPrice.Location = new Point(83, 9);
             SortPrice.Name = "SortPrice";
             SortPrice.Size = new Size(121, 25);
             SortPrice.TabIndex = 1;
             SortPrice.Text = " PRICE";
+            SortPrice.SelectedIndexChanged += SortPrice_SelectedIndexChanged;
             // 
             // label16
             // 
@@ -1875,6 +1891,7 @@
             ItemView_QtyIncrement.Text = "-";
             ItemView_QtyIncrement.TextAlign = ContentAlignment.TopCenter;
             ItemView_QtyIncrement.UseVisualStyleBackColor = true;
+            ItemView_QtyIncrement.Click += ItemView_QtyIncrement_Click;
             // 
             // ItemView_QtyDecrement
             // 
@@ -1886,6 +1903,7 @@
             ItemView_QtyDecrement.Text = "+";
             ItemView_QtyDecrement.TextAlign = ContentAlignment.TopCenter;
             ItemView_QtyDecrement.UseVisualStyleBackColor = true;
+            ItemView_QtyDecrement.Click += ItemView_QtyDecrement_Click;
             // 
             // ItemViewQty
             // 
@@ -2650,5 +2668,6 @@
         private Panel panel26;
         private Label label17;
         private Label label18;
+        private Button button11;
     }
 }

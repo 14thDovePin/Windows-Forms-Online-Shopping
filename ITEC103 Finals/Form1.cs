@@ -5,14 +5,23 @@ namespace ITEC103_Finals
 {
     public partial class Form1 : Form
     {
-        int id = 1000, itm;//Note:yung item na int is kinukuha lang yung id ng item para sa detail buttons kasi fixed 1000 laging nalabas
+        int qnty = 1;
+        int itm;//id para sa ibang switch
+        int[] id = { 899, 499, 1259, 2459, 89, 259, 40, 699, 270, 180, 550, 70, 700, 130, 75, 821 };
         string details = "det";
+
+        Panel[] panels = new Panel[16];
         public Form1()
         {
             InitializeComponent();
             addid();
+            storecontrols();
             // Set Form Size
             this.Size = new Size(1366, 768);
+            //displays default quantity to 1 
+            ItemViewQty.Text = qnty.ToString();
+            //sets reset button hidden
+            button11.Visible = false;
         }
 
         //adds id to the link labels
@@ -25,12 +34,19 @@ namespace ITEC103_Finals
                  linkLabel9, linkLabel10, linkLabel11, linkLabel12,
                  linkLabel13, linkLabel14, linkLabel15, linkLabel16
             };
-
+            Panel[] panels = {
+                panel2, panel3, panel4, panel5,
+                 panel6, panel7, panel8, panel9,
+                panel10, panel11, panel12, panel13,
+                panel14, panel15, panel16, panel17
+            };
             for (int i = 0; i < labels.Length; i++)
             {
-                labels[i].Tag = id + i;
+                labels[i].Tag = id[i];
                 labels[i].LinkClicked += LinkLabel_LinkClicked;
+                panels[i].Tag = id[i];
             }
+
         }
 
         //executes when link label is clicked
@@ -45,12 +61,13 @@ namespace ITEC103_Finals
             }
         }
 
+
         //shows products information
         private void showiteminfo(int id)
         {
             switch (id)
             {
-                case 1000:
+                case 899:
                     resetvisuals();
                     ItemViewName.Text = "Zeus K-55(Mechanical Keyboard";
                     label18.Text = "899";
@@ -70,7 +87,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1001:
+                case 499:
                     resetvisuals();
                     ItemViewName.Text = "Vintag Jacket (violet)";
                     label18.Text = "499";
@@ -90,7 +107,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1002:
+                case 1259:
                     resetvisuals();
                     ItemViewName.Text = "Mini electric fan";
                     label18.Text = "1259";
@@ -110,7 +127,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1003:
+                case 2459:
                     resetvisuals();
                     ItemViewName.Text = "Uratex inflatable mattress";
                     label18.Text = "2459";
@@ -130,7 +147,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1004:
+                case 89:
                     resetvisuals();
                     ItemViewName.Text = "(Inspeed) Bike Bag";
                     label18.Text = "89";
@@ -150,7 +167,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1005:
+                case 259:
                     resetvisuals();
                     ItemViewName.Text = "Wireless Headset (Onikuma Gaming Headset)";
                     label18.Text = "259";
@@ -170,7 +187,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
                     itm = id;
                     break;
-                case 1006:
+                case 40:
                     resetvisuals();
                     ItemViewName.Text = "Taslan Shorts";
                     label18.Text = "40";
@@ -190,7 +207,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1007:
+                case 699:
                     resetvisuals();
                     ItemViewName.Text = "Wireless RGB mouse (Zeus x Gundam) ";
                     label18.Text = "699";
@@ -210,10 +227,10 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1008:
+                case 270:
                     resetvisuals();
                     ItemViewName.Text = "Chelsea boots (brown)";
-                    label18.Text = "699";
+                    label18.Text = "270";
                     label19.Text = "Size";
                     button1.Text = "38";
                     button2.Text = "39";
@@ -230,7 +247,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1009:
+                case 180:
                     resetvisuals();
                     ItemViewName.Text = "Lovito pocket pants";
                     label18.Text = "180";
@@ -250,10 +267,10 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1010:
+                case 550:
                     resetvisuals();
-                    ItemViewName.Text = "Wireless RGB mouse (Zeus x Gundam) ";
-                    label18.Text = "699";
+                    ItemViewName.Text = "Bluetooth Earbuds (Robin Honkai Star Rail)  ";
+                    label18.Text = "550";
                     label19.Visible = false;
                     button1.Visible = false;
                     button2.Visible = false;
@@ -270,7 +287,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1011:
+                case 70:
                     resetvisuals();
                     ItemViewName.Text = "wallet (black, dark brown, brown) ";
                     label18.Text = "70";
@@ -290,7 +307,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1012:
+                case 700:
                     resetvisuals();
                     ItemViewName.Text = "10kg Workout Dumbbells";
                     label18.Text = "700";
@@ -310,7 +327,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1013:
+                case 130:
                     resetvisuals();
                     ItemViewName.Text = "Bike shades";
                     label18.Text = "130";
@@ -330,7 +347,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1014:
+                case 75:
                     resetvisuals();
                     ItemViewName.Text = "Adadis Socks (6pairs)";
                     label18.Text = "75";
@@ -350,7 +367,7 @@ namespace ITEC103_Finals
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
                     itm = id;
                     break;
-                case 1015:
+                case 821:
                     resetvisuals();
                     ItemViewName.Text = "Gunpla Gundam kit HG (Barbatos, Aerial)";
                     label18.Text = "821";
@@ -387,42 +404,44 @@ namespace ITEC103_Finals
             button8.Visible = true;
             button9.Visible = true;
             button10.Visible = true;
+            qnty = 1;
+            ItemViewQty.Text = qnty.ToString();
         }
 
         //Selects details based on click button (color, size, etc) (for buttons 1-5)(also changes images depending on the button clicked)
         private void button1_Click(object sender, EventArgs e)
         {
-            switch(itm)
+            switch (itm)
             {
-                case 1000:
+                case 899:
                     details = button1.Text;
                     break;
-                case 1001:
+                case 499:
                     details = button1.Text;
                     break;
-                case 1004:
+                case 89:
                     details = button1.Text;
                     pictureBox17.Image = Image.FromFile(@"img\5_def.png");
                     break;
-                case 1006:
+                case 40:
                     details = button1.Text;
                     pictureBox17.Image = Image.FromFile(@"img\7_def.png");
                     break;
-                case 1008:
+                case 270:
                     details = button1.Text;
                     break;
-                case 1009:
+                case 550:
                     details = button1.Text;
                     break;
-                case 1011:
+                case 700:
                     details = button1.Text;
                     pictureBox17.Image = Image.FromFile(@"img\12_blk.png");
                     break;
-                case 1013:
+                case 130:
                     details = button1.Text;
                     pictureBox17.Image = Image.FromFile(@"img\14_def.png");
                     break;
-                case 1014:
+                case 75:
                     details = button1.Text;
                     pictureBox17.Image = Image.FromFile(@"img\15_def.png");
                     break;
@@ -433,35 +452,35 @@ namespace ITEC103_Finals
         {
             switch (itm)
             {
-                case 1000:
+                case 899:
                     details = button2.Text;
                     break;
-                case 1001:
+                case 499:
                     details = button2.Text;
                     break;
-                case 1004:
+                case 89:
                     details = button2.Text;
                     pictureBox17.Image = Image.FromFile(@"img\5_rd.png");
                     break;
-                case 1006:
+                case 40:
                     details = button2.Text;
                     pictureBox17.Image = Image.FromFile(@"img\7_gry.png");
                     break;
-                case 1008:
+                case 270:
                     details = button2.Text;
                     break;
-                case 1009:
+                case 180:
                     details = button2.Text;
                     break;
-                case 1011:
+                case 70:
                     details = button2.Text;
                     pictureBox17.Image = Image.FromFile(@"img\12_drkbrwn.png");
                     break;
-                case 1013:
+                case 130:
                     details = button2.Text;
                     pictureBox17.Image = Image.FromFile(@"img\14-bl.png");
                     break;
-                case 1014:
+                case 75:
                     details = button2.Text;
                     pictureBox17.Image = Image.FromFile(@"img\15_black.png");
                     break;
@@ -472,35 +491,35 @@ namespace ITEC103_Finals
         {
             switch (itm)
             {
-                case 1000:
+                case 899:
                     details = button3.Text;
                     break;
-                case 1001:
+                case 499:
                     details = button3.Text;
                     break;
-                case 1004:
+                case 89:
                     details = button3.Text;
                     pictureBox17.Image = Image.FromFile(@"img\5_blck.png");
                     break;
-                case 1006:
+                case 40:
                     details = button3.Text;
                     pictureBox17.Image = Image.FromFile(@"img\7_bl.png");
                     break;
-                case 1008:
+                case 270:
                     details = button3.Text;
                     break;
-                case 1009:
+                case 180:
                     details = button3.Text;
                     break;
-                case 1011:
+                case 70:
                     details = button3.Text;
                     pictureBox17.Image = Image.FromFile(@"img\12_def.png");
                     break;
-                case 1013:
+                case 130:
                     details = button3.Text;
                     pictureBox17.Image = Image.FromFile(@"img\14_prpl.png");
                     break;
-                case 1014:
+                case 75:
                     details = button3.Text;
                     pictureBox17.Image = Image.FromFile(@"img\15_blkwht.png");
                     break;
@@ -511,13 +530,13 @@ namespace ITEC103_Finals
         {
             switch (itm)
             {
-                case 1001:
+                case 499:
                     details = button4.Text;
                     break;
-                case 1008:
+                case 270:
                     details = button4.Text;
                     break;
-                case 1009:
+                case 180:
                     details = button4.Text;
                     break;
             }
@@ -527,13 +546,13 @@ namespace ITEC103_Finals
         {
             switch (itm)
             {
-                case 1001:
+                case 499:
                     details = button5.Text;
                     break;
-                case 1008:
+                case 270:
                     details = button5.Text;
                     break;
-                case 1009:
+                case 180:
                     details = button5.Text;
                     break;
             }
@@ -543,6 +562,79 @@ namespace ITEC103_Finals
         private void CloseView_Click(object sender, EventArgs e)
         {
             HomePage_Panel.BringToFront();
+        }
+
+        //adds 1 to quantity if clicked
+        private void ItemView_QtyDecrement_Click(object sender, EventArgs e)
+        {
+            qnty++;
+            ItemViewQty.Text = qnty.ToString();
+        }
+
+        //subtracts 1 to quantity if clicked
+        private void ItemView_QtyIncrement_Click(object sender, EventArgs e)
+        {
+            if (qnty > 1)
+            {
+                qnty--;
+            }
+            ItemViewQty.Text = qnty.ToString();
+        }
+
+        //readds all controls depending on sort option
+        private void SortPrice_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (SortPrice.Text == "High to Low")
+            {
+                //sort by price
+                var sortedPanels = ItemList.Controls
+                .OfType<Panel>()
+                .OrderBy(p => (int)p.Tag);
+
+                foreach (Panel panel in sortedPanels)
+                {
+                    ItemList.Controls.SetChildIndex(panel, 0); // move panel to top
+                }
+                button11.Visible = true;
+            }
+            else if (SortPrice.Text == "Low to High")
+            {
+                //sort by price
+                var sortedPanels = ItemList.Controls
+                .OfType<Panel>()
+                .OrderByDescending(p => (int)p.Tag);
+
+                foreach (Panel panel in sortedPanels)
+                {
+                    ItemList.Controls.SetChildIndex(panel, 0); // move panel to top
+                }
+                button11.Visible = true;
+            }
+        }
+
+        //stores all controls in ItemList to an array
+        private void storecontrols()
+        {
+            foreach (Panel pnl in ItemList.Controls)
+            {
+                for (int i = 0; i < ItemList.Controls.Count; i++)
+                {
+                    panels[i] = (Panel)ItemList.Controls[i];
+                }
+            }
+        }
+
+        //resets the sort
+        private void button11_Click(object sender, EventArgs e)
+        {
+            ItemList.Controls.Clear();
+            for (int i = 0; i < panels.Length; i++)
+            {
+                ItemList.Controls.Add(panels[i]);
+            }
+            SortPrice.Text = "Price"; 
+            button11.Visible = false;
         }
 
         private void SignUp_FooterLbl_Click(object sender, EventArgs e)
