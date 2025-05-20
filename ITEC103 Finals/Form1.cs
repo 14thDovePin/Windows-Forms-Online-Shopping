@@ -633,7 +633,7 @@ namespace ITEC103_Finals
             {
                 ItemList.Controls.Add(panels[i]);
             }
-            SortPrice.Text = "Price"; 
+            SortPrice.Text = "Price";
             button11.Visible = false;
         }
 
@@ -712,5 +712,9 @@ namespace ITEC103_Finals
 
         }
 
+        private void tableLayoutPanel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

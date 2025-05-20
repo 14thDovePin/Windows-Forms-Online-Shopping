@@ -35,10 +35,10 @@
             PageLabel = new Label();
             CartIcon_PicBox = new PictureBox();
             ProfileIcon_PicBox = new PictureBox();
-            Search_Btn = new AddControls.RoundedButton();
+            Search_Btn = new ITEC103_Finals.AddControls.RoundedButton();
             NotificationIcon_PicBox = new PictureBox();
-            SearchBar_TxtBox = new AddControls.RoundedTextBox();
-            SignIn_Btn = new AddControls.RoundedButton();
+            SearchBar_TxtBox = new ITEC103_Finals.AddControls.RoundedTextBox();
+            SignIn_Btn = new ITEC103_Finals.AddControls.RoundedButton();
             SignIn_Container = new Panel();
             SignUpLink = new LinkLabel();
             ForgotPasswordLink = new LinkLabel();
@@ -59,7 +59,7 @@
             Password_SignUpTxtBox = new TextBox();
             RepeatPassword_SignUpLbl = new Label();
             RepeatPassword_SignUpTxtBox = new TextBox();
-            SignUp_Btn = new AddControls.RoundedButton();
+            SignUp_Btn = new ITEC103_Finals.AddControls.RoundedButton();
             SignIn_FooterLbl = new Label();
             tableLayout1 = new TableLayoutPanel();
             tableLayout2 = new TableLayoutPanel();
@@ -155,8 +155,8 @@
             ItemView_QtyIncrement = new Button();
             ItemView_QtyDecrement = new Button();
             ItemViewQty = new Label();
-            ItemView_Buy = new AddControls.RoundedButton();
-            ItemView_AddCart = new AddControls.RoundedButton();
+            ItemView_Buy = new ITEC103_Finals.AddControls.RoundedButton();
+            ItemView_AddCart = new ITEC103_Finals.AddControls.RoundedButton();
             label21 = new Label();
             label20 = new Label();
             label19 = new Label();
@@ -182,7 +182,7 @@
             CartUnitPrice = new Label();
             CartVariation = new Label();
             pictureBox18 = new PictureBox();
-            ToggleItem = new AddControls.ToggleButton();
+            ToggleItem = new ITEC103_Finals.AddControls.ToggleButton();
             panel26 = new Panel();
             CartItemName = new Label();
             panel22 = new Panel();
@@ -191,10 +191,66 @@
             label24 = new Label();
             label23 = new Label();
             panel18 = new Panel();
-            CartCheckOut = new AddControls.RoundedButton();
+            CartCheckOut = new ITEC103_Finals.AddControls.RoundedButton();
             CheckOutTotalPrice = new Label();
             TotalItemLabel = new Label();
             CartSelectAll = new CheckBox();
+            Profile_Panel = new Panel();
+            ProfileViewContainer = new Panel();
+            tableLayoutPanel4 = new TableLayoutPanel();
+            panel37 = new Panel();
+            pictureBox19 = new PictureBox();
+            tableLayoutPanel5 = new TableLayoutPanel();
+            panel44 = new Panel();
+            ChangeAddress = new LinkLabel();
+            ProfileAddress = new Label();
+            label40 = new Label();
+            panel43 = new Panel();
+            ChangeBirthday = new LinkLabel();
+            ProfileBirthday = new Label();
+            label38 = new Label();
+            panel42 = new Panel();
+            ChangeSex = new LinkLabel();
+            ProfileSex = new Label();
+            label36 = new Label();
+            panel41 = new Panel();
+            ChangePassword = new LinkLabel();
+            ProfilePassword = new Label();
+            label34 = new Label();
+            panel40 = new Panel();
+            ChangeEmail = new LinkLabel();
+            ProfileEmail = new Label();
+            label32 = new Label();
+            panel39 = new Panel();
+            ChangeUsername = new LinkLabel();
+            ProfileUsername = new Label();
+            label30 = new Label();
+            panel38 = new Panel();
+            CopyID = new LinkLabel();
+            ProfileAccID = new Label();
+            label27 = new Label();
+            panel47 = new Panel();
+            panel46 = new Panel();
+            ChangeProfilePicture = new LinkLabel();
+            panel45 = new Panel();
+            SaveProfile_Btn = new ITEC103_Finals.AddControls.RoundedButton();
+            ProfilePictureBox = new PictureBox();
+            panel36 = new Panel();
+            label22 = new Label();
+            panel35 = new Panel();
+            panel34 = new Panel();
+            panel33 = new Panel();
+            panel32 = new Panel();
+            panel27 = new Panel();
+            panel28 = new Panel();
+            panel31 = new Panel();
+            MyAccount_LinkLbl = new LinkLabel();
+            panel30 = new Panel();
+            MyPurchases_LinkLbl = new LinkLabel();
+            panel29 = new Panel();
+            Notification_LinkLbl = new LinkLabel();
+            ProfileUser_Lbl = new Label();
+            ProfileIcon = new PictureBox();
             TopNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
@@ -259,6 +315,30 @@
             panel26.SuspendLayout();
             panel22.SuspendLayout();
             panel18.SuspendLayout();
+            Profile_Panel.SuspendLayout();
+            ProfileViewContainer.SuspendLayout();
+            tableLayoutPanel4.SuspendLayout();
+            panel37.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
+            tableLayoutPanel5.SuspendLayout();
+            panel44.SuspendLayout();
+            panel43.SuspendLayout();
+            panel42.SuspendLayout();
+            panel41.SuspendLayout();
+            panel40.SuspendLayout();
+            panel39.SuspendLayout();
+            panel38.SuspendLayout();
+            panel47.SuspendLayout();
+            panel46.SuspendLayout();
+            panel45.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).BeginInit();
+            panel36.SuspendLayout();
+            panel27.SuspendLayout();
+            panel28.SuspendLayout();
+            panel31.SuspendLayout();
+            panel30.SuspendLayout();
+            panel29.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ProfileIcon).BeginInit();
             SuspendLayout();
             // 
             // TopNavBar
@@ -2389,12 +2469,643 @@
             CartSelectAll.Text = "Select All";
             CartSelectAll.UseVisualStyleBackColor = true;
             // 
+            // Profile_Panel
+            // 
+            Profile_Panel.BackColor = Color.FromArgb(224, 224, 224);
+            Profile_Panel.Controls.Add(ProfileViewContainer);
+            Profile_Panel.Controls.Add(panel35);
+            Profile_Panel.Controls.Add(panel34);
+            Profile_Panel.Controls.Add(panel33);
+            Profile_Panel.Controls.Add(panel32);
+            Profile_Panel.Controls.Add(panel27);
+            Profile_Panel.Dock = DockStyle.Fill;
+            Profile_Panel.Location = new Point(0, 69);
+            Profile_Panel.Name = "Profile_Panel";
+            Profile_Panel.Size = new Size(1350, 660);
+            Profile_Panel.TabIndex = 3;
+            // 
+            // ProfileViewContainer
+            // 
+            ProfileViewContainer.BackColor = Color.White;
+            ProfileViewContainer.Controls.Add(tableLayoutPanel4);
+            ProfileViewContainer.Controls.Add(panel36);
+            ProfileViewContainer.Dock = DockStyle.Fill;
+            ProfileViewContainer.Location = new Point(322, 34);
+            ProfileViewContainer.Name = "ProfileViewContainer";
+            ProfileViewContainer.Size = new Size(970, 554);
+            ProfileViewContainer.TabIndex = 5;
+            // 
+            // tableLayoutPanel4
+            // 
+            tableLayoutPanel4.ColumnCount = 3;
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65.32663F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 1.00502515F));
+            tableLayoutPanel4.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.6683426F));
+            tableLayoutPanel4.Controls.Add(panel37, 1, 0);
+            tableLayoutPanel4.Controls.Add(tableLayoutPanel5, 0, 0);
+            tableLayoutPanel4.Controls.Add(panel47, 2, 0);
+            tableLayoutPanel4.Dock = DockStyle.Fill;
+            tableLayoutPanel4.Location = new Point(0, 87);
+            tableLayoutPanel4.Name = "tableLayoutPanel4";
+            tableLayoutPanel4.RowCount = 1;
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.Size = new Size(970, 467);
+            tableLayoutPanel4.TabIndex = 1;
+            tableLayoutPanel4.Paint += tableLayoutPanel4_Paint;
+            // 
+            // panel37
+            // 
+            panel37.Controls.Add(pictureBox19);
+            panel37.Dock = DockStyle.Fill;
+            panel37.Location = new Point(636, 3);
+            panel37.Name = "panel37";
+            panel37.Size = new Size(3, 461);
+            panel37.TabIndex = 0;
+            // 
+            // pictureBox19
+            // 
+            pictureBox19.BackColor = Color.Black;
+            pictureBox19.BackgroundImageLayout = ImageLayout.None;
+            pictureBox19.Dock = DockStyle.Fill;
+            pictureBox19.Location = new Point(0, 0);
+            pictureBox19.Margin = new Padding(3, 2, 3, 2);
+            pictureBox19.Name = "pictureBox19";
+            pictureBox19.Size = new Size(3, 461);
+            pictureBox19.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox19.TabIndex = 13;
+            pictureBox19.TabStop = false;
+            // 
+            // tableLayoutPanel5
+            // 
+            tableLayoutPanel5.ColumnCount = 1;
+            tableLayoutPanel5.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel5.Controls.Add(panel44, 0, 6);
+            tableLayoutPanel5.Controls.Add(panel43, 0, 5);
+            tableLayoutPanel5.Controls.Add(panel42, 0, 4);
+            tableLayoutPanel5.Controls.Add(panel41, 0, 3);
+            tableLayoutPanel5.Controls.Add(panel40, 0, 2);
+            tableLayoutPanel5.Controls.Add(panel39, 0, 1);
+            tableLayoutPanel5.Controls.Add(panel38, 0, 0);
+            tableLayoutPanel5.Dock = DockStyle.Fill;
+            tableLayoutPanel5.Font = new Font("Segoe UI", 10F);
+            tableLayoutPanel5.Location = new Point(3, 3);
+            tableLayoutPanel5.Name = "tableLayoutPanel5";
+            tableLayoutPanel5.RowCount = 7;
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 14.2857141F));
+            tableLayoutPanel5.Size = new Size(627, 461);
+            tableLayoutPanel5.TabIndex = 1;
+            // 
+            // panel44
+            // 
+            panel44.Controls.Add(ChangeAddress);
+            panel44.Controls.Add(ProfileAddress);
+            panel44.Controls.Add(label40);
+            panel44.Location = new Point(3, 393);
+            panel44.Name = "panel44";
+            panel44.Size = new Size(618, 57);
+            panel44.TabIndex = 4;
+            // 
+            // ChangeAddress
+            // 
+            ChangeAddress.ActiveLinkColor = Color.SteelBlue;
+            ChangeAddress.AutoSize = true;
+            ChangeAddress.Font = new Font("Segoe UI", 10F);
+            ChangeAddress.LinkColor = Color.DarkSlateGray;
+            ChangeAddress.Location = new Point(547, 20);
+            ChangeAddress.Name = "ChangeAddress";
+            ChangeAddress.Size = new Size(56, 19);
+            ChangeAddress.TabIndex = 2;
+            ChangeAddress.TabStop = true;
+            ChangeAddress.Text = "Change";
+            // 
+            // ProfileAddress
+            // 
+            ProfileAddress.AutoSize = true;
+            ProfileAddress.Font = new Font("Segoe UI", 10F);
+            ProfileAddress.Location = new Point(170, 20);
+            ProfileAddress.Name = "ProfileAddress";
+            ProfileAddress.Size = new Size(51, 19);
+            ProfileAddress.TabIndex = 1;
+            ProfileAddress.Text = "-------";
+            // 
+            // label40
+            // 
+            label40.AutoSize = true;
+            label40.Font = new Font("Segoe UI", 10F);
+            label40.Location = new Point(43, 20);
+            label40.Name = "label40";
+            label40.Size = new Size(58, 19);
+            label40.TabIndex = 0;
+            label40.Text = "Address";
+            // 
+            // panel43
+            // 
+            panel43.Controls.Add(ChangeBirthday);
+            panel43.Controls.Add(ProfileBirthday);
+            panel43.Controls.Add(label38);
+            panel43.Location = new Point(3, 328);
+            panel43.Name = "panel43";
+            panel43.Size = new Size(618, 57);
+            panel43.TabIndex = 4;
+            // 
+            // ChangeBirthday
+            // 
+            ChangeBirthday.ActiveLinkColor = Color.SteelBlue;
+            ChangeBirthday.AutoSize = true;
+            ChangeBirthday.Font = new Font("Segoe UI", 10F);
+            ChangeBirthday.LinkColor = Color.DarkSlateGray;
+            ChangeBirthday.Location = new Point(547, 20);
+            ChangeBirthday.Name = "ChangeBirthday";
+            ChangeBirthday.Size = new Size(56, 19);
+            ChangeBirthday.TabIndex = 2;
+            ChangeBirthday.TabStop = true;
+            ChangeBirthday.Text = "Change";
+            // 
+            // ProfileBirthday
+            // 
+            ProfileBirthday.AutoSize = true;
+            ProfileBirthday.Font = new Font("Segoe UI", 10F);
+            ProfileBirthday.Location = new Point(170, 20);
+            ProfileBirthday.Name = "ProfileBirthday";
+            ProfileBirthday.Size = new Size(97, 19);
+            ProfileBirthday.TabIndex = 1;
+            ProfileBirthday.Text = "MM/DD/YYYY";
+            // 
+            // label38
+            // 
+            label38.AutoSize = true;
+            label38.Font = new Font("Segoe UI", 10F);
+            label38.Location = new Point(43, 20);
+            label38.Name = "label38";
+            label38.Size = new Size(60, 19);
+            label38.TabIndex = 0;
+            label38.Text = "Birthday";
+            // 
+            // panel42
+            // 
+            panel42.Controls.Add(ChangeSex);
+            panel42.Controls.Add(ProfileSex);
+            panel42.Controls.Add(label36);
+            panel42.Location = new Point(3, 263);
+            panel42.Name = "panel42";
+            panel42.Size = new Size(618, 57);
+            panel42.TabIndex = 4;
+            // 
+            // ChangeSex
+            // 
+            ChangeSex.ActiveLinkColor = Color.SteelBlue;
+            ChangeSex.AutoSize = true;
+            ChangeSex.Font = new Font("Segoe UI", 10F);
+            ChangeSex.LinkColor = Color.DarkSlateGray;
+            ChangeSex.Location = new Point(547, 20);
+            ChangeSex.Name = "ChangeSex";
+            ChangeSex.Size = new Size(56, 19);
+            ChangeSex.TabIndex = 2;
+            ChangeSex.TabStop = true;
+            ChangeSex.Text = "Change";
+            // 
+            // ProfileSex
+            // 
+            ProfileSex.AutoSize = true;
+            ProfileSex.Font = new Font("Segoe UI", 10F);
+            ProfileSex.Location = new Point(170, 20);
+            ProfileSex.Name = "ProfileSex";
+            ProfileSex.Size = new Size(39, 19);
+            ProfileSex.TabIndex = 1;
+            ProfileSex.Text = "Male";
+            // 
+            // label36
+            // 
+            label36.AutoSize = true;
+            label36.Font = new Font("Segoe UI", 10F);
+            label36.Location = new Point(43, 20);
+            label36.Name = "label36";
+            label36.Size = new Size(29, 19);
+            label36.TabIndex = 0;
+            label36.Text = "Sex";
+            // 
+            // panel41
+            // 
+            panel41.Controls.Add(ChangePassword);
+            panel41.Controls.Add(ProfilePassword);
+            panel41.Controls.Add(label34);
+            panel41.Location = new Point(3, 198);
+            panel41.Name = "panel41";
+            panel41.Size = new Size(618, 57);
+            panel41.TabIndex = 4;
+            // 
+            // ChangePassword
+            // 
+            ChangePassword.ActiveLinkColor = Color.SteelBlue;
+            ChangePassword.AutoSize = true;
+            ChangePassword.Font = new Font("Segoe UI", 10F);
+            ChangePassword.LinkColor = Color.DarkSlateGray;
+            ChangePassword.Location = new Point(547, 20);
+            ChangePassword.Name = "ChangePassword";
+            ChangePassword.Size = new Size(56, 19);
+            ChangePassword.TabIndex = 2;
+            ChangePassword.TabStop = true;
+            ChangePassword.Text = "Change";
+            // 
+            // ProfilePassword
+            // 
+            ProfilePassword.AutoSize = true;
+            ProfilePassword.Font = new Font("Segoe UI", 10F);
+            ProfilePassword.Location = new Point(170, 20);
+            ProfilePassword.Name = "ProfilePassword";
+            ProfilePassword.Size = new Size(63, 19);
+            ProfilePassword.TabIndex = 1;
+            ProfilePassword.Text = "*********";
+            // 
+            // label34
+            // 
+            label34.AutoSize = true;
+            label34.Font = new Font("Segoe UI", 10F);
+            label34.Location = new Point(43, 20);
+            label34.Name = "label34";
+            label34.Size = new Size(67, 19);
+            label34.TabIndex = 0;
+            label34.Text = "Password";
+            // 
+            // panel40
+            // 
+            panel40.Controls.Add(ChangeEmail);
+            panel40.Controls.Add(ProfileEmail);
+            panel40.Controls.Add(label32);
+            panel40.Location = new Point(3, 133);
+            panel40.Name = "panel40";
+            panel40.Size = new Size(618, 57);
+            panel40.TabIndex = 4;
+            // 
+            // ChangeEmail
+            // 
+            ChangeEmail.ActiveLinkColor = Color.SteelBlue;
+            ChangeEmail.AutoSize = true;
+            ChangeEmail.Font = new Font("Segoe UI", 10F);
+            ChangeEmail.LinkColor = Color.DarkSlateGray;
+            ChangeEmail.Location = new Point(547, 20);
+            ChangeEmail.Name = "ChangeEmail";
+            ChangeEmail.Size = new Size(56, 19);
+            ChangeEmail.TabIndex = 2;
+            ChangeEmail.TabStop = true;
+            ChangeEmail.Text = "Change";
+            // 
+            // ProfileEmail
+            // 
+            ProfileEmail.AutoSize = true;
+            ProfileEmail.Font = new Font("Segoe UI", 10F);
+            ProfileEmail.Location = new Point(170, 20);
+            ProfileEmail.Name = "ProfileEmail";
+            ProfileEmail.Size = new Size(160, 19);
+            ProfileEmail.TabIndex = 1;
+            ProfileEmail.Text = "juandelacruz@gmail.com";
+            // 
+            // label32
+            // 
+            label32.AutoSize = true;
+            label32.Font = new Font("Segoe UI", 10F);
+            label32.Location = new Point(43, 20);
+            label32.Name = "label32";
+            label32.Size = new Size(41, 19);
+            label32.TabIndex = 0;
+            label32.Text = "Email";
+            // 
+            // panel39
+            // 
+            panel39.Controls.Add(ChangeUsername);
+            panel39.Controls.Add(ProfileUsername);
+            panel39.Controls.Add(label30);
+            panel39.Location = new Point(3, 68);
+            panel39.Name = "panel39";
+            panel39.Size = new Size(618, 57);
+            panel39.TabIndex = 3;
+            // 
+            // ChangeUsername
+            // 
+            ChangeUsername.ActiveLinkColor = Color.SteelBlue;
+            ChangeUsername.AutoSize = true;
+            ChangeUsername.Font = new Font("Segoe UI", 10F);
+            ChangeUsername.LinkColor = Color.DarkSlateGray;
+            ChangeUsername.Location = new Point(547, 20);
+            ChangeUsername.Name = "ChangeUsername";
+            ChangeUsername.Size = new Size(56, 19);
+            ChangeUsername.TabIndex = 2;
+            ChangeUsername.TabStop = true;
+            ChangeUsername.Text = "Change";
+            // 
+            // ProfileUsername
+            // 
+            ProfileUsername.AutoSize = true;
+            ProfileUsername.Font = new Font("Segoe UI", 10F);
+            ProfileUsername.Location = new Point(170, 20);
+            ProfileUsername.Name = "ProfileUsername";
+            ProfileUsername.Size = new Size(100, 19);
+            ProfileUsername.TabIndex = 1;
+            ProfileUsername.Text = "Juan Dela Cruz";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Font = new Font("Segoe UI", 10F);
+            label30.Location = new Point(43, 20);
+            label30.Name = "label30";
+            label30.Size = new Size(71, 19);
+            label30.TabIndex = 0;
+            label30.Text = "Username";
+            // 
+            // panel38
+            // 
+            panel38.Controls.Add(CopyID);
+            panel38.Controls.Add(ProfileAccID);
+            panel38.Controls.Add(label27);
+            panel38.Dock = DockStyle.Fill;
+            panel38.Location = new Point(3, 3);
+            panel38.Name = "panel38";
+            panel38.Size = new Size(621, 59);
+            panel38.TabIndex = 0;
+            // 
+            // CopyID
+            // 
+            CopyID.ActiveLinkColor = Color.SteelBlue;
+            CopyID.AutoSize = true;
+            CopyID.Font = new Font("Segoe UI", 10F);
+            CopyID.LinkColor = Color.DarkSlateGray;
+            CopyID.Location = new Point(547, 20);
+            CopyID.Name = "CopyID";
+            CopyID.Size = new Size(41, 19);
+            CopyID.TabIndex = 2;
+            CopyID.TabStop = true;
+            CopyID.Text = "Copy";
+            // 
+            // ProfileAccID
+            // 
+            ProfileAccID.AutoSize = true;
+            ProfileAccID.Font = new Font("Segoe UI", 10F);
+            ProfileAccID.Location = new Point(170, 20);
+            ProfileAccID.Name = "ProfileAccID";
+            ProfileAccID.Size = new Size(121, 19);
+            ProfileAccID.TabIndex = 1;
+            ProfileAccID.Text = "XXXXXXXXXXXXXX";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Segoe UI", 10F);
+            label27.Location = new Point(43, 20);
+            label27.Name = "label27";
+            label27.Size = new Size(77, 19);
+            label27.TabIndex = 0;
+            label27.Text = "Account ID";
+            // 
+            // panel47
+            // 
+            panel47.Controls.Add(panel46);
+            panel47.Controls.Add(panel45);
+            panel47.Controls.Add(ProfilePictureBox);
+            panel47.Dock = DockStyle.Fill;
+            panel47.Location = new Point(645, 3);
+            panel47.Name = "panel47";
+            panel47.Size = new Size(322, 461);
+            panel47.TabIndex = 2;
+            // 
+            // panel46
+            // 
+            panel46.Controls.Add(ChangeProfilePicture);
+            panel46.Dock = DockStyle.Fill;
+            panel46.Location = new Point(0, 298);
+            panel46.Name = "panel46";
+            panel46.Size = new Size(322, 62);
+            panel46.TabIndex = 2;
+            // 
+            // ChangeProfilePicture
+            // 
+            ChangeProfilePicture.ActiveLinkColor = Color.SteelBlue;
+            ChangeProfilePicture.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            ChangeProfilePicture.AutoSize = true;
+            ChangeProfilePicture.Font = new Font("Segoe UI", 14F);
+            ChangeProfilePicture.LinkColor = Color.DarkSlateGray;
+            ChangeProfilePicture.Location = new Point(120, 0);
+            ChangeProfilePicture.Name = "ChangeProfilePicture";
+            ChangeProfilePicture.Size = new Size(77, 25);
+            ChangeProfilePicture.TabIndex = 0;
+            ChangeProfilePicture.TabStop = true;
+            ChangeProfilePicture.Text = "Change";
+            // 
+            // panel45
+            // 
+            panel45.Controls.Add(SaveProfile_Btn);
+            panel45.Dock = DockStyle.Bottom;
+            panel45.Location = new Point(0, 360);
+            panel45.Name = "panel45";
+            panel45.Size = new Size(322, 101);
+            panel45.TabIndex = 1;
+            // 
+            // SaveProfile_Btn
+            // 
+            SaveProfile_Btn.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            SaveProfile_Btn.BackColor = Color.Teal;
+            SaveProfile_Btn.BackgroundColor = Color.Teal;
+            SaveProfile_Btn.BorderColor = Color.PaleVioletRed;
+            SaveProfile_Btn.BorderRadius = 57;
+            SaveProfile_Btn.BorderSize = 0;
+            SaveProfile_Btn.FlatAppearance.BorderSize = 0;
+            SaveProfile_Btn.FlatStyle = FlatStyle.Flat;
+            SaveProfile_Btn.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            SaveProfile_Btn.ForeColor = Color.White;
+            SaveProfile_Btn.Location = new Point(70, 21);
+            SaveProfile_Btn.Name = "SaveProfile_Btn";
+            SaveProfile_Btn.Size = new Size(188, 57);
+            SaveProfile_Btn.TabIndex = 0;
+            SaveProfile_Btn.Text = "SAVE";
+            SaveProfile_Btn.TextColor = Color.White;
+            SaveProfile_Btn.UseVisualStyleBackColor = false;
+            // 
+            // ProfilePictureBox
+            // 
+            ProfilePictureBox.BackColor = Color.Gray;
+            ProfilePictureBox.Dock = DockStyle.Top;
+            ProfilePictureBox.Location = new Point(0, 0);
+            ProfilePictureBox.Name = "ProfilePictureBox";
+            ProfilePictureBox.Size = new Size(322, 298);
+            ProfilePictureBox.TabIndex = 0;
+            ProfilePictureBox.TabStop = false;
+            // 
+            // panel36
+            // 
+            panel36.BackColor = Color.Teal;
+            panel36.Controls.Add(label22);
+            panel36.Dock = DockStyle.Top;
+            panel36.Location = new Point(0, 0);
+            panel36.Name = "panel36";
+            panel36.Size = new Size(970, 87);
+            panel36.TabIndex = 0;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label22.ForeColor = Color.White;
+            label22.Location = new Point(34, 18);
+            label22.Name = "label22";
+            label22.Size = new Size(203, 50);
+            label22.TabIndex = 0;
+            label22.Text = "My Profile";
+            // 
+            // panel35
+            // 
+            panel35.Dock = DockStyle.Bottom;
+            panel35.Location = new Point(322, 588);
+            panel35.Name = "panel35";
+            panel35.Size = new Size(970, 72);
+            panel35.TabIndex = 4;
+            // 
+            // panel34
+            // 
+            panel34.Dock = DockStyle.Right;
+            panel34.Location = new Point(1292, 34);
+            panel34.Name = "panel34";
+            panel34.Size = new Size(58, 626);
+            panel34.TabIndex = 3;
+            // 
+            // panel33
+            // 
+            panel33.Dock = DockStyle.Left;
+            panel33.Location = new Point(302, 34);
+            panel33.Name = "panel33";
+            panel33.Size = new Size(20, 626);
+            panel33.TabIndex = 2;
+            // 
+            // panel32
+            // 
+            panel32.Dock = DockStyle.Top;
+            panel32.Location = new Point(302, 0);
+            panel32.Name = "panel32";
+            panel32.Size = new Size(1048, 34);
+            panel32.TabIndex = 1;
+            // 
+            // panel27
+            // 
+            panel27.Controls.Add(panel28);
+            panel27.Dock = DockStyle.Left;
+            panel27.Location = new Point(0, 0);
+            panel27.Name = "panel27";
+            panel27.Size = new Size(302, 660);
+            panel27.TabIndex = 0;
+            // 
+            // panel28
+            // 
+            panel28.BackColor = Color.White;
+            panel28.Controls.Add(panel31);
+            panel28.Controls.Add(panel30);
+            panel28.Controls.Add(panel29);
+            panel28.Controls.Add(ProfileUser_Lbl);
+            panel28.Controls.Add(ProfileIcon);
+            panel28.Location = new Point(17, 32);
+            panel28.Name = "panel28";
+            panel28.Size = new Size(270, 267);
+            panel28.TabIndex = 0;
+            // 
+            // panel31
+            // 
+            panel31.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            panel31.Controls.Add(MyAccount_LinkLbl);
+            panel31.Location = new Point(0, 89);
+            panel31.Name = "panel31";
+            panel31.Size = new Size(270, 50);
+            panel31.TabIndex = 4;
+            // 
+            // MyAccount_LinkLbl
+            // 
+            MyAccount_LinkLbl.ActiveLinkColor = Color.Teal;
+            MyAccount_LinkLbl.AutoSize = true;
+            MyAccount_LinkLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            MyAccount_LinkLbl.LinkColor = Color.Black;
+            MyAccount_LinkLbl.Location = new Point(50, 15);
+            MyAccount_LinkLbl.Name = "MyAccount_LinkLbl";
+            MyAccount_LinkLbl.Size = new Size(98, 21);
+            MyAccount_LinkLbl.TabIndex = 0;
+            MyAccount_LinkLbl.TabStop = true;
+            MyAccount_LinkLbl.Text = "My Account";
+            MyAccount_LinkLbl.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel30
+            // 
+            panel30.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            panel30.Controls.Add(MyPurchases_LinkLbl);
+            panel30.Location = new Point(0, 145);
+            panel30.Name = "panel30";
+            panel30.Size = new Size(270, 50);
+            panel30.TabIndex = 3;
+            // 
+            // MyPurchases_LinkLbl
+            // 
+            MyPurchases_LinkLbl.ActiveLinkColor = Color.Teal;
+            MyPurchases_LinkLbl.AutoSize = true;
+            MyPurchases_LinkLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            MyPurchases_LinkLbl.LinkColor = Color.Black;
+            MyPurchases_LinkLbl.Location = new Point(50, 15);
+            MyPurchases_LinkLbl.Name = "MyPurchases_LinkLbl";
+            MyPurchases_LinkLbl.Size = new Size(109, 21);
+            MyPurchases_LinkLbl.TabIndex = 1;
+            MyPurchases_LinkLbl.TabStop = true;
+            MyPurchases_LinkLbl.Text = "My Purchases";
+            MyPurchases_LinkLbl.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel29
+            // 
+            panel29.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            panel29.Controls.Add(Notification_LinkLbl);
+            panel29.Location = new Point(0, 201);
+            panel29.Name = "panel29";
+            panel29.Size = new Size(270, 50);
+            panel29.TabIndex = 2;
+            // 
+            // Notification_LinkLbl
+            // 
+            Notification_LinkLbl.ActiveLinkColor = Color.Teal;
+            Notification_LinkLbl.AutoSize = true;
+            Notification_LinkLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            Notification_LinkLbl.LinkColor = Color.Black;
+            Notification_LinkLbl.Location = new Point(50, 15);
+            Notification_LinkLbl.Name = "Notification_LinkLbl";
+            Notification_LinkLbl.Size = new Size(97, 21);
+            Notification_LinkLbl.TabIndex = 2;
+            Notification_LinkLbl.TabStop = true;
+            Notification_LinkLbl.Text = "Notification";
+            Notification_LinkLbl.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // ProfileUser_Lbl
+            // 
+            ProfileUser_Lbl.AutoSize = true;
+            ProfileUser_Lbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ProfileUser_Lbl.Location = new Point(84, 31);
+            ProfileUser_Lbl.Name = "ProfileUser_Lbl";
+            ProfileUser_Lbl.Size = new Size(83, 21);
+            ProfileUser_Lbl.TabIndex = 1;
+            ProfileUser_Lbl.Text = "Username";
+            // 
+            // ProfileIcon
+            // 
+            ProfileIcon.BackColor = Color.DimGray;
+            ProfileIcon.Location = new Point(13, 11);
+            ProfileIcon.Name = "ProfileIcon";
+            ProfileIcon.Size = new Size(65, 65);
+            ProfileIcon.TabIndex = 0;
+            ProfileIcon.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 244);
             ClientSize = new Size(1350, 729);
+            Controls.Add(Profile_Panel);
             Controls.Add(HomePage_Panel);
             Controls.Add(ItemView_Panel);
             Controls.Add(Cart_Panel);
@@ -2498,6 +3209,43 @@
             panel22.PerformLayout();
             panel18.ResumeLayout(false);
             panel18.PerformLayout();
+            Profile_Panel.ResumeLayout(false);
+            ProfileViewContainer.ResumeLayout(false);
+            tableLayoutPanel4.ResumeLayout(false);
+            panel37.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
+            tableLayoutPanel5.ResumeLayout(false);
+            panel44.ResumeLayout(false);
+            panel44.PerformLayout();
+            panel43.ResumeLayout(false);
+            panel43.PerformLayout();
+            panel42.ResumeLayout(false);
+            panel42.PerformLayout();
+            panel41.ResumeLayout(false);
+            panel41.PerformLayout();
+            panel40.ResumeLayout(false);
+            panel40.PerformLayout();
+            panel39.ResumeLayout(false);
+            panel39.PerformLayout();
+            panel38.ResumeLayout(false);
+            panel38.PerformLayout();
+            panel47.ResumeLayout(false);
+            panel46.ResumeLayout(false);
+            panel46.PerformLayout();
+            panel45.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ProfilePictureBox).EndInit();
+            panel36.ResumeLayout(false);
+            panel36.PerformLayout();
+            panel27.ResumeLayout(false);
+            panel28.ResumeLayout(false);
+            panel28.PerformLayout();
+            panel31.ResumeLayout(false);
+            panel31.PerformLayout();
+            panel30.ResumeLayout(false);
+            panel30.PerformLayout();
+            panel29.ResumeLayout(false);
+            panel29.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ProfileIcon).EndInit();
             ResumeLayout(false);
         }
 
@@ -2669,5 +3417,61 @@
         private Label label17;
         private Label label18;
         private Button button11;
+        private Panel Profile_Panel;
+        private Panel panel27;
+        private Panel panel28;
+        private Panel panel31;
+        private Panel panel30;
+        private Panel panel29;
+        private Label ProfileUser_Lbl;
+        private PictureBox ProfileIcon;
+        private LinkLabel MyAccount_LinkLbl;
+        private LinkLabel MyPurchases_LinkLbl;
+        private LinkLabel Notification_LinkLbl;
+        private Panel panel33;
+        private Panel panel32;
+        private Panel ProfileViewContainer;
+        private Panel panel36;
+        private Panel panel35;
+        private Panel panel34;
+        private TableLayoutPanel tableLayoutPanel4;
+        private Panel panel37;
+        private Label label22;
+        private TableLayoutPanel tableLayoutPanel5;
+        private Panel panel44;
+        private LinkLabel ChangeAddress;
+        private Label ProfileAddress;
+        private Label label40;
+        private Panel panel43;
+        private LinkLabel ChangeBirthday;
+        private Label ProfileBirthday;
+        private Label label38;
+        private Panel panel42;
+        private LinkLabel ChangeSex;
+        private Label ProfileSex;
+        private Label label36;
+        private Panel panel41;
+        private LinkLabel ChangePassword;
+        private Label ProfilePassword;
+        private Label label34;
+        private Panel panel40;
+        private LinkLabel ChangeEmail;
+        private Label ProfileEmail;
+        private Label label32;
+        private Panel panel39;
+        private LinkLabel ChangeUsername;
+        private Label ProfileUsername;
+        private Label label30;
+        private Panel panel38;
+        private LinkLabel CopyID;
+        private Label ProfileAccID;
+        private Label label27;
+        private Panel panel47;
+        private PictureBox ProfilePictureBox;
+        private Panel panel46;
+        private LinkLabel ChangeProfilePicture;
+        private Panel panel45;
+        private AddControls.RoundedButton SaveProfile_Btn;
+        private PictureBox pictureBox19;
     }
 }
