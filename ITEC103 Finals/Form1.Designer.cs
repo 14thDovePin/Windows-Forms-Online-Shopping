@@ -370,6 +370,7 @@
             Logo_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
             Logo_PicBox.TabIndex = 0;
             Logo_PicBox.TabStop = false;
+            Logo_PicBox.Click += Logo_PicBox_Click;
             // 
             // Line_PicBox
             // 
