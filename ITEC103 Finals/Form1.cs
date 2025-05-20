@@ -719,7 +719,7 @@ namespace ITEC103_Finals
 
         private void Logo_PicBox_Click(object sender, EventArgs e)
         {
-            HomePage_Panel.Show(); //clicking logo brings you back to home page
+            HomePage_Panel.BringToFront(); //clicking logo brings you back to home page
         }
     }
 }
