@@ -1,6 +1,3 @@
-using System.Net.Sockets;
-using System.Windows.Forms;
-
 namespace ITEC103_Finals
 {
     public partial class Form1 : Form
