@@ -30,15 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             TopNavBar = new Panel();
+            textBox1 = new TextBox();
+            roundedButton1 = new AddControls.RoundedButton();
             Logo_PicBox = new PictureBox();
             Line_PicBox = new PictureBox();
             PageLabel = new Label();
             CartIcon_PicBox = new PictureBox();
             ProfileIcon_PicBox = new PictureBox();
-            Search_Btn = new ITEC103_Finals.AddControls.RoundedButton();
+            Search_Btn = new AddControls.RoundedButton();
             NotificationIcon_PicBox = new PictureBox();
-            SearchBar_TxtBox = new ITEC103_Finals.AddControls.RoundedTextBox();
-            SignIn_Btn = new ITEC103_Finals.AddControls.RoundedButton();
+            SearchBar_TxtBox = new AddControls.RoundedTextBox();
+            SignIn_Btn = new AddControls.RoundedButton();
             SignIn_Container = new Panel();
             SignUpLink = new LinkLabel();
             ForgotPasswordLink = new LinkLabel();
@@ -59,7 +61,7 @@
             Password_SignUpTxtBox = new TextBox();
             RepeatPassword_SignUpLbl = new Label();
             RepeatPassword_SignUpTxtBox = new TextBox();
-            SignUp_Btn = new ITEC103_Finals.AddControls.RoundedButton();
+            SignUp_Btn = new AddControls.RoundedButton();
             SignIn_FooterLbl = new Label();
             tableLayout1 = new TableLayoutPanel();
             tableLayout2 = new TableLayoutPanel();
@@ -155,8 +157,8 @@
             ItemView_QtyIncrement = new Button();
             ItemView_QtyDecrement = new Button();
             ItemViewQty = new Label();
-            ItemView_Buy = new ITEC103_Finals.AddControls.RoundedButton();
-            ItemView_AddCart = new ITEC103_Finals.AddControls.RoundedButton();
+            ItemView_Buy = new AddControls.RoundedButton();
+            ItemView_AddCart = new AddControls.RoundedButton();
             label21 = new Label();
             label20 = new Label();
             label19 = new Label();
@@ -182,7 +184,7 @@
             CartUnitPrice = new Label();
             CartVariation = new Label();
             pictureBox18 = new PictureBox();
-            ToggleItem = new ITEC103_Finals.AddControls.ToggleButton();
+            ToggleItem = new AddControls.ToggleButton();
             panel26 = new Panel();
             CartItemName = new Label();
             panel22 = new Panel();
@@ -191,7 +193,7 @@
             label24 = new Label();
             label23 = new Label();
             panel18 = new Panel();
-            CartCheckOut = new ITEC103_Finals.AddControls.RoundedButton();
+            CartCheckOut = new AddControls.RoundedButton();
             CheckOutTotalPrice = new Label();
             TotalItemLabel = new Label();
             CartSelectAll = new CheckBox();
@@ -233,7 +235,7 @@
             panel46 = new Panel();
             ChangeProfilePicture = new LinkLabel();
             panel45 = new Panel();
-            SaveProfile_Btn = new ITEC103_Finals.AddControls.RoundedButton();
+            SaveProfile_Btn = new AddControls.RoundedButton();
             ProfilePictureBox = new PictureBox();
             panel36 = new Panel();
             label22 = new Label();
@@ -344,6 +346,8 @@
             // TopNavBar
             // 
             TopNavBar.BackColor = Color.FromArgb(82, 171, 153);
+            TopNavBar.Controls.Add(textBox1);
+            TopNavBar.Controls.Add(roundedButton1);
             TopNavBar.Controls.Add(Logo_PicBox);
             TopNavBar.Controls.Add(Line_PicBox);
             TopNavBar.Controls.Add(PageLabel);
@@ -358,6 +362,37 @@
             TopNavBar.Name = "TopNavBar";
             TopNavBar.Size = new Size(1350, 69);
             TopNavBar.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(275, 20);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(180, 23);
+            textBox1.TabIndex = 14;
+            // 
+            // roundedButton1
+            // 
+            roundedButton1.BackColor = Color.FromArgb(45, 103, 119);
+            roundedButton1.BackgroundColor = Color.FromArgb(45, 103, 119);
+            roundedButton1.BackgroundImageLayout = ImageLayout.None;
+            roundedButton1.BorderColor = Color.PaleVioletRed;
+            roundedButton1.BorderRadius = 25;
+            roundedButton1.BorderSize = 0;
+            roundedButton1.FlatAppearance.BorderSize = 0;
+            roundedButton1.FlatStyle = FlatStyle.Flat;
+            roundedButton1.Font = new Font("Segoe UI", 10F);
+            roundedButton1.ForeColor = Color.White;
+            roundedButton1.Location = new Point(921, 21);
+            roundedButton1.Margin = new Padding(3, 2, 3, 2);
+            roundedButton1.Name = "roundedButton1";
+            roundedButton1.Size = new Size(58, 25);
+            roundedButton1.TabIndex = 13;
+            roundedButton1.Text = "Clear";
+            roundedButton1.TextColor = Color.White;
+            roundedButton1.TextImageRelation = TextImageRelation.TextBeforeImage;
+            roundedButton1.UseMnemonic = false;
+            roundedButton1.UseVisualStyleBackColor = false;
+            roundedButton1.Click += roundedButton1_Click;
             // 
             // Logo_PicBox
             // 
@@ -442,6 +477,7 @@
             Search_Btn.TextColor = Color.White;
             Search_Btn.TextImageRelation = TextImageRelation.ImageAboveText;
             Search_Btn.UseVisualStyleBackColor = false;
+            Search_Btn.Click += Search_Btn_Click;
             // 
             // NotificationIcon_PicBox
             // 
@@ -475,6 +511,7 @@
             SearchBar_TxtBox.TabIndex = 0;
             SearchBar_TxtBox.Texts = "";
             SearchBar_TxtBox.UnderlinedStyle = false;
+            SearchBar_TxtBox._TextChanged += SearchBar_TxtBox_TextChanged;
             // 
             // SignIn_Btn
             // 
@@ -3106,8 +3143,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 244);
             ClientSize = new Size(1350, 729);
-            Controls.Add(Profile_Panel);
             Controls.Add(HomePage_Panel);
+            Controls.Add(Profile_Panel);
             Controls.Add(ItemView_Panel);
             Controls.Add(Cart_Panel);
             Controls.Add(SignIn_Panel);
@@ -3474,5 +3511,7 @@
         private Panel panel45;
         private AddControls.RoundedButton SaveProfile_Btn;
         private PictureBox pictureBox19;
+        private AddControls.RoundedButton roundedButton1;
+        private TextBox textBox1;
     }
 }
