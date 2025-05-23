@@ -57,5 +57,26 @@ namespace ITEC103_Finals
             Profile_Panel.BringToFront(); //brings you to profile page
             PageLabel.Text = "Profile";
         }
+        private void PageLabel_TextChanged(object sender, EventArgs e)
+        {
+            //// Reset all icons to white
+            //CartIcon_PicBox.BackColor = Color.White;
+            //ProfileIcon_PicBox.BackColor = Color.White;
+            //NotificationIcon_PicBox.BackColor = Color.White;
+
+            //// Highlight only the selected icon
+            //switch (PageLabel.Text)
+            //{
+            //    case "Cart":
+            //        CartIcon_PicBox.BackColor = Color.DarkGray;
+            //        break;
+            //    case "Profile":
+            //        ProfileIcon_PicBox.BackColor = Color.DarkGray;
+            //        break;
+            //    case "Notification":
+            //        NotificationIcon_PicBox.BackColor = Color.DarkGray;
+            //        break;
+            //}
+        }
     }
 }

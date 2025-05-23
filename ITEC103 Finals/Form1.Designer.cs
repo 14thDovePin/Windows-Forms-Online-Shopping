@@ -200,6 +200,13 @@
             PurchaseViewContainer = new Panel();
             flowLayoutPanel2 = new FlowLayoutPanel();
             panel50 = new Panel();
+            PurchaseBuyAgain = new ITEC103_Finals.AddControls.RoundedButton();
+            PurchaseCost = new Label();
+            PurchaseStatus = new Label();
+            PurchaseQuantity = new Label();
+            PurchaseVariation = new Label();
+            PurchaseItemName = new Label();
+            PurchasePicture = new PictureBox();
             panel49 = new Panel();
             panel48 = new Panel();
             tableLayoutPanel6 = new TableLayoutPanel();
@@ -335,6 +342,8 @@
             Profile_Panel.SuspendLayout();
             PurchaseViewContainer.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
+            panel50.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PurchasePicture).BeginInit();
             panel48.SuspendLayout();
             tableLayoutPanel6.SuspendLayout();
             PurchaseSelector_Cancelled.SuspendLayout();
@@ -447,6 +456,7 @@
             PageLabel.TabIndex = 8;
             PageLabel.Text = "Sign in";
             PageLabel.TextAlign = ContentAlignment.MiddleLeft;
+            PageLabel.TextChanged += PageLabel_TextChanged;
             // 
             // CartIcon_PicBox
             // 
@@ -2551,10 +2561,97 @@
             // panel50
             // 
             panel50.BackColor = Color.White;
+            panel50.BorderStyle = BorderStyle.FixedSingle;
+            panel50.Controls.Add(PurchaseBuyAgain);
+            panel50.Controls.Add(PurchaseCost);
+            panel50.Controls.Add(PurchaseStatus);
+            panel50.Controls.Add(PurchaseQuantity);
+            panel50.Controls.Add(PurchaseVariation);
+            panel50.Controls.Add(PurchaseItemName);
+            panel50.Controls.Add(PurchasePicture);
             panel50.Location = new Point(3, 3);
             panel50.Name = "panel50";
             panel50.Size = new Size(964, 121);
             panel50.TabIndex = 0;
+            // 
+            // PurchaseBuyAgain
+            // 
+            PurchaseBuyAgain.BackColor = Color.Teal;
+            PurchaseBuyAgain.BackgroundColor = Color.Teal;
+            PurchaseBuyAgain.BorderColor = Color.PaleVioletRed;
+            PurchaseBuyAgain.BorderRadius = 40;
+            PurchaseBuyAgain.BorderSize = 0;
+            PurchaseBuyAgain.FlatAppearance.BorderSize = 0;
+            PurchaseBuyAgain.FlatStyle = FlatStyle.Flat;
+            PurchaseBuyAgain.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            PurchaseBuyAgain.ForeColor = Color.White;
+            PurchaseBuyAgain.Location = new Point(809, 76);
+            PurchaseBuyAgain.Name = "PurchaseBuyAgain";
+            PurchaseBuyAgain.Size = new Size(150, 40);
+            PurchaseBuyAgain.TabIndex = 6;
+            PurchaseBuyAgain.Text = "Buy Again";
+            PurchaseBuyAgain.TextColor = Color.White;
+            PurchaseBuyAgain.UseVisualStyleBackColor = false;
+            // 
+            // PurchaseCost
+            // 
+            PurchaseCost.AutoSize = true;
+            PurchaseCost.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            PurchaseCost.Location = new Point(906, 51);
+            PurchaseCost.Name = "PurchaseCost";
+            PurchaseCost.Size = new Size(37, 21);
+            PurchaseCost.TabIndex = 5;
+            PurchaseCost.Text = "$$$";
+            // 
+            // PurchaseStatus
+            // 
+            PurchaseStatus.AutoSize = true;
+            PurchaseStatus.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            PurchaseStatus.Location = new Point(879, 8);
+            PurchaseStatus.Name = "PurchaseStatus";
+            PurchaseStatus.Size = new Size(66, 21);
+            PurchaseStatus.TabIndex = 4;
+            PurchaseStatus.Text = "STATUS";
+            // 
+            // PurchaseQuantity
+            // 
+            PurchaseQuantity.AutoSize = true;
+            PurchaseQuantity.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            PurchaseQuantity.Location = new Point(142, 90);
+            PurchaseQuantity.Name = "PurchaseQuantity";
+            PurchaseQuantity.Size = new Size(24, 21);
+            PurchaseQuantity.TabIndex = 3;
+            PurchaseQuantity.Text = "x1";
+            // 
+            // PurchaseVariation
+            // 
+            PurchaseVariation.AutoSize = true;
+            PurchaseVariation.Font = new Font("Segoe UI", 10F);
+            PurchaseVariation.Location = new Point(142, 42);
+            PurchaseVariation.Name = "PurchaseVariation";
+            PurchaseVariation.Size = new Size(125, 19);
+            PurchaseVariation.TabIndex = 2;
+            PurchaseVariation.Text = "Variation: XYZ. XYZ";
+            // 
+            // PurchaseItemName
+            // 
+            PurchaseItemName.AutoSize = true;
+            PurchaseItemName.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            PurchaseItemName.Location = new Point(142, 8);
+            PurchaseItemName.Name = "PurchaseItemName";
+            PurchaseItemName.Size = new Size(210, 25);
+            PurchaseItemName.TabIndex = 1;
+            PurchaseItemName.Text = "PRODUCT NAME HERE";
+            // 
+            // PurchasePicture
+            // 
+            PurchasePicture.BackColor = Color.DarkGray;
+            PurchasePicture.Dock = DockStyle.Left;
+            PurchasePicture.Location = new Point(0, 0);
+            PurchasePicture.Name = "PurchasePicture";
+            PurchasePicture.Size = new Size(129, 119);
+            PurchasePicture.TabIndex = 0;
+            PurchasePicture.TabStop = false;
             // 
             // panel49
             // 
@@ -3226,7 +3323,7 @@
             // 
             // panel28
             // 
-            panel28.BackColor = Color.White;
+            panel28.BackColor = Color.Transparent;
             panel28.Controls.Add(panel31);
             panel28.Controls.Add(panel30);
             panel28.Controls.Add(panel29);
@@ -3240,12 +3337,13 @@
             // panel31
             // 
             panel31.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            panel31.BorderStyle = BorderStyle.FixedSingle;
+            panel31.BackColor = Color.Transparent;
             panel31.Controls.Add(MyAccount_LinkLbl);
             panel31.Location = new Point(0, 89);
             panel31.Name = "panel31";
             panel31.Size = new Size(270, 50);
             panel31.TabIndex = 4;
+            panel31.Click += panel31_Click;
             // 
             // MyAccount_LinkLbl
             // 
@@ -3253,18 +3351,19 @@
             MyAccount_LinkLbl.AutoSize = true;
             MyAccount_LinkLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             MyAccount_LinkLbl.LinkColor = Color.Black;
-            MyAccount_LinkLbl.Location = new Point(50, 15);
+            MyAccount_LinkLbl.Location = new Point(13, 15);
             MyAccount_LinkLbl.Name = "MyAccount_LinkLbl";
             MyAccount_LinkLbl.Size = new Size(98, 21);
             MyAccount_LinkLbl.TabIndex = 0;
             MyAccount_LinkLbl.TabStop = true;
             MyAccount_LinkLbl.Text = "My Account";
             MyAccount_LinkLbl.TextAlign = ContentAlignment.MiddleCenter;
+            MyAccount_LinkLbl.Click += MyAccount_LinkLbl_Click;
             // 
             // panel30
             // 
             panel30.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            panel30.BorderStyle = BorderStyle.FixedSingle;
+            panel30.BackColor = Color.Transparent;
             panel30.Controls.Add(MyPurchases_LinkLbl);
             panel30.Location = new Point(0, 145);
             panel30.Name = "panel30";
@@ -3277,18 +3376,19 @@
             MyPurchases_LinkLbl.AutoSize = true;
             MyPurchases_LinkLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             MyPurchases_LinkLbl.LinkColor = Color.Black;
-            MyPurchases_LinkLbl.Location = new Point(50, 15);
+            MyPurchases_LinkLbl.Location = new Point(13, 15);
             MyPurchases_LinkLbl.Name = "MyPurchases_LinkLbl";
             MyPurchases_LinkLbl.Size = new Size(109, 21);
             MyPurchases_LinkLbl.TabIndex = 1;
             MyPurchases_LinkLbl.TabStop = true;
             MyPurchases_LinkLbl.Text = "My Purchases";
             MyPurchases_LinkLbl.TextAlign = ContentAlignment.MiddleCenter;
+            MyPurchases_LinkLbl.Click += MyPurchases_LinkLbl_Click;
             // 
             // panel29
             // 
             panel29.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            panel29.BorderStyle = BorderStyle.FixedSingle;
+            panel29.BackColor = Color.Transparent;
             panel29.Controls.Add(Notification_LinkLbl);
             panel29.Location = new Point(0, 201);
             panel29.Name = "panel29";
@@ -3301,13 +3401,14 @@
             Notification_LinkLbl.AutoSize = true;
             Notification_LinkLbl.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
             Notification_LinkLbl.LinkColor = Color.Black;
-            Notification_LinkLbl.Location = new Point(50, 15);
+            Notification_LinkLbl.Location = new Point(13, 14);
             Notification_LinkLbl.Name = "Notification_LinkLbl";
             Notification_LinkLbl.Size = new Size(97, 21);
             Notification_LinkLbl.TabIndex = 2;
             Notification_LinkLbl.TabStop = true;
             Notification_LinkLbl.Text = "Notification";
             Notification_LinkLbl.TextAlign = ContentAlignment.MiddleCenter;
+            Notification_LinkLbl.Click += Notification_LinkLbl_Click;
             // 
             // ProfileUser_Lbl
             // 
@@ -3441,6 +3542,9 @@
             Profile_Panel.ResumeLayout(false);
             PurchaseViewContainer.ResumeLayout(false);
             flowLayoutPanel2.ResumeLayout(false);
+            panel50.ResumeLayout(false);
+            panel50.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PurchasePicture).EndInit();
             panel48.ResumeLayout(false);
             tableLayoutPanel6.ResumeLayout(false);
             PurchaseSelector_Cancelled.ResumeLayout(false);
@@ -3733,5 +3837,13 @@
         private Label label29;
         private Panel PurchaseSelector_All;
         private Label label28;
+        private Label label39;
+        private Label PurchaseItemName;
+        private PictureBox PurchasePicture;
+        private AddControls.RoundedButton PurchaseBuyAgain;
+        private Label PurchaseCost;
+        private Label PurchaseStatus;
+        private Label PurchaseQuantity;
+        private Label PurchaseVariation;
     }
 }

@@ -122,7 +122,7 @@ namespace ITEC103_Finals
         {
 
         }
-                
+
         private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
         {
 
@@ -132,6 +132,12 @@ namespace ITEC103_Finals
         {
 
         }
-               
+
+        private void panel31_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
