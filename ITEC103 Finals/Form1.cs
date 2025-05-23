@@ -2,6 +2,8 @@ namespace ITEC103_Finals
 {
     public partial class Form1 : Form
     {
+        private API api;
+
         int qnty = 1;
         int itm;//id para sa ibang switch
         int[] id = { 899, 499, 1259, 2459, 89, 259, 40, 699, 270, 180, 550, 70, 700, 130, 75, 821 };
@@ -11,6 +13,11 @@ namespace ITEC103_Finals
         public Form1()
         {
             InitializeComponent();
+
+            // API Setup
+            api = new API();
+            api.ConnectDB();
+
             addid();
             storecontrols();
             // Set Form Size
