@@ -252,6 +252,12 @@
             Notification_LinkLbl = new LinkLabel();
             ProfileUser_Lbl = new Label();
             ProfileIcon = new PictureBox();
+            PurchaseViewContainer = new Panel();
+            panel48 = new Panel();
+            label28 = new Label();
+            panel49 = new Panel();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            panel50 = new Panel();
             TopNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
@@ -340,6 +346,9 @@
             panel30.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ProfileIcon).BeginInit();
+            PurchaseViewContainer.SuspendLayout();
+            panel48.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
             SuspendLayout();
             // 
             // TopNavBar
@@ -2490,6 +2499,7 @@
             // Profile_Panel
             // 
             Profile_Panel.BackColor = Color.FromArgb(224, 224, 224);
+            Profile_Panel.Controls.Add(PurchaseViewContainer);
             Profile_Panel.Controls.Add(ProfileViewContainer);
             Profile_Panel.Controls.Add(panel35);
             Profile_Panel.Controls.Add(panel34);
@@ -2527,6 +2537,7 @@
             tableLayoutPanel4.Name = "tableLayoutPanel4";
             tableLayoutPanel4.RowCount = 1;
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel4.Size = new Size(970, 467);
             tableLayoutPanel4.TabIndex = 1;
             tableLayoutPanel4.Paint += tableLayoutPanel4_Paint;
@@ -3117,14 +3128,72 @@
             ProfileIcon.TabIndex = 0;
             ProfileIcon.TabStop = false;
             // 
+            // PurchaseViewContainer
+            // 
+            PurchaseViewContainer.Controls.Add(flowLayoutPanel2);
+            PurchaseViewContainer.Controls.Add(panel49);
+            PurchaseViewContainer.Controls.Add(panel48);
+            PurchaseViewContainer.Dock = DockStyle.Fill;
+            PurchaseViewContainer.Location = new Point(322, 34);
+            PurchaseViewContainer.Name = "PurchaseViewContainer";
+            PurchaseViewContainer.Size = new Size(970, 554);
+            PurchaseViewContainer.TabIndex = 2;
+            // 
+            // panel48
+            // 
+            panel48.BackColor = Color.Teal;
+            panel48.Controls.Add(label28);
+            panel48.Dock = DockStyle.Top;
+            panel48.Location = new Point(0, 0);
+            panel48.Name = "panel48";
+            panel48.Size = new Size(970, 87);
+            panel48.TabIndex = 0;
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label28.ForeColor = Color.White;
+            label28.Location = new Point(24, 19);
+            label28.Name = "label28";
+            label28.Size = new Size(259, 50);
+            label28.TabIndex = 1;
+            label28.Text = "My Purchases";
+            // 
+            // panel49
+            // 
+            panel49.BackColor = Color.White;
+            panel49.Dock = DockStyle.Top;
+            panel49.Location = new Point(0, 87);
+            panel49.Name = "panel49";
+            panel49.Size = new Size(970, 36);
+            panel49.TabIndex = 1;
+            // 
+            // flowLayoutPanel2
+            // 
+            flowLayoutPanel2.Controls.Add(panel50);
+            flowLayoutPanel2.Dock = DockStyle.Fill;
+            flowLayoutPanel2.Location = new Point(0, 123);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(970, 431);
+            flowLayoutPanel2.TabIndex = 2;
+            // 
+            // panel50
+            // 
+            panel50.BackColor = Color.White;
+            panel50.Location = new Point(3, 3);
+            panel50.Name = "panel50";
+            panel50.Size = new Size(964, 121);
+            panel50.TabIndex = 0;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 244);
             ClientSize = new Size(1350, 729);
-            Controls.Add(HomePage_Panel);
             Controls.Add(Profile_Panel);
+            Controls.Add(HomePage_Panel);
             Controls.Add(ItemView_Panel);
             Controls.Add(Cart_Panel);
             Controls.Add(SignIn_Panel);
@@ -3264,6 +3333,10 @@
             panel29.ResumeLayout(false);
             panel29.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ProfileIcon).EndInit();
+            PurchaseViewContainer.ResumeLayout(false);
+            panel48.ResumeLayout(false);
+            panel48.PerformLayout();
+            flowLayoutPanel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -3492,5 +3565,11 @@
         private PictureBox pictureBox19;
         private AddControls.RoundedButton roundedButton1;
         private TextBox SearchBox_TxtBox;
+        private Panel PurchaseViewContainer;
+        private Panel panel48;
+        private Label label28;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private Panel panel50;
+        private Panel panel49;
     }
 }
