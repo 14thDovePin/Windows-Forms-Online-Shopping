@@ -31,16 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             TopNavBar = new Panel();
             textBox1 = new TextBox();
-            roundedButton1 = new AddControls.RoundedButton();
+            roundedButton1 = new ITEC103_Finals.AddControls.RoundedButton();
             Logo_PicBox = new PictureBox();
             Line_PicBox = new PictureBox();
             PageLabel = new Label();
             CartIcon_PicBox = new PictureBox();
             ProfileIcon_PicBox = new PictureBox();
-            Search_Btn = new AddControls.RoundedButton();
+            Search_Btn = new ITEC103_Finals.AddControls.RoundedButton();
             NotificationIcon_PicBox = new PictureBox();
-            SearchBar_TxtBox = new AddControls.RoundedTextBox();
-            SignIn_Btn = new AddControls.RoundedButton();
+            SignIn_Btn = new ITEC103_Finals.AddControls.RoundedButton();
             SignIn_Container = new Panel();
             SignUpLink = new LinkLabel();
             ForgotPasswordLink = new LinkLabel();
@@ -61,7 +60,7 @@
             Password_SignUpTxtBox = new TextBox();
             RepeatPassword_SignUpLbl = new Label();
             RepeatPassword_SignUpTxtBox = new TextBox();
-            SignUp_Btn = new AddControls.RoundedButton();
+            SignUp_Btn = new ITEC103_Finals.AddControls.RoundedButton();
             SignIn_FooterLbl = new Label();
             tableLayout1 = new TableLayoutPanel();
             tableLayout2 = new TableLayoutPanel();
@@ -157,8 +156,8 @@
             ItemView_QtyIncrement = new Button();
             ItemView_QtyDecrement = new Button();
             ItemViewQty = new Label();
-            ItemView_Buy = new AddControls.RoundedButton();
-            ItemView_AddCart = new AddControls.RoundedButton();
+            ItemView_Buy = new ITEC103_Finals.AddControls.RoundedButton();
+            ItemView_AddCart = new ITEC103_Finals.AddControls.RoundedButton();
             label21 = new Label();
             label20 = new Label();
             label19 = new Label();
@@ -184,7 +183,7 @@
             CartUnitPrice = new Label();
             CartVariation = new Label();
             pictureBox18 = new PictureBox();
-            ToggleItem = new AddControls.ToggleButton();
+            ToggleItem = new ITEC103_Finals.AddControls.ToggleButton();
             panel26 = new Panel();
             CartItemName = new Label();
             panel22 = new Panel();
@@ -193,7 +192,7 @@
             label24 = new Label();
             label23 = new Label();
             panel18 = new Panel();
-            CartCheckOut = new AddControls.RoundedButton();
+            CartCheckOut = new ITEC103_Finals.AddControls.RoundedButton();
             CheckOutTotalPrice = new Label();
             TotalItemLabel = new Label();
             CartSelectAll = new CheckBox();
@@ -235,7 +234,7 @@
             panel46 = new Panel();
             ChangeProfilePicture = new LinkLabel();
             panel45 = new Panel();
-            SaveProfile_Btn = new AddControls.RoundedButton();
+            SaveProfile_Btn = new ITEC103_Finals.AddControls.RoundedButton();
             ProfilePictureBox = new PictureBox();
             panel36 = new Panel();
             label22 = new Label();
@@ -346,7 +345,6 @@
             // TopNavBar
             // 
             TopNavBar.BackColor = Color.FromArgb(82, 171, 153);
-            TopNavBar.Controls.Add(textBox1);
             TopNavBar.Controls.Add(roundedButton1);
             TopNavBar.Controls.Add(Logo_PicBox);
             TopNavBar.Controls.Add(Line_PicBox);
@@ -355,7 +353,7 @@
             TopNavBar.Controls.Add(ProfileIcon_PicBox);
             TopNavBar.Controls.Add(Search_Btn);
             TopNavBar.Controls.Add(NotificationIcon_PicBox);
-            TopNavBar.Controls.Add(SearchBar_TxtBox);
+            TopNavBar.Controls.Add(textBox1);
             TopNavBar.Dock = DockStyle.Top;
             TopNavBar.Location = new Point(0, 0);
             TopNavBar.Margin = new Padding(3, 2, 3, 2);
@@ -365,9 +363,11 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(275, 20);
+            textBox1.Font = new Font("Segoe UI", 14F);
+            textBox1.Location = new Point(369, 16);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(180, 23);
+            textBox1.PlaceholderText = " SEARCH";
+            textBox1.Size = new Size(672, 32);
             textBox1.TabIndex = 14;
             // 
             // roundedButton1
@@ -382,12 +382,12 @@
             roundedButton1.FlatStyle = FlatStyle.Flat;
             roundedButton1.Font = new Font("Segoe UI", 10F);
             roundedButton1.ForeColor = Color.White;
-            roundedButton1.Location = new Point(921, 21);
+            roundedButton1.Location = new Point(328, 19);
             roundedButton1.Margin = new Padding(3, 2, 3, 2);
             roundedButton1.Name = "roundedButton1";
-            roundedButton1.Size = new Size(58, 25);
+            roundedButton1.Size = new Size(35, 25);
             roundedButton1.TabIndex = 13;
-            roundedButton1.Text = "Clear";
+            roundedButton1.Text = "X";
             roundedButton1.TextColor = Color.White;
             roundedButton1.TextImageRelation = TextImageRelation.TextBeforeImage;
             roundedButton1.UseMnemonic = false;
@@ -469,7 +469,7 @@
             Search_Btn.FlatStyle = FlatStyle.Flat;
             Search_Btn.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Search_Btn.ForeColor = Color.White;
-            Search_Btn.Location = new Point(980, 20);
+            Search_Btn.Location = new Point(979, 19);
             Search_Btn.Margin = new Padding(3, 2, 3, 2);
             Search_Btn.Name = "Search_Btn";
             Search_Btn.Size = new Size(58, 25);
@@ -490,28 +490,6 @@
             NotificationIcon_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
             NotificationIcon_PicBox.TabIndex = 9;
             NotificationIcon_PicBox.TabStop = false;
-            // 
-            // SearchBar_TxtBox
-            // 
-            SearchBar_TxtBox.BackColor = Color.White;
-            SearchBar_TxtBox.BorderColor = Color.Teal;
-            SearchBar_TxtBox.BorderFocusColor = Color.Teal;
-            SearchBar_TxtBox.BorderRadius = 20;
-            SearchBar_TxtBox.BorderSize = 2;
-            SearchBar_TxtBox.Font = new Font("Segoe UI", 14F);
-            SearchBar_TxtBox.ForeColor = Color.DimGray;
-            SearchBar_TxtBox.Location = new Point(452, 12);
-            SearchBar_TxtBox.Multiline = false;
-            SearchBar_TxtBox.Name = "SearchBar_TxtBox";
-            SearchBar_TxtBox.Padding = new Padding(7);
-            SearchBar_TxtBox.PasswordChar = false;
-            SearchBar_TxtBox.PlaceholderColor = Color.DarkGray;
-            SearchBar_TxtBox.PlaceholderText = " SEARCH";
-            SearchBar_TxtBox.Size = new Size(595, 40);
-            SearchBar_TxtBox.TabIndex = 0;
-            SearchBar_TxtBox.Texts = "";
-            SearchBar_TxtBox.UnderlinedStyle = false;
-            SearchBar_TxtBox._TextChanged += SearchBar_TxtBox_TextChanged;
             // 
             // SignIn_Btn
             // 
@@ -3325,7 +3303,6 @@
         private Panel SignUp_Panel;
         private PictureBox Logo_PicBox;
         private Panel HomePage_Panel;
-        private AddControls.RoundedTextBox SearchBar_TxtBox;
         private Panel SideBar;
         private FlowLayoutPanel ItemList;
         private Panel panel14;
