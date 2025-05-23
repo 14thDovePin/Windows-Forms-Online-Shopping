@@ -102,14 +102,10 @@ namespace ITEC103_Finals
 
         }
 
-        private void Logo_PicBox_Click(object sender, EventArgs e)
-        {
-            HomePage_Panel.BringToFront(); //clicking logo brings you back to home page
-        }
-
         private void SearchBar_TxtBox_TextChanged(object sender, EventArgs e)
         {
 
         }
+
     }
 }

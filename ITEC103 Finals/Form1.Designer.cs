@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             TopNavBar = new Panel();
-            textBox1 = new TextBox();
             roundedButton1 = new ITEC103_Finals.AddControls.RoundedButton();
             Logo_PicBox = new PictureBox();
             Line_PicBox = new PictureBox();
@@ -39,6 +38,7 @@
             ProfileIcon_PicBox = new PictureBox();
             Search_Btn = new ITEC103_Finals.AddControls.RoundedButton();
             NotificationIcon_PicBox = new PictureBox();
+            SearchBox_TxtBox = new TextBox();
             SignIn_Btn = new ITEC103_Finals.AddControls.RoundedButton();
             SignIn_Container = new Panel();
             SignUpLink = new LinkLabel();
@@ -353,22 +353,13 @@
             TopNavBar.Controls.Add(ProfileIcon_PicBox);
             TopNavBar.Controls.Add(Search_Btn);
             TopNavBar.Controls.Add(NotificationIcon_PicBox);
-            TopNavBar.Controls.Add(textBox1);
+            TopNavBar.Controls.Add(SearchBox_TxtBox);
             TopNavBar.Dock = DockStyle.Top;
             TopNavBar.Location = new Point(0, 0);
             TopNavBar.Margin = new Padding(3, 2, 3, 2);
             TopNavBar.Name = "TopNavBar";
             TopNavBar.Size = new Size(1350, 69);
             TopNavBar.TabIndex = 0;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI", 14F);
-            textBox1.Location = new Point(369, 16);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = " SEARCH";
-            textBox1.Size = new Size(672, 32);
-            textBox1.TabIndex = 14;
             // 
             // roundedButton1
             // 
@@ -443,6 +434,7 @@
             CartIcon_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
             CartIcon_PicBox.TabIndex = 10;
             CartIcon_PicBox.TabStop = false;
+            CartIcon_PicBox.Click += CartIcon_PicBox_Click;
             // 
             // ProfileIcon_PicBox
             // 
@@ -455,6 +447,7 @@
             ProfileIcon_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
             ProfileIcon_PicBox.TabIndex = 11;
             ProfileIcon_PicBox.TabStop = false;
+            ProfileIcon_PicBox.Click += ProfileIcon_PicBox_Click;
             // 
             // Search_Btn
             // 
@@ -490,6 +483,15 @@
             NotificationIcon_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
             NotificationIcon_PicBox.TabIndex = 9;
             NotificationIcon_PicBox.TabStop = false;
+            // 
+            // SearchBox_TxtBox
+            // 
+            SearchBox_TxtBox.Font = new Font("Segoe UI", 14F);
+            SearchBox_TxtBox.Location = new Point(369, 16);
+            SearchBox_TxtBox.Name = "SearchBox_TxtBox";
+            SearchBox_TxtBox.PlaceholderText = " SEARCH";
+            SearchBox_TxtBox.Size = new Size(672, 32);
+            SearchBox_TxtBox.TabIndex = 14;
             // 
             // SignIn_Btn
             // 
@@ -3489,6 +3491,6 @@
         private AddControls.RoundedButton SaveProfile_Btn;
         private PictureBox pictureBox19;
         private AddControls.RoundedButton roundedButton1;
-        private TextBox textBox1;
+        private TextBox SearchBox_TxtBox;
     }
 }

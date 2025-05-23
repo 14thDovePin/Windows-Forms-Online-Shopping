@@ -17,7 +17,7 @@ namespace ITEC103_Finals
                         // Check if the panel's tag matches the search text
                         if (incntrl is LinkLabel lbl)
                         {
-                            if (lbl.Text.ToLower().Contains(textBox1.Text.ToLower()))
+                            if (lbl.Text.ToLower().Contains(SearchBox_TxtBox.Text.ToLower()))
                             {
                                 matchingPanels.Add(pnl);
                             }
@@ -35,12 +35,27 @@ namespace ITEC103_Finals
         }
         private void roundedButton1_Click(object sender, EventArgs e)
         {  
-            SearchBar_TxtBox.Text = "";
+            SearchBox_TxtBox.Text = "";
             for (int i = 0; i < panels.Length; i++)
             {
                 ItemList.Controls.Add(panels[i]);
             }
             roundedButton1.Visible = false;
+        }
+        private void Logo_PicBox_Click(object sender, EventArgs e)
+        {
+            HomePage_Panel.BringToFront(); //clicking logo brings you back to home page
+            PageLabel.Text = "Home";
+        }
+        private void CartIcon_PicBox_Click(object sender, EventArgs e)
+        {
+            Cart_Panel.BringToFront(); //brings you to cart page
+            PageLabel.Text = "Cart";
+        }
+        private void ProfileIcon_PicBox_Click(object sender, EventArgs e)
+        {
+            Profile_Panel.BringToFront(); //brings you to profile page
+            PageLabel.Text = "Profile";
         }
     }
 }
