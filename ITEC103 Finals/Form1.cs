@@ -107,5 +107,31 @@ namespace ITEC103_Finals
 
         }
 
+        private void panel49_Paint(object sender, PaintEventArgs e)
+        {
+
+
+        }
+
+        private void panel48_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label31_Click(object sender, EventArgs e)
+        {
+
+        }
+                
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PurchaseSelector_All_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+               
     }
 }

@@ -197,6 +197,22 @@
             TotalItemLabel = new Label();
             CartSelectAll = new CheckBox();
             Profile_Panel = new Panel();
+            PurchaseViewContainer = new Panel();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            panel50 = new Panel();
+            panel49 = new Panel();
+            panel48 = new Panel();
+            tableLayoutPanel6 = new TableLayoutPanel();
+            PurchaseSelector_Cancelled = new Panel();
+            label35 = new Label();
+            PurchaseSelector_Completed = new Panel();
+            label33 = new Label();
+            PurchaseSelector_ToReceive = new Panel();
+            label31 = new Label();
+            PurchaseSelector_ToShip = new Panel();
+            label29 = new Label();
+            PurchaseSelector_All = new Panel();
+            label28 = new Label();
             ProfileViewContainer = new Panel();
             tableLayoutPanel4 = new TableLayoutPanel();
             panel37 = new Panel();
@@ -252,12 +268,6 @@
             Notification_LinkLbl = new LinkLabel();
             ProfileUser_Lbl = new Label();
             ProfileIcon = new PictureBox();
-            PurchaseViewContainer = new Panel();
-            panel48 = new Panel();
-            label28 = new Label();
-            panel49 = new Panel();
-            flowLayoutPanel2 = new FlowLayoutPanel();
-            panel50 = new Panel();
             TopNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
@@ -323,6 +333,15 @@
             panel22.SuspendLayout();
             panel18.SuspendLayout();
             Profile_Panel.SuspendLayout();
+            PurchaseViewContainer.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
+            panel48.SuspendLayout();
+            tableLayoutPanel6.SuspendLayout();
+            PurchaseSelector_Cancelled.SuspendLayout();
+            PurchaseSelector_Completed.SuspendLayout();
+            PurchaseSelector_ToReceive.SuspendLayout();
+            PurchaseSelector_ToShip.SuspendLayout();
+            PurchaseSelector_All.SuspendLayout();
             ProfileViewContainer.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             panel37.SuspendLayout();
@@ -346,9 +365,6 @@
             panel30.SuspendLayout();
             panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ProfileIcon).BeginInit();
-            PurchaseViewContainer.SuspendLayout();
-            panel48.SuspendLayout();
-            flowLayoutPanel2.SuspendLayout();
             SuspendLayout();
             // 
             // TopNavBar
@@ -2512,6 +2528,187 @@
             Profile_Panel.Size = new Size(1350, 660);
             Profile_Panel.TabIndex = 3;
             // 
+            // PurchaseViewContainer
+            // 
+            PurchaseViewContainer.Controls.Add(flowLayoutPanel2);
+            PurchaseViewContainer.Controls.Add(panel49);
+            PurchaseViewContainer.Controls.Add(panel48);
+            PurchaseViewContainer.Dock = DockStyle.Fill;
+            PurchaseViewContainer.Location = new Point(322, 34);
+            PurchaseViewContainer.Name = "PurchaseViewContainer";
+            PurchaseViewContainer.Size = new Size(970, 554);
+            PurchaseViewContainer.TabIndex = 2;
+            // 
+            // flowLayoutPanel2
+            // 
+            flowLayoutPanel2.Controls.Add(panel50);
+            flowLayoutPanel2.Dock = DockStyle.Fill;
+            flowLayoutPanel2.Location = new Point(0, 86);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(970, 468);
+            flowLayoutPanel2.TabIndex = 2;
+            // 
+            // panel50
+            // 
+            panel50.BackColor = Color.White;
+            panel50.Location = new Point(3, 3);
+            panel50.Name = "panel50";
+            panel50.Size = new Size(964, 121);
+            panel50.TabIndex = 0;
+            // 
+            // panel49
+            // 
+            panel49.BackColor = Color.Transparent;
+            panel49.Dock = DockStyle.Top;
+            panel49.Location = new Point(0, 50);
+            panel49.Name = "panel49";
+            panel49.Size = new Size(970, 36);
+            panel49.TabIndex = 1;
+            panel49.Paint += panel49_Paint;
+            // 
+            // panel48
+            // 
+            panel48.BackColor = Color.White;
+            panel48.Controls.Add(tableLayoutPanel6);
+            panel48.Dock = DockStyle.Top;
+            panel48.Location = new Point(0, 0);
+            panel48.Name = "panel48";
+            panel48.Size = new Size(970, 50);
+            panel48.TabIndex = 0;
+            panel48.Paint += panel48_Paint;
+            // 
+            // tableLayoutPanel6
+            // 
+            tableLayoutPanel6.BackColor = Color.FromArgb(224, 224, 224);
+            tableLayoutPanel6.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
+            tableLayoutPanel6.ColumnCount = 5;
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
+            tableLayoutPanel6.Controls.Add(PurchaseSelector_Cancelled, 4, 0);
+            tableLayoutPanel6.Controls.Add(PurchaseSelector_Completed, 3, 0);
+            tableLayoutPanel6.Controls.Add(PurchaseSelector_ToReceive, 2, 0);
+            tableLayoutPanel6.Controls.Add(PurchaseSelector_ToShip, 1, 0);
+            tableLayoutPanel6.Controls.Add(PurchaseSelector_All, 0, 0);
+            tableLayoutPanel6.Dock = DockStyle.Fill;
+            tableLayoutPanel6.Location = new Point(0, 0);
+            tableLayoutPanel6.Name = "tableLayoutPanel6";
+            tableLayoutPanel6.RowCount = 1;
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel6.Size = new Size(970, 50);
+            tableLayoutPanel6.TabIndex = 0;
+            tableLayoutPanel6.Paint += tableLayoutPanel6_Paint;
+            // 
+            // PurchaseSelector_Cancelled
+            // 
+            PurchaseSelector_Cancelled.BackColor = Color.White;
+            PurchaseSelector_Cancelled.BorderStyle = BorderStyle.FixedSingle;
+            PurchaseSelector_Cancelled.Controls.Add(label35);
+            PurchaseSelector_Cancelled.Location = new Point(776, 4);
+            PurchaseSelector_Cancelled.Name = "PurchaseSelector_Cancelled";
+            PurchaseSelector_Cancelled.Size = new Size(188, 42);
+            PurchaseSelector_Cancelled.TabIndex = 4;
+            PurchaseSelector_Cancelled.Click += PurchaseSelector_Cancelled_Click;
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label35.Location = new Point(51, 15);
+            label35.Name = "label35";
+            label35.Size = new Size(85, 21);
+            label35.TabIndex = 0;
+            label35.Text = "Cancelled";
+            // 
+            // PurchaseSelector_Completed
+            // 
+            PurchaseSelector_Completed.BackColor = Color.White;
+            PurchaseSelector_Completed.BorderStyle = BorderStyle.FixedSingle;
+            PurchaseSelector_Completed.Controls.Add(label33);
+            PurchaseSelector_Completed.Location = new Point(583, 4);
+            PurchaseSelector_Completed.Name = "PurchaseSelector_Completed";
+            PurchaseSelector_Completed.Size = new Size(186, 42);
+            PurchaseSelector_Completed.TabIndex = 3;
+            PurchaseSelector_Completed.Click += PurchaseSelector_Completed_Click;
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label33.Location = new Point(47, 15);
+            label33.Name = "label33";
+            label33.Size = new Size(94, 21);
+            label33.TabIndex = 0;
+            label33.Text = "Completed";
+            // 
+            // PurchaseSelector_ToReceive
+            // 
+            PurchaseSelector_ToReceive.BackColor = Color.White;
+            PurchaseSelector_ToReceive.BorderStyle = BorderStyle.FixedSingle;
+            PurchaseSelector_ToReceive.Controls.Add(label31);
+            PurchaseSelector_ToReceive.Location = new Point(390, 4);
+            PurchaseSelector_ToReceive.Name = "PurchaseSelector_ToReceive";
+            PurchaseSelector_ToReceive.Size = new Size(186, 42);
+            PurchaseSelector_ToReceive.TabIndex = 2;
+            PurchaseSelector_ToReceive.Click += PurchaseSelector_ToReceive_Click;
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label31.Location = new Point(50, 15);
+            label31.Name = "label31";
+            label31.Size = new Size(91, 21);
+            label31.TabIndex = 0;
+            label31.Text = "To Receive";
+            label31.Click += label31_Click;
+            // 
+            // PurchaseSelector_ToShip
+            // 
+            PurchaseSelector_ToShip.BackColor = Color.White;
+            PurchaseSelector_ToShip.BorderStyle = BorderStyle.FixedSingle;
+            PurchaseSelector_ToShip.Controls.Add(label29);
+            PurchaseSelector_ToShip.Location = new Point(197, 4);
+            PurchaseSelector_ToShip.Name = "PurchaseSelector_ToShip";
+            PurchaseSelector_ToShip.Size = new Size(186, 42);
+            PurchaseSelector_ToShip.TabIndex = 1;
+            PurchaseSelector_ToShip.Click += PurchaseSelector_ToShip_Click;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label29.Location = new Point(63, 15);
+            label29.Name = "label29";
+            label29.Size = new Size(66, 21);
+            label29.TabIndex = 0;
+            label29.Text = "To Ship";
+            // 
+            // PurchaseSelector_All
+            // 
+            PurchaseSelector_All.BackColor = Color.White;
+            PurchaseSelector_All.BorderStyle = BorderStyle.FixedSingle;
+            PurchaseSelector_All.Controls.Add(label28);
+            PurchaseSelector_All.Location = new Point(4, 4);
+            PurchaseSelector_All.Name = "PurchaseSelector_All";
+            PurchaseSelector_All.Size = new Size(186, 42);
+            PurchaseSelector_All.TabIndex = 0;
+            PurchaseSelector_All.Click += PurchaseSelector_All_Click;
+            PurchaseSelector_All.Paint += PurchaseSelector_All_Paint;
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label28.Location = new Point(75, 15);
+            label28.Name = "label28";
+            label28.Size = new Size(31, 21);
+            label28.TabIndex = 0;
+            label28.Text = "All";
+            // 
             // ProfileViewContainer
             // 
             ProfileViewContainer.BackColor = Color.White;
@@ -3043,6 +3240,7 @@
             // panel31
             // 
             panel31.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            panel31.BorderStyle = BorderStyle.FixedSingle;
             panel31.Controls.Add(MyAccount_LinkLbl);
             panel31.Location = new Point(0, 89);
             panel31.Name = "panel31";
@@ -3066,6 +3264,7 @@
             // panel30
             // 
             panel30.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            panel30.BorderStyle = BorderStyle.FixedSingle;
             panel30.Controls.Add(MyPurchases_LinkLbl);
             panel30.Location = new Point(0, 145);
             panel30.Name = "panel30";
@@ -3089,6 +3288,7 @@
             // panel29
             // 
             panel29.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            panel29.BorderStyle = BorderStyle.FixedSingle;
             panel29.Controls.Add(Notification_LinkLbl);
             panel29.Location = new Point(0, 201);
             panel29.Name = "panel29";
@@ -3127,64 +3327,6 @@
             ProfileIcon.Size = new Size(65, 65);
             ProfileIcon.TabIndex = 0;
             ProfileIcon.TabStop = false;
-            // 
-            // PurchaseViewContainer
-            // 
-            PurchaseViewContainer.Controls.Add(flowLayoutPanel2);
-            PurchaseViewContainer.Controls.Add(panel49);
-            PurchaseViewContainer.Controls.Add(panel48);
-            PurchaseViewContainer.Dock = DockStyle.Fill;
-            PurchaseViewContainer.Location = new Point(322, 34);
-            PurchaseViewContainer.Name = "PurchaseViewContainer";
-            PurchaseViewContainer.Size = new Size(970, 554);
-            PurchaseViewContainer.TabIndex = 2;
-            // 
-            // panel48
-            // 
-            panel48.BackColor = Color.Teal;
-            panel48.Controls.Add(label28);
-            panel48.Dock = DockStyle.Top;
-            panel48.Location = new Point(0, 0);
-            panel48.Name = "panel48";
-            panel48.Size = new Size(970, 87);
-            panel48.TabIndex = 0;
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label28.ForeColor = Color.White;
-            label28.Location = new Point(24, 19);
-            label28.Name = "label28";
-            label28.Size = new Size(259, 50);
-            label28.TabIndex = 1;
-            label28.Text = "My Purchases";
-            // 
-            // panel49
-            // 
-            panel49.BackColor = Color.White;
-            panel49.Dock = DockStyle.Top;
-            panel49.Location = new Point(0, 87);
-            panel49.Name = "panel49";
-            panel49.Size = new Size(970, 36);
-            panel49.TabIndex = 1;
-            // 
-            // flowLayoutPanel2
-            // 
-            flowLayoutPanel2.Controls.Add(panel50);
-            flowLayoutPanel2.Dock = DockStyle.Fill;
-            flowLayoutPanel2.Location = new Point(0, 123);
-            flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(970, 431);
-            flowLayoutPanel2.TabIndex = 2;
-            // 
-            // panel50
-            // 
-            panel50.BackColor = Color.White;
-            panel50.Location = new Point(3, 3);
-            panel50.Name = "panel50";
-            panel50.Size = new Size(964, 121);
-            panel50.TabIndex = 0;
             // 
             // Form1
             // 
@@ -3297,6 +3439,20 @@
             panel18.ResumeLayout(false);
             panel18.PerformLayout();
             Profile_Panel.ResumeLayout(false);
+            PurchaseViewContainer.ResumeLayout(false);
+            flowLayoutPanel2.ResumeLayout(false);
+            panel48.ResumeLayout(false);
+            tableLayoutPanel6.ResumeLayout(false);
+            PurchaseSelector_Cancelled.ResumeLayout(false);
+            PurchaseSelector_Cancelled.PerformLayout();
+            PurchaseSelector_Completed.ResumeLayout(false);
+            PurchaseSelector_Completed.PerformLayout();
+            PurchaseSelector_ToReceive.ResumeLayout(false);
+            PurchaseSelector_ToReceive.PerformLayout();
+            PurchaseSelector_ToShip.ResumeLayout(false);
+            PurchaseSelector_ToShip.PerformLayout();
+            PurchaseSelector_All.ResumeLayout(false);
+            PurchaseSelector_All.PerformLayout();
             ProfileViewContainer.ResumeLayout(false);
             tableLayoutPanel4.ResumeLayout(false);
             panel37.ResumeLayout(false);
@@ -3333,10 +3489,6 @@
             panel29.ResumeLayout(false);
             panel29.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)ProfileIcon).EndInit();
-            PurchaseViewContainer.ResumeLayout(false);
-            panel48.ResumeLayout(false);
-            panel48.PerformLayout();
-            flowLayoutPanel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -3567,9 +3719,19 @@
         private TextBox SearchBox_TxtBox;
         private Panel PurchaseViewContainer;
         private Panel panel48;
-        private Label label28;
         private FlowLayoutPanel flowLayoutPanel2;
         private Panel panel50;
         private Panel panel49;
+        private TableLayoutPanel tableLayoutPanel6;
+        private Panel PurchaseSelector_Cancelled;
+        private Label label35;
+        private Panel PurchaseSelector_Completed;
+        private Label label33;
+        private Panel PurchaseSelector_ToReceive;
+        private Label label31;
+        private Panel PurchaseSelector_ToShip;
+        private Label label29;
+        private Panel PurchaseSelector_All;
+        private Label label28;
     }
 }
