@@ -567,7 +567,6 @@
             SignIn_Container.Name = "SignIn_Container";
             SignIn_Container.Size = new Size(444, 458);
             SignIn_Container.TabIndex = 2;
-            SignIn_Container.Paint += SignIn_Container_Paint;
             // 
             // SignUpLink
             // 
@@ -672,7 +671,6 @@
             SignUp_FooterLbl.TabIndex = 2;
             SignUp_FooterLbl.Text = "Doesn't have an account yet?";
             SignUp_FooterLbl.TextAlign = ContentAlignment.MiddleCenter;
-            SignUp_FooterLbl.Click += SignUp_FooterLbl_Click;
             // 
             // SignUp_Container
             // 
@@ -863,7 +861,6 @@
             tableLayout1.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayout1.Size = new Size(1350, 660);
             tableLayout1.TabIndex = 9;
-            tableLayout1.Paint += tableLayoutPanel1_Paint;
             // 
             // tableLayout2
             // 
@@ -881,7 +878,6 @@
             tableLayout2.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tableLayout2.Size = new Size(1350, 660);
             tableLayout2.TabIndex = 3;
-            tableLayout2.Paint += tableLayout2_Paint;
             // 
             // SignIn_Panel
             // 
@@ -891,7 +887,6 @@
             SignIn_Panel.Name = "SignIn_Panel";
             SignIn_Panel.Size = new Size(1350, 660);
             SignIn_Panel.TabIndex = 3;
-            SignIn_Panel.Paint += panel1_Paint;
             // 
             // SignUp_Panel
             // 
@@ -1827,7 +1822,6 @@
             panel19.Name = "panel19";
             panel19.Size = new Size(1189, 548);
             panel19.TabIndex = 0;
-            panel19.Paint += panel19_Paint;
             // 
             // CloseView
             // 
@@ -2107,7 +2101,6 @@
             label20.Size = new Size(48, 21);
             label20.TabIndex = 5;
             label20.Text = "Color";
-            label20.Click += label20_Click;
             // 
             // label19
             // 
@@ -2189,7 +2182,6 @@
             pictureBox17.Size = new Size(541, 488);
             pictureBox17.TabIndex = 0;
             pictureBox17.TabStop = false;
-            pictureBox17.Click += pictureBox17_Click;
             // 
             // Cart_Panel
             // 
@@ -2350,7 +2342,6 @@
             CartUnitPrice.Size = new Size(37, 21);
             CartUnitPrice.TabIndex = 7;
             CartUnitPrice.Text = "###";
-            CartUnitPrice.Click += label27_Click;
             // 
             // CartVariation
             // 
@@ -2661,7 +2652,6 @@
             panel49.Name = "panel49";
             panel49.Size = new Size(970, 36);
             panel49.TabIndex = 1;
-            panel49.Paint += panel49_Paint;
             // 
             // panel48
             // 
@@ -2672,7 +2662,6 @@
             panel48.Name = "panel48";
             panel48.Size = new Size(970, 50);
             panel48.TabIndex = 0;
-            panel48.Paint += panel48_Paint;
             // 
             // tableLayoutPanel6
             // 
@@ -2697,7 +2686,6 @@
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel6.Size = new Size(970, 50);
             tableLayoutPanel6.TabIndex = 0;
-            tableLayoutPanel6.Paint += tableLayoutPanel6_Paint;
             // 
             // PurchaseSelector_Cancelled
             // 
@@ -2761,7 +2749,6 @@
             label31.Size = new Size(91, 21);
             label31.TabIndex = 0;
             label31.Text = "To Receive";
-            label31.Click += label31_Click;
             // 
             // PurchaseSelector_ToShip
             // 
@@ -2794,7 +2781,6 @@
             PurchaseSelector_All.Size = new Size(186, 42);
             PurchaseSelector_All.TabIndex = 0;
             PurchaseSelector_All.Click += PurchaseSelector_All_Click;
-            PurchaseSelector_All.Paint += PurchaseSelector_All_Paint;
             // 
             // label28
             // 
@@ -2834,7 +2820,6 @@
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tableLayoutPanel4.Size = new Size(970, 467);
             tableLayoutPanel4.TabIndex = 1;
-            tableLayoutPanel4.Paint += tableLayoutPanel4_Paint;
             // 
             // panel37
             // 
@@ -3343,7 +3328,6 @@
             panel31.Name = "panel31";
             panel31.Size = new Size(270, 50);
             panel31.TabIndex = 4;
-            panel31.Click += panel31_Click;
             // 
             // MyAccount_LinkLbl
             // 
@@ -3444,7 +3428,6 @@
             Controls.Add(TopNavBar);
             Name = "Form1";
             Text = "Add Program Label Here";
-            Load += Form1_Load;
             TopNavBar.ResumeLayout(false);
             TopNavBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)Logo_PicBox).EndInit();
