@@ -18,6 +18,9 @@ namespace ITEC103_Finals
             api = new API();
             api.ConnectDB();
 
+            // Panel Setup
+            SignIn_Panel.BringToFront();
+
             addid();
             storecontrols();
             // Set Form Size
@@ -28,7 +31,7 @@ namespace ITEC103_Finals
             button11.Visible = false;
             roundedButton1.Visible = false;
         }
-        
+
         // Add Methods to Their Designated Panel Files...
 
     }

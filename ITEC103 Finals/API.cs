@@ -1,4 +1,6 @@
-﻿namespace ITEC103_Finals
+﻿using System.Data;
+
+namespace ITEC103_Finals
 {
     class API
     {
@@ -72,5 +74,107 @@
             MessageBox.Show("Error " + ex.Number + " has occurred: " + ex.Message,
                 "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        public DataTable pullDataTable(string table_name)
+        {
+            // Return a datatable from the db with a given table name.
+
+            // Setup Command for Query
+            cmd.CommandText = $"SELECT * FROM {table_name}";
+            cmd.Parameters.Clear();
+
+            try
+            {
+                DataTable dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+                return dt;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public bool AuthenticateAccount(string username, string password)
+        {
+            // Check the given username and password inside the system.
+            // If username and password are both found, return true otherwise return false.
+
+            try
+            {
+                // Pull the users data.
+                DataTable dt = pullDataTable("users");
+
+                // Check through each row of username and password.
+                bool final_check, user_check, pass_check;
+                foreach (DataRow row in dt.Rows)
+                {
+
+                    user_check = username.ToLower() == row[1].ToString().ToLower();
+                    pass_check = password == row[2].ToString();
+                    final_check = user_check && pass_check;
+
+                    if (final_check)
+                        return true;
+                }
+                return false;
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                RaiseSQLError(ex);
+                return false;
+            }
+        }
+
+        public bool UsernameExists(string username)
+        {
+            // Check if the username is already in the Users table - JM
+            string query = "SELECT COUNT(*) FROM users WHERE LOWER(username) = LOWER(@username)";
+            cmd.CommandText = query;
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@username", username);
+
+            try
+            {
+                int count = Convert.ToInt32(cmd.ExecuteScalar());
+                return count > 0;
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                RaiseSQLError(ex);
+                return false;
+            }
+        }
+
+        public void PushDataToUsers(string username, string password)
+        {
+            // Pushes data to the Users table.
+
+            // Check database connection
+            if (!ConnectionPresent())
+                return;
+
+            // Query Command
+            string query = "INSERT INTO users (username, password) VALUES (@username, @password)";
+
+            // Setup Command for Query
+            cmd.CommandText = query;
+            cmd.Parameters.Clear();
+
+            // Add Parameters.
+            cmd.Parameters.AddWithValue("@username", username);
+            cmd.Parameters.AddWithValue("@password", password);
+
+            // Attempt Query Execution
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                RaiseSQLError(ex);
+            }
+        }
+
     }
 }

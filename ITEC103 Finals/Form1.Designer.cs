@@ -548,6 +548,7 @@
             SignIn_Btn.Text = "Sign in";
             SignIn_Btn.TextColor = Color.White;
             SignIn_Btn.UseVisualStyleBackColor = false;
+            SignIn_Btn.Click += SignIn_Btn_Click;
             // 
             // SignIn_Container
             // 
@@ -581,6 +582,7 @@
             SignUpLink.TabIndex = 9;
             SignUpLink.TabStop = true;
             SignUpLink.Text = "Sign up";
+            SignUpLink.LinkClicked += SignUpLink_LinkClicked;
             // 
             // ForgotPasswordLink
             // 
@@ -656,6 +658,7 @@
             Password_SignInTxtBox.Location = new Point(61, 216);
             Password_SignInTxtBox.Margin = new Padding(3, 2, 3, 2);
             Password_SignInTxtBox.Name = "Password_SignInTxtBox";
+            Password_SignInTxtBox.PasswordChar = '*';
             Password_SignInTxtBox.PlaceholderText = " ENTER PASSWORD";
             Password_SignInTxtBox.Size = new Size(329, 32);
             Password_SignInTxtBox.TabIndex = 7;
@@ -706,6 +709,7 @@
             SignInLink.TabIndex = 13;
             SignInLink.TabStop = true;
             SignInLink.Text = "Sign In";
+            SignInLink.LinkClicked += SignInLink_LinkClicked;
             // 
             // SignUp_HeaderLbl
             // 
@@ -749,9 +753,9 @@
             Email_SignUpLbl.ImageAlign = ContentAlignment.MiddleLeft;
             Email_SignUpLbl.Location = new Point(61, 162);
             Email_SignUpLbl.Name = "Email_SignUpLbl";
-            Email_SignUpLbl.Size = new Size(47, 20);
+            Email_SignUpLbl.Size = new Size(123, 20);
             Email_SignUpLbl.TabIndex = 7;
-            Email_SignUpLbl.Text = "Email";
+            Email_SignUpLbl.Text = "Email (Optional)";
             Email_SignUpLbl.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Email_SignUpTxtBox
@@ -786,6 +790,7 @@
             Password_SignUpTxtBox.Location = new Point(61, 237);
             Password_SignUpTxtBox.Margin = new Padding(3, 2, 3, 2);
             Password_SignUpTxtBox.Name = "Password_SignUpTxtBox";
+            Password_SignUpTxtBox.PasswordChar = '*';
             Password_SignUpTxtBox.PlaceholderText = " ENTER PASSWORD";
             Password_SignUpTxtBox.Size = new Size(329, 32);
             Password_SignUpTxtBox.TabIndex = 10;
@@ -810,6 +815,7 @@
             RepeatPassword_SignUpTxtBox.Location = new Point(61, 292);
             RepeatPassword_SignUpTxtBox.Margin = new Padding(3, 2, 3, 2);
             RepeatPassword_SignUpTxtBox.Name = "RepeatPassword_SignUpTxtBox";
+            RepeatPassword_SignUpTxtBox.PasswordChar = '*';
             RepeatPassword_SignUpTxtBox.PlaceholderText = " REPEAT PASSWORD";
             RepeatPassword_SignUpTxtBox.Size = new Size(329, 32);
             RepeatPassword_SignUpTxtBox.TabIndex = 12;
@@ -833,6 +839,7 @@
             SignUp_Btn.Text = "Sign up";
             SignUp_Btn.TextColor = Color.White;
             SignUp_Btn.UseVisualStyleBackColor = false;
+            SignUp_Btn.Click += SignUp_Btn_Click;
             // 
             // SignIn_FooterLbl
             // 
@@ -3419,12 +3426,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 244);
             ClientSize = new Size(1350, 729);
-            Controls.Add(Profile_Panel);
-            Controls.Add(HomePage_Panel);
-            Controls.Add(ItemView_Panel);
-            Controls.Add(Cart_Panel);
             Controls.Add(SignIn_Panel);
             Controls.Add(SignUp_Panel);
+            Controls.Add(HomePage_Panel);
+            Controls.Add(Profile_Panel);
+            Controls.Add(ItemView_Panel);
+            Controls.Add(Cart_Panel);
             Controls.Add(TopNavBar);
             Name = "Form1";
             Text = "Add Program Label Here";
