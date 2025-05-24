@@ -3,6 +3,7 @@ namespace ITEC103_Finals
     public partial class Form1 : Form
     {
         private API api;
+        bool signed_in = false;
 
         int qnty = 1;
         int itm;//id para sa ibang switch

@@ -79,6 +79,7 @@
                     Email_SignInTxtBox.Clear();
                     Password_SignInTxtBox.Clear();
 
+                    signed_in = true;
                     HomePage_Panel.BringToFront();
                 }
                 else

@@ -44,16 +44,22 @@ namespace ITEC103_Finals
         }
         private void Logo_PicBox_Click(object sender, EventArgs e)
         {
+            if (!signed_in)
+                return;
             HomePage_Panel.BringToFront(); //clicking logo brings you back to home page
             PageLabel.Text = "Home";
         }
         private void CartIcon_PicBox_Click(object sender, EventArgs e)
         {
+            if (!signed_in)
+                return;
             Cart_Panel.BringToFront(); //brings you to cart page
             PageLabel.Text = "Cart";
         }
         private void ProfileIcon_PicBox_Click(object sender, EventArgs e)
         {
+            if (!signed_in)
+                return;
             Profile_Panel.BringToFront(); //brings you to profile page
             PageLabel.Text = "Profile";
         }
