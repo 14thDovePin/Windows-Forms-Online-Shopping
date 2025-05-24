@@ -31,6 +31,8 @@ namespace ITEC103_Finals
             //sets reset buttons hidden
             button11.Visible = false;
             roundedButton1.Visible = false;
+
+            CartPanel_Load();
         }
 
         // Add Methods to Their Designated Panel Files...
