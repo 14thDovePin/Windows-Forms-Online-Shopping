@@ -26,28 +26,50 @@ namespace ITEC103_Finals
 
         private void CartPanel_Load()
         {
-            LoadCartItems(
+            flowLayoutPanel1.Controls.Clear();
+
+            GenerateCartItem(
                 821,
                 0,
                 DateTime.MinValue,
                 20,
                 "Cart",
-                "Secret Gundam Sheet",
-                "White Nigga"
+                "Secret Gundam Warrior",
+                "White Medium Set"
                 );
         }
 
+        private void GenerateCartItem(int price_id, int user_id, DateTime purchase_date, int purchase_quantity, string status, string product_name, string variation)
+        {
+            // Check User & Order Status
+            bool user_check = true;
+            bool cart_item = status.ToLower() == "cart";
+
+            if (user_check && cart_item) { }
+            else return;
+
+            // Generate Interface
+            generatepanel();
+            imagesource(price_id); //displays the image based on the id 
+            price = price_id;//price galing sa database
+            totalprice = price * purchase_quantity;
+
+            //this part displays the data in each respective label 
+            imagesource(price_id);
+            label50.Text = product_name;
+            label51.Text = variation;
+            label52.Text = price.ToString();
+            ItemCartQty.Text = purchase_quantity.ToString();
+            label53.Text = totalprice.ToString();
+            totalamount += totalprice;
+            totalitems += purchase_quantity;
+            TotalItemLabel.Text = $"Total( {totalitems} Item/s):";
+            CheckOutTotalPrice.Text = totalamount.ToString();
+        }
+
+
         //generates cart items depending on user id
-        //private void LoadCartItems(int cartid, string productname, string variation, int quantity)
-        private void LoadCartItems(
-            int price_id,
-            int user_id,
-            DateTime purchase_date,
-            int purchase_quantity,
-            string status,
-            string product_name,
-            string variation
-            )
+        private void LoadCartItems(int price_id, int user_id, DateTime purchase_date, int purchase_quantity, string status, string product_name, string variation)
         {
             panel23.Visible = false;
             
@@ -168,6 +190,7 @@ namespace ITEC103_Finals
                 Text = "Color, Size",// Replace with actual product variation
             };
 
+            panel.Controls.Add(label51);
             panel.Controls.Add(label4);
 
             //product price 
