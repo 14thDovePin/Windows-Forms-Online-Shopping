@@ -11,6 +11,7 @@ namespace ITEC103_Finals
         string details = "det";
 
         Panel[] panels = new Panel[16];
+
         public Form1()
         {
             InitializeComponent();

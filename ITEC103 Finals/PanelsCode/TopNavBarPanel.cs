@@ -1,13 +1,13 @@
-﻿using ITEC103_Finals.AddControls;
-
-namespace ITEC103_Finals
+﻿namespace ITEC103_Finals
 {
     public partial class Form1 : Form
     {
-        
+        // Add Code Here
+
         private void Search_Btn_Click(object sender, EventArgs e)
         {
             var matchingPanels = new List<Panel>();
+
             foreach (Control ctrl in ItemList.Controls)
             {
                 if(ctrl is Panel pnl)
@@ -25,41 +25,52 @@ namespace ITEC103_Finals
                     }
                 }
             }
+
             ItemList.Controls.Clear();
+
             foreach (Panel panel in matchingPanels)
             {
                 ItemList.Controls.Add(panel);
             }
-            roundedButton1.Visible = true;
 
+            roundedButton1.Visible = true;
         }
+
         private void roundedButton1_Click(object sender, EventArgs e)
         {  
             SearchBox_TxtBox.Text = "";
+
             for (int i = 0; i < panels.Length; i++)
             {
                 ItemList.Controls.Add(panels[i]);
             }
+
             roundedButton1.Visible = false;
         }
+
         private void Logo_PicBox_Click(object sender, EventArgs e)
         {
             if (!signed_in)
                 return;
+
             HomePage_Panel.BringToFront(); //clicking logo brings you back to home page
             PageLabel.Text = "Home";
         }
+
         private void CartIcon_PicBox_Click(object sender, EventArgs e)
         {
             if (!signed_in)
                 return;
+
             Cart_Panel.BringToFront(); //brings you to cart page
             PageLabel.Text = "Cart";
         }
+
         private void ProfileIcon_PicBox_Click(object sender, EventArgs e)
         {
             if (!signed_in)
                 return;
+
             Profile_Panel.BringToFront(); //brings you to profile page
             PageLabel.Text = "Profile";
         }

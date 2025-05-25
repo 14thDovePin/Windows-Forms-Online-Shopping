@@ -2,35 +2,38 @@
 {
     public partial class Form1 : Form
     {
+        // Add Code Here
+
         //adds id to the link labels
         private void addid()
         {
-
             LinkLabel[] labels = new LinkLabel[] {
                  linkLabel1, linkLabel2, linkLabel3, linkLabel4,
                  linkLabel5, linkLabel6, linkLabel7, linkLabel8,
                  linkLabel9, linkLabel10, linkLabel11, linkLabel12,
                  linkLabel13, linkLabel14, linkLabel15, linkLabel16
             };
+
             Panel[] panels = {
                 panel2, panel3, panel4, panel5,
                  panel6, panel7, panel8, panel9,
                 panel10, panel11, panel12, panel13,
                 panel14, panel15, panel16, panel17
             };
+
             for (int i = 0; i < labels.Length; i++)
             {
                 labels[i].Tag = id[i];
                 labels[i].LinkClicked += LinkLabel_LinkClicked;
                 panels[i].Tag = id[i];
             }
-
         }
 
         //executes when link label is clicked
         private void LinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             LinkLabel clickedLabel = sender as LinkLabel;
+
             if (clickedLabel != null && clickedLabel.Tag != null)
             {
                 int id = (int)clickedLabel.Tag; //gets id from clicked button
@@ -38,7 +41,6 @@
                 showiteminfo(id);
             }
         }
-
 
         //shows products information
         private void showiteminfo(int id)

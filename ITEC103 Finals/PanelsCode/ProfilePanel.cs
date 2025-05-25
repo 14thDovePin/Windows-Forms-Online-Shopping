@@ -3,6 +3,7 @@
     public partial class Form1 : Form
     {
         // Add Code Here
+
         private void ResetPurchaseSelectors()
         {
             PurchaseSelector_All.BackColor = Color.White;
@@ -17,12 +18,14 @@
             label33.ForeColor = Color.Black;
             label35.ForeColor = Color.Black;
         }
+
         private void PurchaseSelector_All_Click(object sender, EventArgs e)
         {
             ResetPurchaseSelectors();
             PurchaseSelector_All.BackColor = Color.Teal;
             label28.ForeColor = Color.White;
         }
+
         private void PurchaseSelector_ToShip_Click(object sender, EventArgs e)
         {
             ResetPurchaseSelectors();
@@ -78,6 +81,5 @@
             ResetSidebarLinks();
             Notification_LinkLbl.ForeColor = Color.Teal;
         }
-
     }
 }

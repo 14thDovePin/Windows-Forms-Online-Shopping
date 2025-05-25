@@ -1,5 +1,5 @@
 ﻿namespace ITEC103_Finals
-{
+{    
     public partial class Form1 : Form
     {
         // Add Code Here
@@ -19,6 +19,7 @@
             string username = Username_TxtBox.Text.Trim();
             string password = Password_SignUpTxtBox.Text.Trim();
             string repeatPassword = RepeatPassword_SignUpTxtBox.Text.Trim();
+
             try
             {
                 //checks if all signup fields are filled -JM
@@ -27,18 +28,21 @@
                     MessageBox.Show("Please fill in all fields.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+
                 //checks if password and repeat password match -JM
                 if (password != repeatPassword)
                 {
                     MessageBox.Show("Passwords do not match. Please try again.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+
                 //checks if username is already taken -JM
                 if (api.UsernameExists(username))
                 {
                     MessageBox.Show("Username already exists. Please choose another one.", "Duplicate Username", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+
                 api.PushDataToUsers(username, password);
 
                 MessageBox.Show("Sign up successful. Please wait for account approval.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -72,14 +76,18 @@
                     MessageBox.Show("Please enter both username and password.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+
                 // Authenticate the user -JM
                 if (api.AuthenticateAccount(username, password))
                 {
                     MessageBox.Show("Sign in successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    ProfileUser_Lbl.Text = Email_SignInTxtBox.Text;
+                    signed_in = true;
+
                     Email_SignInTxtBox.Clear();
                     Password_SignInTxtBox.Clear();
 
-                    signed_in = true;
                     HomePage_Panel.BringToFront();
                 }
                 else

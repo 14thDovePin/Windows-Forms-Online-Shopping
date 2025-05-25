@@ -2,10 +2,11 @@
 {
     public partial class Form1 : Form
     {
+        // Add Code Here
+
         //readds all controls depending on sort option
         private void SortPrice_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             if (SortPrice.Text == "High to Low")
             {
                 //sort by price
@@ -17,6 +18,7 @@
                 {
                     ItemList.Controls.SetChildIndex(panel, 0); // move panel to top
                 }
+
                 button11.Visible = true;
             }
             else if (SortPrice.Text == "Low to High")
@@ -30,6 +32,7 @@
                 {
                     ItemList.Controls.SetChildIndex(panel, 0); // move panel to top
                 }
+
                 button11.Visible = true;
             }
         }
@@ -50,13 +53,14 @@
         private void button11_Click(object sender, EventArgs e)
         {
             ItemList.Controls.Clear();
+
             for (int i = 0; i < panels.Length; i++)
             {
                 ItemList.Controls.Add(panels[i]);
             }
+
             SortPrice.Text = "Price";
             button11.Visible = false;
         }
-
     }
 }

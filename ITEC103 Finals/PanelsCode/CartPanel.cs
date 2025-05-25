@@ -1,12 +1,12 @@
-﻿using System.Windows.Forms;
-using ITEC103_Finals.AddControls;
-using MySqlX.XDevAPI.Relational;
+﻿using ITEC103_Finals.AddControls;
 
 namespace ITEC103_Finals
 {
     public partial class Form1 : Form
     {
-     //labels buttons and picture box for each panel of product
+        // Add Code Here
+
+        //labels buttons and picture box for each panel of product
         private PictureBox pictureBox = new PictureBox{};
         private Label label50 = new Label {};
         private Label label51 = new Label {};
@@ -15,14 +15,16 @@ namespace ITEC103_Finals
         private Label ItemCartQty = new Label {};
         private Button cart_qtyDecrement = new Button{};
         private Button cart_qtyIncrement = new Button{};
+
         //user and product infos
         int cartid,quantity,price, totalprice;
         string  productname,variation,status;
 
         //totals 
         int totalamount, totalitems;
-    //loads cart items
-    private void CartPanel_Load()
+        //loads cart items
+
+        private void CartPanel_Load()
         {
             LoadCartItems();
         }
@@ -31,11 +33,11 @@ namespace ITEC103_Finals
         private void LoadCartItems()
         {
             panel23.Visible = false;
-
             
             for (int i = 0; i < 5; i++)
             {
                 status = "cart"; //status galing sa database
+
                 if (i == 0 && status == "cart") //condtion dito dapat is buyer id tas sa status is cart or something
                 {
                     generatepanel();
@@ -72,6 +74,7 @@ namespace ITEC103_Finals
                 ItemCartQty.Text = quantity.ToString();
             }
         }
+
         private void cart_qtyIncrement_Click(object sender, EventArgs e)
         {
             // Increment quantity logic
@@ -91,7 +94,6 @@ namespace ITEC103_Finals
             };
 
             //product toggle
-
             ToggleButton toggleButton = new ToggleButton
             {
                 AutoSize = true,
@@ -117,6 +119,7 @@ namespace ITEC103_Finals
                 Location = new Point(65, 3),
                 SizeMode = PictureBoxSizeMode.StretchImage
             };
+
             panel.Controls.Add(pictureBox);
 
             //product name and panel
@@ -205,6 +208,7 @@ namespace ITEC103_Finals
                 Text = "+",
                 UseVisualStyleBackColor = true,
             };
+
             cart_qtyDecrement.Click += cart_qtyDecrement_Click; 
             cart_qtyIncrement.Click += cart_qtyIncrement_Click;
 
@@ -243,12 +247,14 @@ namespace ITEC103_Finals
                 TabIndex = 8,
                 Text = "###",
             };
+
             panel.Controls.Add(label53);
 
             // edit and delete Buttons
             Button button1 = new Button
             {
-                BackgroundImage = Image.FromFile("img/edit.png"), // Use BackgroundImage instead of Image
+                // TODO: Uncomment when resolved.
+                //BackgroundImage = Image.FromFile("img/edit.png"), // Use BackgroundImage instead of Image
                 BackgroundImageLayout = ImageLayout.Zoom,         // Zoom keeps image aspect ratio
                 FlatStyle = FlatStyle.Flat,
                 Location = new Point(956, 40),
@@ -264,7 +270,8 @@ namespace ITEC103_Finals
 
             Button button2 = new Button
             {
-                BackgroundImage = Image.FromFile("img/delete.png"),
+                // TODO: Uncomment when resolved.
+                //BackgroundImage = Image.FromFile("img/delete.png"),
                 BackgroundImageLayout = ImageLayout.Zoom,
                 FlatStyle = FlatStyle.Flat,
                 Location = new Point(1010, 40),
@@ -278,12 +285,9 @@ namespace ITEC103_Finals
 
             panel.Controls.Add(button2);
 
-
             // Add panel to the form
             flowLayoutPanel1.Controls.Add(panel);
-        }
-
-        
+        }        
 
         private void imagesource(int id)
         {
