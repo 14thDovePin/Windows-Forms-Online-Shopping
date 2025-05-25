@@ -175,6 +175,54 @@ namespace ITEC103_Finals
                 RaiseSQLError(ex);
             }
         }
+        public IEnumerable<(int PriceId, int UserId, DateTime PurchaseDate, int Quantity, string Status, string Variation, string ProductName)> GetAllCartItems()
+        {
+            // A generator that returns ready to use data from the orders table.
+            DataTable dt;
+
+            try
+            {
+                dt = pullDataTable("orders");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error pulling data: " + ex.Message,
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                yield break; // Stop to avoid indexing out of range.
+            }
+
+            foreach (DataRow row in dt.Rows)
+            {
+                int price_id = 0;
+                int user_id = 0;
+                DateTime purchase_date = DateTime.MinValue;
+                int purchase_quantity = 0;
+                string status = "";
+                string variation = "";
+                string product_name = "";
+
+                try
+                {
+                    price_id = Convert.ToInt32(row[0]);
+                    user_id = Convert.ToInt32(row[1]);
+                    purchase_date = Convert.ToDateTime(row[2]);
+                    purchase_quantity = Convert.ToInt32(row[3]);
+                    status = Convert.ToString(row[4]);
+                    variation = Convert.ToString(row[5]);
+                    product_name = Convert.ToString(row[6]);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Data conversion error: " + ex.Message,
+                        "Row Skipped", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    continue; // Skip this row and continue with the rest
+                }
+
+                yield return (price_id, user_id, purchase_date, purchase_quantity, status, variation, product_name);
+            }
+        }
+
+
 
     }
 }
