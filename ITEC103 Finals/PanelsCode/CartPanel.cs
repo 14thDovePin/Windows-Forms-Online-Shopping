@@ -26,11 +26,28 @@ namespace ITEC103_Finals
 
         private void CartPanel_Load()
         {
-            LoadCartItems();
+            LoadCartItems(
+                821,
+                0,
+                DateTime.MinValue,
+                20,
+                "Cart",
+                "Secret Gundam Sheet",
+                "White Nigga"
+                );
         }
 
         //generates cart items depending on user id
-        private void LoadCartItems()
+        //private void LoadCartItems(int cartid, string productname, string variation, int quantity)
+        private void LoadCartItems(
+            int price_id,
+            int user_id,
+            DateTime purchase_date,
+            int purchase_quantity,
+            string status,
+            string product_name,
+            string variation
+            )
         {
             panel23.Visible = false;
             
@@ -41,24 +58,19 @@ namespace ITEC103_Finals
                 if (i == 0 && status == "cart") //condtion dito dapat is buyer id tas sa status is cart or something
                 {
                     generatepanel();
-                    //this part assigns the data from the database to fixed variables in the code
-                    cartid = 821;//product id galing sa database
-                    imagesource(cartid); //displays the image based on the id 
-                    productname = null; //product name galing database 
-                    variation = null; //variation or details galing database
-                    price = 0;//price galing sa database
-                    quantity = 0; // quantity galing sa database
-                    totalprice = price * quantity;
+                    imagesource(price_id); //displays the image based on the id 
+                    price = price_id;//price galing sa database
+                    totalprice = price * purchase_quantity;
                     
                     //this part displays the data in each respective label 
-                    imagesource(cartid);
-                    label50.Text = productname;
+                    imagesource(price_id);
+                    label50.Text = product_name;
                     label51.Text = variation;
                     label52.Text = price.ToString();
-                    ItemCartQty.Text = quantity.ToString(); 
+                    ItemCartQty.Text = purchase_quantity.ToString(); 
                     label53.Text = totalprice.ToString(); 
                     totalamount += totalprice;
-                    totalitems += quantity;
+                    totalitems += purchase_quantity;
                     TotalItemLabel.Text = $"Total( {totalitems} Item/s):";
                     CheckOutTotalPrice.Text = totalamount.ToString();
                 }
