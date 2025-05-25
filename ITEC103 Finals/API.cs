@@ -1,4 +1,6 @@
-﻿using System.Data;
+﻿using MySqlX.XDevAPI.Common;
+using System.Data;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ITEC103_Finals
 {
@@ -95,7 +97,7 @@ namespace ITEC103_Finals
             }
         }
 
-        public bool AuthenticateAccount(string username, string password)
+        public (bool auth, int uid) AuthenticateAccount(string username, string password)
         {
             // Check the given username and password inside the system.
             // If username and password are both found, return true otherwise return false.
@@ -109,20 +111,19 @@ namespace ITEC103_Finals
                 bool final_check, user_check, pass_check;
                 foreach (DataRow row in dt.Rows)
                 {
-
                     user_check = username.ToLower() == row[1].ToString().ToLower();
                     pass_check = password == row[2].ToString();
                     final_check = user_check && pass_check;
 
-                    if (final_check)
-                        return true;
+                    if (final_check)                        
+                        return (true, Convert.ToInt32(row[0]));
                 }
-                return false;
+                return (false, -1);
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {
                 RaiseSQLError(ex);
-                return false;
+                return (false, -1);
             }
         }
 
@@ -219,6 +220,41 @@ namespace ITEC103_Finals
                 }
 
                 yield return (price_id, user_id, purchase_date, purchase_quantity, status, variation, product_name);
+            }
+        }
+
+        public void PushDataToOrders(int price_id, int user_id, DateTime purchase_date, int purchase_quantity, string variation, string product_name, string status="Cart")
+        {
+            // Pushes data to the Orders table.
+
+            // Check database connection
+            if (!ConnectionPresent())
+                return;
+
+            // Query Command
+            string query = "INSERT INTO Users (price_id, user_id, purchase_date, purchase_quantity, status, variation, product_name) VALUES (@price_id, @user_id, @purchase_date, @purchase_quantity, @status, @variation, @product_name)";
+
+            // Setup Command for Query
+            cmd.CommandText = query;
+            cmd.Parameters.Clear();
+
+            // Add Parameters.
+            cmd.Parameters.AddWithValue("@price_id", price_id);
+            cmd.Parameters.AddWithValue("@user_id", user_id);
+            cmd.Parameters.AddWithValue("@purchase_date", purchase_date);
+            cmd.Parameters.AddWithValue("@purchase_quantity", purchase_quantity);
+            cmd.Parameters.AddWithValue("@status", status);
+            cmd.Parameters.AddWithValue("@variation", variation);
+            cmd.Parameters.AddWithValue("@product_name", product_name);
+
+            // Attempt Query Execution
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                RaiseSQLError(ex);
             }
         }
 

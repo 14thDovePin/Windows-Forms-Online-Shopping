@@ -5,10 +5,11 @@ namespace ITEC103_Finals
         private API api;
         bool signed_in = false;
 
+        int user_id;
         int qnty = 1;
         int itm;//id para sa ibang switch
         int[] id = { 899, 499, 1259, 2459, 89, 259, 40, 699, 270, 180, 550, 70, 700, 130, 75, 821 };
-        string details = "det";
+        string details = null;
 
         Panel[] panels = new Panel[16];
 
@@ -34,6 +35,19 @@ namespace ITEC103_Finals
             roundedButton1.Visible = false;
 
             CartPanel_Load();
+        }
+
+        int[] exclusions = { 259, 550, 699, 700, 821, 1259, 2459 };
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (details == null)
+                ItemView_AddCart.Enabled = false;
+            else
+                ItemView_AddCart.Enabled = true;
+
+            if (exclusions.Contains(itm))
+                ItemView_AddCart.Enabled = true;
         }
 
         // Add Methods to Their Designated Panel Files...

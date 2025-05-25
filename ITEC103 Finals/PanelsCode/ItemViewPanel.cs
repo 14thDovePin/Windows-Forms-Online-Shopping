@@ -4,6 +4,12 @@
     {
         // Add Code Here
 
+        private void ItemView_AddCart_Click(object sender, EventArgs e)
+        {
+            // Uploads the current selection information to the server.
+
+        }
+
         //adds id to the link labels
         private void addid()
         {
@@ -541,6 +547,7 @@
         //returns to homepage from items view
         private void CloseView_Click(object sender, EventArgs e)
         {
+            details = null;
             HomePage_Panel.BringToFront();
         }
 

@@ -78,7 +78,11 @@
                 }
 
                 // Authenticate the user -JM
-                if (api.AuthenticateAccount(username, password))
+                (bool authenticate_user, user_id) = api.AuthenticateAccount(username, password);
+
+                Console.WriteLine(user_id);
+
+                if (authenticate_user)
                 {
                     MessageBox.Show("Sign in successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

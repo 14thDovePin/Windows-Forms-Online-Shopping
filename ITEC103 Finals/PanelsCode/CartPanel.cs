@@ -68,36 +68,36 @@ namespace ITEC103_Finals
         }
 
 
-        //generates cart items depending on user id
-        private void LoadCartItems(int price_id, int user_id, DateTime purchase_date, int purchase_quantity, string status, string product_name, string variation)
-        {
-            panel23.Visible = false;
+        ////generates cart items depending on user id
+        //private void LoadCartItems(int price_id, int user_id, DateTime purchase_date, int purchase_quantity, string status, string product_name, string variation)
+        //{
+        //    panel23.Visible = false;
             
-            for (int i = 0; i < 5; i++)
-            {
-                status = "cart"; //status galing sa database
+        //    for (int i = 0; i < 5; i++)
+        //    {
+        //        status = "cart"; //status galing sa database
 
-                if (i == 0 && status == "cart") //condtion dito dapat is buyer id tas sa status is cart or something
-                {
-                    generatepanel();
-                    imagesource(price_id); //displays the image based on the id 
-                    price = price_id;//price galing sa database
-                    totalprice = price * purchase_quantity;
+        //        if (i == 0 && status == "cart") //condtion dito dapat is buyer id tas sa status is cart or something
+        //        {
+        //            generatepanel();
+        //            imagesource(price_id); //displays the image based on the id 
+        //            price = price_id;//price galing sa database
+        //            totalprice = price * purchase_quantity;
                     
-                    //this part displays the data in each respective label 
-                    imagesource(price_id);
-                    label50.Text = product_name;
-                    label51.Text = variation;
-                    label52.Text = price.ToString();
-                    ItemCartQty.Text = purchase_quantity.ToString(); 
-                    label53.Text = totalprice.ToString(); 
-                    totalamount += totalprice;
-                    totalitems += purchase_quantity;
-                    TotalItemLabel.Text = $"Total( {totalitems} Item/s):";
-                    CheckOutTotalPrice.Text = totalamount.ToString();
-                }
-            }
-        }
+        //            //this part displays the data in each respective label 
+        //            imagesource(price_id);
+        //            label50.Text = product_name;
+        //            label51.Text = variation;
+        //            label52.Text = price.ToString();
+        //            ItemCartQty.Text = purchase_quantity.ToString(); 
+        //            label53.Text = totalprice.ToString(); 
+        //            totalamount += totalprice;
+        //            totalitems += purchase_quantity;
+        //            TotalItemLabel.Text = $"Total( {totalitems} Item/s):";
+        //            CheckOutTotalPrice.Text = totalamount.ToString();
+        //        }
+        //    }
+        //}
 
         private void cart_qtyDecrement_Click(object sender, EventArgs e)
         {
@@ -191,7 +191,6 @@ namespace ITEC103_Finals
             };
 
             panel.Controls.Add(label51);
-            panel.Controls.Add(label4);
 
             //product price 
             label52 = new Label

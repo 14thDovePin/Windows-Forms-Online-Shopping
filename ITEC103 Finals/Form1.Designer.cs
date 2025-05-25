@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             TopNavBar = new Panel();
             roundedButton1 = new ITEC103_Finals.AddControls.RoundedButton();
@@ -275,6 +276,7 @@
             Notification_LinkLbl = new LinkLabel();
             ProfileUser_Lbl = new Label();
             ProfileIcon = new PictureBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             TopNavBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Logo_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
@@ -2058,6 +2060,7 @@
             ItemView_Buy.BorderColor = Color.PaleVioletRed;
             ItemView_Buy.BorderRadius = 40;
             ItemView_Buy.BorderSize = 0;
+            ItemView_Buy.Enabled = false;
             ItemView_Buy.FlatAppearance.BorderSize = 0;
             ItemView_Buy.FlatStyle = FlatStyle.Flat;
             ItemView_Buy.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -2088,6 +2091,7 @@
             ItemView_AddCart.Text = "Add to Cart";
             ItemView_AddCart.TextColor = Color.Teal;
             ItemView_AddCart.UseVisualStyleBackColor = false;
+            ItemView_AddCart.Click += ItemView_AddCart_Click;
             // 
             // label21
             // 
@@ -3420,17 +3424,23 @@
             ProfileIcon.TabIndex = 0;
             ProfileIcon.TabStop = false;
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 17;
+            timer1.Tick += timer1_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 244);
             ClientSize = new Size(1350, 729);
+            Controls.Add(ItemView_Panel);
+            Controls.Add(HomePage_Panel);
             Controls.Add(SignIn_Panel);
             Controls.Add(SignUp_Panel);
-            Controls.Add(HomePage_Panel);
             Controls.Add(Profile_Panel);
-            Controls.Add(ItemView_Panel);
             Controls.Add(Cart_Panel);
             Controls.Add(TopNavBar);
             Name = "Form1";
@@ -3835,5 +3845,6 @@
         private Label PurchaseStatus;
         private Label PurchaseQuantity;
         private Label PurchaseVariation;
+        private System.Windows.Forms.Timer timer1;
     }
 }
