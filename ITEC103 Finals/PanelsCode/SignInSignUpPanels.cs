@@ -78,9 +78,9 @@
                 }
 
                 // Authenticate the user -JM
-                (bool authenticate_user, uid) = api.AuthenticateAccount(username, password);
+                (bool authenticate_user, global_uid) = api.AuthenticateAccount(username, password);
 
-                Console.WriteLine(uid);
+                Console.WriteLine(global_uid);
 
                 if (authenticate_user)
                 {

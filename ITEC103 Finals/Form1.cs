@@ -5,11 +5,12 @@ namespace ITEC103_Finals
         private API api;
         bool signed_in = false;
 
-        int uid;
-        int qnty = 1;
-        int itm;//id para sa ibang switch
+        int global_uid;
+        int global_quantity;
+        int global_item_id;
+
         int[] id = { 899, 499, 1259, 2459, 89, 259, 40, 699, 270, 180, 550, 70, 700, 130, 75, 821 };
-        string details = null;
+        string global_variation = null;
 
         Panel[] panels = new Panel[16];
 
@@ -29,7 +30,7 @@ namespace ITEC103_Finals
             // Set Form Size
             this.Size = new Size(1366, 768);
             //displays default quantity to 1 
-            ItemViewQty.Text = qnty.ToString();
+            ItemViewQty.Text = global_quantity.ToString();
             //sets reset buttons hidden
             button11.Visible = false;
             roundedButton1.Visible = false;
@@ -41,12 +42,9 @@ namespace ITEC103_Finals
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (details == null)
+            if (global_variation == null && !exclusions.Contains(global_item_id))
                 ItemView_AddCart.Enabled = false;
             else
-                ItemView_AddCart.Enabled = true;
-
-            if (exclusions.Contains(itm))
                 ItemView_AddCart.Enabled = true;
         }
 

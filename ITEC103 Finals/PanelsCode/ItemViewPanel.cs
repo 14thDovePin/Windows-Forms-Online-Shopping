@@ -6,8 +6,25 @@
 
         private void ItemView_AddCart_Click(object sender, EventArgs e)
         {
-            // Uploads the current selection information to the server.
+            // Convert and rally all data needed.
+            Console.WriteLine(global_quantity);
+            global_quantity = Convert.ToInt32(ItemViewQty.Text);
+            string item_name = ItemViewName.Text;
 
+            // Uploads the current selection information to the server.
+            api.PushDataToOrders(
+                global_item_id,
+                global_uid,
+                DateTime.Now,
+                global_quantity,
+                global_variation,
+                item_name
+                );
+
+            // Notify user and return to menu.
+            MessageBox.Show("Order has been added to Cart...", "Success!", MessageBoxButtons.OK);
+            global_variation = null;
+            HomePage_Panel.BringToFront();
         }
 
         //adds id to the link labels
@@ -71,7 +88,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\1.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 499:
                     resetvisuals();
@@ -91,7 +108,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\2.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 1259:
                     resetvisuals();
@@ -111,7 +128,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\3.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 2459:
                     resetvisuals();
@@ -131,7 +148,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\4.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 89:
                     resetvisuals();
@@ -151,7 +168,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\5_def.png");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 259:
                     resetvisuals();
@@ -171,7 +188,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\6.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.Zoom;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 40:
                     resetvisuals();
@@ -191,7 +208,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\7_def.png");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 699:
                     resetvisuals();
@@ -211,7 +228,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\8.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 270:
                     resetvisuals();
@@ -231,7 +248,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\9.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 180:
                     resetvisuals();
@@ -251,7 +268,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\10.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 550:
                     resetvisuals();
@@ -271,7 +288,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\11.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 70:
                     resetvisuals();
@@ -291,7 +308,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\12_def.png");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 700:
                     resetvisuals();
@@ -311,7 +328,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\13.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 130:
                     resetvisuals();
@@ -331,7 +348,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\14_def.png");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 75:
                     resetvisuals();
@@ -351,7 +368,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\15_def.png");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
                 case 821:
                     resetvisuals();
@@ -371,7 +388,7 @@
                     button10.Visible = false;
                     pictureBox17.Image = Image.FromFile(@"img\16.jpg");
                     pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-                    itm = id;
+                    global_item_id = id;
                     break;
             }
         }
@@ -390,45 +407,45 @@
             button8.Visible = true;
             button9.Visible = true;
             button10.Visible = true;
-            qnty = 1;
-            ItemViewQty.Text = qnty.ToString();
+            global_quantity = 1;
+            ItemViewQty.Text = global_quantity.ToString();
         }
 
         //Selects details based on click button (color, size, etc) (for buttons 1-5)(also changes images depending on the button clicked)
         private void button1_Click(object sender, EventArgs e)
         {
-            switch (itm)
+            switch (global_item_id)
             {
                 case 899:
-                    details = button1.Text;
+                    global_variation = button1.Text;
                     break;
                 case 499:
-                    details = button1.Text;
+                    global_variation = button1.Text;
                     break;
                 case 89:
-                    details = button1.Text;
+                    global_variation = button1.Text;
                     pictureBox17.Image = Image.FromFile(@"img\5_def.png");
                     break;
                 case 40:
-                    details = button1.Text;
+                    global_variation = button1.Text;
                     pictureBox17.Image = Image.FromFile(@"img\7_def.png");
                     break;
                 case 270:
-                    details = button1.Text;
+                    global_variation = button1.Text;
                     break;
                 case 550:
-                    details = button1.Text;
+                    global_variation = button1.Text;
                     break;
                 case 700:
-                    details = button1.Text;
+                    global_variation = button1.Text;
                     pictureBox17.Image = Image.FromFile(@"img\12_blk.png");
                     break;
                 case 130:
-                    details = button1.Text;
+                    global_variation = button1.Text;
                     pictureBox17.Image = Image.FromFile(@"img\14_def.png");
                     break;
                 case 75:
-                    details = button1.Text;
+                    global_variation = button1.Text;
                     pictureBox17.Image = Image.FromFile(@"img\15_def.png");
                     break;
             }
@@ -436,38 +453,38 @@
 
         private void button2_Click(object sender, EventArgs e)
         {
-            switch (itm)
+            switch (global_item_id)
             {
                 case 899:
-                    details = button2.Text;
+                    global_variation = button2.Text;
                     break;
                 case 499:
-                    details = button2.Text;
+                    global_variation = button2.Text;
                     break;
                 case 89:
-                    details = button2.Text;
+                    global_variation = button2.Text;
                     pictureBox17.Image = Image.FromFile(@"img\5_rd.png");
                     break;
                 case 40:
-                    details = button2.Text;
+                    global_variation = button2.Text;
                     pictureBox17.Image = Image.FromFile(@"img\7_gry.png");
                     break;
                 case 270:
-                    details = button2.Text;
+                    global_variation = button2.Text;
                     break;
                 case 180:
-                    details = button2.Text;
+                    global_variation = button2.Text;
                     break;
                 case 70:
-                    details = button2.Text;
+                    global_variation = button2.Text;
                     pictureBox17.Image = Image.FromFile(@"img\12_drkbrwn.png");
                     break;
                 case 130:
-                    details = button2.Text;
+                    global_variation = button2.Text;
                     pictureBox17.Image = Image.FromFile(@"img\14-bl.png");
                     break;
                 case 75:
-                    details = button2.Text;
+                    global_variation = button2.Text;
                     pictureBox17.Image = Image.FromFile(@"img\15_black.png");
                     break;
             }
@@ -475,38 +492,38 @@
 
         private void button3_Click(object sender, EventArgs e)
         {
-            switch (itm)
+            switch (global_item_id)
             {
                 case 899:
-                    details = button3.Text;
+                    global_variation = button3.Text;
                     break;
                 case 499:
-                    details = button3.Text;
+                    global_variation = button3.Text;
                     break;
                 case 89:
-                    details = button3.Text;
+                    global_variation = button3.Text;
                     pictureBox17.Image = Image.FromFile(@"img\5_blck.png");
                     break;
                 case 40:
-                    details = button3.Text;
+                    global_variation = button3.Text;
                     pictureBox17.Image = Image.FromFile(@"img\7_bl.png");
                     break;
                 case 270:
-                    details = button3.Text;
+                    global_variation = button3.Text;
                     break;
                 case 180:
-                    details = button3.Text;
+                    global_variation = button3.Text;
                     break;
                 case 70:
-                    details = button3.Text;
+                    global_variation = button3.Text;
                     pictureBox17.Image = Image.FromFile(@"img\12_def.png");
                     break;
                 case 130:
-                    details = button3.Text;
+                    global_variation = button3.Text;
                     pictureBox17.Image = Image.FromFile(@"img\14_prpl.png");
                     break;
                 case 75:
-                    details = button3.Text;
+                    global_variation = button3.Text;
                     pictureBox17.Image = Image.FromFile(@"img\15_blkwht.png");
                     break;
             }
@@ -514,32 +531,32 @@
 
         private void button4_Click(object sender, EventArgs e)
         {
-            switch (itm)
+            switch (global_item_id)
             {
                 case 499:
-                    details = button4.Text;
+                    global_variation = button4.Text;
                     break;
                 case 270:
-                    details = button4.Text;
+                    global_variation = button4.Text;
                     break;
                 case 180:
-                    details = button4.Text;
+                    global_variation = button4.Text;
                     break;
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            switch (itm)
+            switch (global_item_id)
             {
                 case 499:
-                    details = button5.Text;
+                    global_variation = button5.Text;
                     break;
                 case 270:
-                    details = button5.Text;
+                    global_variation = button5.Text;
                     break;
                 case 180:
-                    details = button5.Text;
+                    global_variation = button5.Text;
                     break;
             }
         }
@@ -547,25 +564,25 @@
         //returns to homepage from items view
         private void CloseView_Click(object sender, EventArgs e)
         {
-            details = null;
+            global_variation = null;
             HomePage_Panel.BringToFront();
         }
 
         //adds 1 to quantity if clicked
         private void ItemView_QtyDecrement_Click(object sender, EventArgs e)
         {
-            qnty++;
-            ItemViewQty.Text = qnty.ToString();
+            global_quantity++;
+            ItemViewQty.Text = global_quantity.ToString();
         }
 
         //subtracts 1 to quantity if clicked
         private void ItemView_QtyIncrement_Click(object sender, EventArgs e)
         {
-            if (qnty > 1)
+            if (global_quantity > 1)
             {
-                qnty--;
+                global_quantity--;
             }
-            ItemViewQty.Text = qnty.ToString();
+            ItemViewQty.Text = global_quantity.ToString();
         }
     }
 }

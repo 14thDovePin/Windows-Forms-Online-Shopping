@@ -28,23 +28,39 @@ namespace ITEC103_Finals
         {
             flowLayoutPanel1.Controls.Clear();
 
-            GenerateCartItem(
-                821,
-                1,
-                DateTime.MinValue,
-                20,
-                "Cart",
-                "Secret Gundam Warrior",
-                "White Medium Set"
-                );
+            // Pull server data & generate cart items with it.
+
+            foreach (var item in api.GetAllCartItems())
+            {
+                GenerateCartItem(
+                    item.PriceId,
+                    item.UserId,
+                    item.PurchaseDate,
+                    item.Quantity,
+                    item.Status,
+                    item.ProductName,
+                    item.Variation
+                    );
+            }
+
+
+            //GenerateCartItem(
+            //    821,
+            //    1,
+            //    DateTime.MinValue,
+            //    20,
+            //    "Cart",
+            //    "Secret Gundam Warrior",
+            //    "White Medium Set"
+            //    );
         }
 
         private void GenerateCartItem(int price_id, int user_id, DateTime purchase_date, int purchase_quantity, string status, string product_name, string variation)
         {
             // Check User & Order Status
-            Console.WriteLine(uid);
+            Console.WriteLine(global_uid);
             Console.WriteLine(user_id);
-            bool user_check = user_id == uid;
+            bool user_check = user_id == global_uid;
             bool cart_item = status.ToLower() == "cart";
 
             if (user_check && cart_item) { }

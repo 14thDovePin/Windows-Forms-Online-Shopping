@@ -204,13 +204,13 @@ namespace ITEC103_Finals
 
                 try
                 {
-                    price_id = Convert.ToInt32(row[0]);
-                    user_id = Convert.ToInt32(row[1]);
-                    purchase_date = Convert.ToDateTime(row[2]);
-                    purchase_quantity = Convert.ToInt32(row[3]);
-                    status = Convert.ToString(row[4]);
-                    variation = Convert.ToString(row[5]);
-                    product_name = Convert.ToString(row[6]);
+                    price_id = Convert.ToInt32(row[1]);
+                    user_id = Convert.ToInt32(row[2]);
+                    purchase_date = Convert.ToDateTime(row[3]);
+                    purchase_quantity = Convert.ToInt32(row[4]);
+                    status = Convert.ToString(row[5]);
+                    variation = Convert.ToString(row[6]);
+                    product_name = Convert.ToString(row[7]);
                 }
                 catch (Exception ex)
                 {
@@ -232,7 +232,7 @@ namespace ITEC103_Finals
                 return;
 
             // Query Command
-            string query = "INSERT INTO Users (price_id, user_id, purchase_date, purchase_quantity, status, variation, product_name) VALUES (@price_id, @user_id, @purchase_date, @purchase_quantity, @status, @variation, @product_name)";
+            string query = "INSERT INTO orders (price_id, user_id, purchase_date, purchase_quantity, status, variation, product_name) VALUES (@price_id, @user_id, @purchase_date, @purchase_quantity, @status, @variation, @product_name)";
 
             // Setup Command for Query
             cmd.CommandText = query;

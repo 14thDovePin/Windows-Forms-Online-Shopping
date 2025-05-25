@@ -2223,8 +2223,9 @@
             // 
             // flowLayoutPanel1
             // 
+            flowLayoutPanel1.Anchor = AnchorStyles.Top;
+            flowLayoutPanel1.AutoScroll = true;
             flowLayoutPanel1.Controls.Add(panel23);
-            flowLayoutPanel1.Dock = DockStyle.Fill;
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(138, 3);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -3436,12 +3437,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(244, 244, 244);
             ClientSize = new Size(1350, 729);
+            Controls.Add(Cart_Panel);
             Controls.Add(ItemView_Panel);
             Controls.Add(HomePage_Panel);
             Controls.Add(SignIn_Panel);
             Controls.Add(SignUp_Panel);
             Controls.Add(Profile_Panel);
-            Controls.Add(Cart_Panel);
             Controls.Add(TopNavBar);
             Name = "Form1";
             Text = "Add Program Label Here";
