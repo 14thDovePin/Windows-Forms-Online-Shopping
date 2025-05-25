@@ -62,6 +62,7 @@
             if (!signed_in)
                 return;
 
+            CartPanel_Load();
             Cart_Panel.BringToFront(); //brings you to cart page
             PageLabel.Text = "Cart";
         }

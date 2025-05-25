@@ -30,7 +30,7 @@ namespace ITEC103_Finals
 
             GenerateCartItem(
                 821,
-                0,
+                1,
                 DateTime.MinValue,
                 20,
                 "Cart",
@@ -42,7 +42,9 @@ namespace ITEC103_Finals
         private void GenerateCartItem(int price_id, int user_id, DateTime purchase_date, int purchase_quantity, string status, string product_name, string variation)
         {
             // Check User & Order Status
-            bool user_check = true;
+            Console.WriteLine(uid);
+            Console.WriteLine(user_id);
+            bool user_check = user_id == uid;
             bool cart_item = status.ToLower() == "cart";
 
             if (user_check && cart_item) { }
