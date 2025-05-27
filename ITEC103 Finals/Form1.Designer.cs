@@ -38,7 +38,6 @@
             CartIcon_PicBox = new PictureBox();
             ProfileIcon_PicBox = new PictureBox();
             Search_Btn = new ITEC103_Finals.AddControls.RoundedButton();
-            NotificationIcon_PicBox = new PictureBox();
             SearchBox_TxtBox = new TextBox();
             SignIn_Btn = new ITEC103_Finals.AddControls.RoundedButton();
             SignIn_Container = new Panel();
@@ -282,7 +281,6 @@
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)CartIcon_PicBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ProfileIcon_PicBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)NotificationIcon_PicBox).BeginInit();
             SignIn_Container.SuspendLayout();
             SignUp_Container.SuspendLayout();
             tableLayout1.SuspendLayout();
@@ -388,7 +386,6 @@
             TopNavBar.Controls.Add(CartIcon_PicBox);
             TopNavBar.Controls.Add(ProfileIcon_PicBox);
             TopNavBar.Controls.Add(Search_Btn);
-            TopNavBar.Controls.Add(NotificationIcon_PicBox);
             TopNavBar.Controls.Add(SearchBox_TxtBox);
             TopNavBar.Dock = DockStyle.Top;
             TopNavBar.Location = new Point(0, 0);
@@ -508,18 +505,6 @@
             Search_Btn.TextImageRelation = TextImageRelation.ImageAboveText;
             Search_Btn.UseVisualStyleBackColor = false;
             Search_Btn.Click += Search_Btn_Click;
-            // 
-            // NotificationIcon_PicBox
-            // 
-            NotificationIcon_PicBox.BackgroundImageLayout = ImageLayout.None;
-            NotificationIcon_PicBox.Image = (Image)resources.GetObject("NotificationIcon_PicBox.Image");
-            NotificationIcon_PicBox.Location = new Point(1109, 16);
-            NotificationIcon_PicBox.Margin = new Padding(3, 2, 3, 2);
-            NotificationIcon_PicBox.Name = "NotificationIcon_PicBox";
-            NotificationIcon_PicBox.Size = new Size(47, 35);
-            NotificationIcon_PicBox.SizeMode = PictureBoxSizeMode.Zoom;
-            NotificationIcon_PicBox.TabIndex = 9;
-            NotificationIcon_PicBox.TabStop = false;
             // 
             // SearchBox_TxtBox
             // 
@@ -3452,7 +3437,6 @@
             ((System.ComponentModel.ISupportInitialize)Line_PicBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)CartIcon_PicBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)ProfileIcon_PicBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)NotificationIcon_PicBox).EndInit();
             SignIn_Container.ResumeLayout(false);
             SignIn_Container.PerformLayout();
             SignUp_Container.ResumeLayout(false);
@@ -3609,7 +3593,6 @@
         private TextBox Email_SignInTxtBox;
         private TextBox Password_SignInTxtBox;
         private Label PageLabel;
-        private PictureBox NotificationIcon_PicBox;
         private PictureBox CartIcon_PicBox;
         private PictureBox ProfileIcon_PicBox;
         private PictureBox Line_PicBox;
